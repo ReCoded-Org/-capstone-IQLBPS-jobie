@@ -4,7 +4,7 @@ function GetInTouchComponet() {
   return (
       <div className='bg-white '>
       
-      <h1 className='text-[34px] font-medium leading-8 '>Get in touch</h1>
+      <h1 className='text-[34px] font-inter text-primary leading-8 '>Get in touch</h1>
       </div>
   )
 }
