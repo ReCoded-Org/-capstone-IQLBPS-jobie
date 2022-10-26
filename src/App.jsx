@@ -1,12 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+// import logo from './logo.svg';
+// import { Counter } from './features/counter/Counter';
 import './App.css';
+import LatestJobs from './Components/LatestJob/LatestJobs';
 
+const data = [
+  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
+  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
+  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
+  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
+  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
+];
+const header = {
+  title: 'Latest Jobs',
+  first: 'Position',
+  second: 'Salary',
+  third: 'Date',
+};
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <LatestJobs headers={header} data={data} />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
@@ -50,7 +65,7 @@ function App() {
             React Redux
           </a>
         </span>
-      </header>
+      </header> */}
     </div>
   );
 }
