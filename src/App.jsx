@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero/Hero';
 import './App.css';
-import LatestJobs from './Components/LatestJob/LatestJobs';
+import LatestJobs from './components/LatestJob/LatestJobs';
 
 const data = [
   { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
@@ -18,7 +18,9 @@ const header = {
 };
 function App() {
   return (
-      <div>
+    <div>
+      <Hero />
+      <LatestJobs data={data} headers={header} />
     </div>
   );
 }
