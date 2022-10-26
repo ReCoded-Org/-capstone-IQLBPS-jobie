@@ -1,7 +1,6 @@
 import React from 'react';
-// import { Routes, Route } from "react-router-dom";
-// import logo from './logo.svg';
-// import { Counter } from './features/counter/Counter';
+
+
 
 import './App.css';
 import Education from './components/Education';
@@ -12,7 +11,7 @@ function App() {
         <div className = "App" >
             <Experience/>
             <Education/>
-        </div>
+</div>
     );
 }
 
