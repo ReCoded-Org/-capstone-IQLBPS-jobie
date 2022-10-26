@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Routes, Route } from "react-router-dom";
-import Hero from './components/Hero';
+import Hero from './components/Hero/Hero';
 import './App.css';
 
 function App() {
