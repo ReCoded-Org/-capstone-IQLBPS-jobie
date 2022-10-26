@@ -2,7 +2,7 @@ function CompanyShowcaseComponent() {
     return (
       <div className="grid bg-gray-500/5 grid-rows-3 gap-y-5" > 
        
-       <div className="justify-self-center self-end w-4/6"> 
+       <div className="justify-self-start self-end w-4/6"> 
          <h2 className="font-inter text-blue-900 font-semibold">More than 20,000 companies are using our service to hire their employees.</h2>
         </div>
 

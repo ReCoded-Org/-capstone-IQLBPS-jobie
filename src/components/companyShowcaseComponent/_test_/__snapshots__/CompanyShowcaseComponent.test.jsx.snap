@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Company Showcase Component correctly 1`] = `
+<div
+  className="grid bg-gray-500/5 grid-rows-3 gap-y-5"
+>
+  <div
+    className="justify-self-start self-end w-4/6"
+  >
+    <h2
+      className="font-inter text-blue-900 font-semibold"
+    >
+      More than 20,000 companies are using our service to hire their employees.
+    </h2>
+  </div>
+  <div
+    className=" grid grid-cols-5 gap-x-5 content-center items-center justify-self-center w-5/6"
+  >
+    <a
+      href="https://www.facebook.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+       
+      <img
+        alt="Facebook's logo"
+        className="w-30"
+        src="/assets/company-showcase-component-assets/facebook.png"
+      />
+       
+    </a>
+    <a
+      href="https://www.amazon.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Amazon's logo"
+        className="w-30"
+        src="/assets/company-showcase-component-assets/amazon.png"
+      />
+    </a>
+    <a
+      href="https://www.microsoft.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Microsoft's logo"
+        className="w-30"
+        src="/assets/company-showcase-component-assets/microsoft.png"
+      />
+    </a>
+    <a
+      href="https://www.apple.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+       
+      <img
+        alt="Apple's logo"
+        className="w-30"
+        src="/assets/company-showcase-component-assets/apple.png"
+      />
+       
+    </a>
+    <a
+      href="https://www.google.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+       
+      <img
+        alt="Google's logo"
+        className="w-30 "
+        src="/assets/company-showcase-component-assets/google.png"
+      />
+    </a>
+  </div>
+  <div
+    className="grid items-center grid-cols-4 gap-x-5 content-center items-center justify-self-center w-5/6"
+  >
+    <a
+      href="https://www.airbnb.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Airbnb's logo"
+        className="w-50"
+        src="/assets/company-showcase-component-assets/airbnb.png"
+      />
+    </a>
+    <a
+      href="https://www.spotify.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Spotify's logo"
+        className="w-50"
+        src="/assets/company-showcase-component-assets/spotify.png"
+      />
+    </a>
+    <a
+      href="https://www.yahoo.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Yahoo's logo"
+        className="w-50"
+        src="/assets/company-showcase-component-assets/yahoo.png"
+      />
+    </a>
+    <a
+      href="https://www.netflix.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="Netflix's logo"
+        className="w-50"
+        src="/assets/company-showcase-component-assets/netflix.png"
+      />
+    </a>
+  </div>
+</div>
+`;
