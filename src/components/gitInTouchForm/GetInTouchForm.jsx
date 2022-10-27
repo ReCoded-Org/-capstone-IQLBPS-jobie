@@ -3,17 +3,17 @@ import React from 'react'
 export default function ()   {  return (
   <div >    <div className="flex justify-around     ">
     <div className=' flex flex-col justify-evenly' >
-    <div className="div-1 m-8"><h2 className='text-4xl subpixel-antialiased font-semibold'>Get in touch</h2></div>
+    <div className="div-1 m-8"><h2 className='text-4xl text-slate-600 subpixel-antialiased font-semibold'>Get in touch</h2></div>
          <div className='flex justify-around'>
             <div className='flex flex-col'>
             <div className='flex justify-evenly gap-3' >
                 <label htmlFor="Firstname" className='text-left text-xl font-semibold'> first name <br/><input type="text" className='border-2 border-solid p-1.5' /></label>
                 
-             <label htmlFor="Lastname"className='text-left text-xl font-semibold'> first name <br/> <input type="text" className='border-2 border-solid p-1.5'/></label>
+             <label htmlFor="Lastname"className='text-left text-xl font-semibold'> Last name <br/> <input type="text" className='border-2 border-solid p-1.5'/></label>
                 </div>
                 <div className=" flex-col text-left">
              <label htmlFor="Lastname"className='text-left text-xl font-semibold'> Email <br/> <input type="text" className='border-2 border-solid p-1.5'/></label>  
- <br/> <label htmlFor="Lastname"className='text-left text-xl font-semibold'> first name <br/> <textarea name="" className='border-2 border-solid' id="" cols="30" rows="3"> </textarea></label>  
+ <br/> <label htmlFor="Lastname"className='text-left text-xl font-semibold'><br/> Messege   <br/> <textarea name="" className='border-2 border-solid' id="" cols="30" rows="3"> </textarea></label>  
       <br/> <button type='button' className="bg-accent  text-white font-bold py-3 px-7 rounded-full">
   Send
 </button>
@@ -26,10 +26,10 @@ export default function ()   {  return (
     </div>
     <div>
     <div className="div-2 mt-10 ">
-      <h1 className='text-4xl subpixel-antialiased font-semibold mb-10'>Contact Us</h1>
+      <h1 className='text-4xl subpixel-antialiased text-slate-600 font-semibold mb-10'>Contact Us</h1>
       <br />
-    <div className=' flex-col text-2xl text-center  gap-10'>  
-<div className='flex flex-row justify-center gap-3 mb-7'>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+    <div className=' flex-col text-2xl text-center   gap-10'>  
+<div className='flex flex-row justify-center  gap-3 mb-7'>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
         </svg><p>As Sulaimaniyah ,Iraq </p> </div>
