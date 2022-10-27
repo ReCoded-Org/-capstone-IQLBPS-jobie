@@ -1,11 +1,12 @@
 import React from 'react';
 // import { Routes, Route } from "react-router-dom";
-
+import Hero from './components/Hero/Hero';
 import './App.css';
 
 import GetInTouchForm from './componets/GetInTouchForm';
 
 function App() {
+ 
 
     return (
        
@@ -14,6 +15,7 @@ function App() {
         </div>
         
     );
+ 
 }
 
 export default App;
