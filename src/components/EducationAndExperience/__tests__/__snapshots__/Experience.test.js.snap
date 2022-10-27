@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Ed commponent correctly 1`] = `
+<div
+  className="bg-gray-200"
+>
+  <div
+    className="pt-4 pb-10"
+  >
+    <h1
+      className="pb-5"
+    >
+      Work Experience
+    </h1>
+    <button
+      className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full  left-10 top-10 "
+      onClick={[Function]}
+      type="button"
+    >
+      Add Item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`renders Education commponent correctly 1`] = `
+<div
+  className="bg-[#d5d6d8]"
+>
+  <div
+    className="pt-4 pb-10"
+  >
+    <h1
+      className="pb-5"
+    >
+      Education
+    </h1>
+    <button
+      className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full  left-10 top-10 "
+      onClick={[Function]}
+      type="button"
+    >
+      Add Item
+    </button>
+  </div>
+</div>
+`;
+
+exports[`renders Experience commponent correctly 1`] = `
+<div
+  className="bg-gray-200"
+>
+  <div
+    className="pt-4 pb-10"
+  >
+    <h1
+      className="pb-5"
+    >
+      Work Experience
+    </h1>
+    <button
+      className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full  left-10 top-10 "
+      onClick={[Function]}
+      type="button"
+    >
+      Add Item
+    </button>
+  </div>
+</div>
+`;

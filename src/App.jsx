@@ -3,8 +3,8 @@ import React from 'react';
 
 
 import './App.css';
-import Education from './components/Education';
-import Experience from './components/Experience';
+import Education from './components/EducationAndExperience/Education';
+import Experience from './components/EducationAndExperience/Experience';
 
 function App() {
     return ( 
