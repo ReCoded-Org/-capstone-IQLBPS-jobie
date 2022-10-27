@@ -14,7 +14,7 @@ export default function ()   {  return (
                 <div className=" flex-col text-left">
              <label htmlFor="Lastname"className='text-left text-xl font-semibold'> Email <br/> <input type="text" className='border-2 border-solid p-1.5'/></label>  
  <br/> <label htmlFor="Lastname"className='text-left text-xl font-semibold'> first name <br/> <textarea name="" className='border-2 border-solid' id="" cols="30" rows="3"> </textarea></label>  
-      <br/> <button type='button' className="bg-primary  text-white font-bold py-3 px-7 rounded-full">
+      <br/> <button type='button' className="bg-accent  text-white font-bold py-3 px-7 rounded-full">
   Send
 </button>
         </div> 
