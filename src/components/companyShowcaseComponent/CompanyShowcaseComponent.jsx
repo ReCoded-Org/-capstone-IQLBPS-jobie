@@ -1,28 +1,44 @@
-function CompanyShowcaseComponent() {
+// import ShowcaseItem from "./showcase_item"
+
+const details  = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+const data = [
+    {
+        'name':'Full Time Jobs',
+        'detail': details
+    },
+    {
+        'name':'Part Time Jobs',
+        'detail': details
+    },
+    {
+        'name':'Remote Jobs',
+        'detail': details
+    }
+]
+
+
+function Showcase(){
     return (
-      <div className="grid bg-gray-500/5 grid-rows-3 gap-y-5" > 
-       
-       <div className="justify-self-start self-end w-4/6"> 
-         <h2 className="font-inter text-blue-900 font-semibold">More than 20,000 companies are using our service to hire their employees.</h2>
+        <div className="flex flex-row justify-center   content-start items-start self-start self-start">
+            {data.map((e)=>{
+                return (<ShowcaseItem name={e.name} detail = {e.detail} />)})}
         </div>
+    )
+}
 
-          <div className=" grid grid-cols-5 gap-x-5 content-center items-center justify-self-center w-5/6">
-            <a href="https://www.facebook.com" rel="noreferrer" target="_blank"> <img className="w-30" src="/assets/company-showcase-component-assets/facebook.png" alt="Facebook's logo"/> </a>
-            <a href="https://www.amazon.com" rel="noreferrer" target="_blank"><img className="w-30" src="/assets/company-showcase-component-assets/amazon.png" alt="Amazon's logo"/></a>
-            <a href="https://www.microsoft.com" rel="noreferrer" target="_blank"><img className="w-30" src="/assets/company-showcase-component-assets/microsoft.png" alt="Microsoft's logo"/></a>
-            <a href="https://www.apple.com" rel="noreferrer" target="_blank"> <img className="w-30" src="/assets/company-showcase-component-assets/apple.png" alt="Apple's logo"/> </a>
-            <a href="https://www.google.com" rel="noreferrer" target="_blank"> <img className="w-30 " src="/assets/company-showcase-component-assets/google.png" alt="Google's logo"/></a>
-            </div>
 
-          <div className="grid items-center grid-cols-4 gap-x-5 content-center items-center justify-self-center w-5/6">
-            <a href="https://www.airbnb.com" rel="noreferrer" target="_blank"><img className = "w-50" src="/assets/company-showcase-component-assets/airbnb.png" alt="Airbnb's logo"/></a>
-            <a href="https://www.spotify.com" rel="noreferrer" target="_blank"><img className = "w-50" src="/assets/company-showcase-component-assets/spotify.png" alt="Spotify's logo"/></a>
-            <a href="https://www.yahoo.com" rel="noreferrer" target="_blank"><img className = "w-50" src="/assets/company-showcase-component-assets/yahoo.png" alt="Yahoo's logo"/></a>
-            <a href="https://www.netflix.com" rel="noreferrer" target="_blank"><img className = "w-50" src="/assets/company-showcase-component-assets/netflix.png" alt="Netflix's logo"/></a>
-          </div>
+function ShowcaseItem({name, detail}){
+    
+    return (
+        <div className="2xl:w-96 2xl:h-80 bg-white rounded-xl 2xl:drop-shadow-2xl my-12 mx-6 p-12 flex flex-col ">
+        <h3 className="text-xl font-bold self-start">{name}</h3>
+        <h3 className="text-sm text-justify text-gray-500 py-3">
+            {detail}
+        </h3>
+        <h3 className="text-xl font-bold self-start text-gray-500">{name }    &#8594;</h3>
+                </div>)
+                
+}
 
-      </div>
-    );
-  }
-  
-  export default CompanyShowcaseComponent;
+
+export default Showcase
