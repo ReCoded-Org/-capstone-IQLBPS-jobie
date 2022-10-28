@@ -1,10 +1,32 @@
-import React   from 'react'
-
+import React,{useRef}   from 'react'
+import emailjs from '@emailjs/browser';
 
 
 export default function GetInTouchForm() {
  
-    
+     const form = useRef();
+
+     const sendEmail = (e) => {
+       console.log('hey');
+       e.preventDefault();
+
+       emailjs
+         .sendForm(
+           'service_21dgncx',
+           'template_o6d93pf',
+           form.current,
+           'THcaIEhH6x_Hp_92h'
+         )
+         .then(
+           (result) => {
+             console.log(result.text);
+           },
+           (error) => {
+             console.log(error.text);
+           }
+         );
+       e.target.reset();
+     };
     return (
       <div>
         {' '}
@@ -15,7 +37,7 @@ export default function GetInTouchForm() {
                 Get in touch
               </h2>
             </div>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               {' '}
               <div className="flex justify-around">
                 <div className="flex flex-col">
@@ -26,8 +48,8 @@ export default function GetInTouchForm() {
                     >
                       {' '}
                       First name <br />
-                                        <input
-                                            name='firstname'
+                      <input
+                        name="firstname"
                         type="text"
                         className="border-2 border-solid p-1.5"
                       />
@@ -39,8 +61,8 @@ export default function GetInTouchForm() {
                     >
                       {' '}
                       Last name <br />{' '}
-                                        <input
-                                            name='lastname'
+                      <input
+                        name="lastname"
                         type="text"
                         className="border-2 border-solid p-1.5"
                       />
@@ -53,8 +75,8 @@ export default function GetInTouchForm() {
                     >
                       {' '}
                       Email <br />{' '}
-                                        <input
-                                            name='email'
+                      <input
+                        name="email"
                         type="text"
                         className="border-2 border-solid p-1.5"
                       />
@@ -81,7 +103,7 @@ export default function GetInTouchForm() {
                       type="submit"
                       value="Send"
                     />
-                    <br />  
+                    <br />
                   </div>
                 </div>
               </div>
