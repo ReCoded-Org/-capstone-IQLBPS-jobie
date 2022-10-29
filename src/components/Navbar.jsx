@@ -4,19 +4,23 @@ import { faMagnifyingGlass, faGlobe, faBars} from '@fortawesome/free-solid-svg-i
 const Navbar = () => {
 
     return (
-        <nav className="flex justify-center space-x-4 float-center ">
-
-        <div className='flex justify-evenly items-center  md:flex'>
-            <div>
+        
+       
+        <nav className="flex justify-evenly space-x-4 float-center my-6 ">
+            <div className='flex  items-center  md:flex'>
             <img src='/logo.svg' alt='logo' className='h-8 md:flex md:h-12'/>
             </div>
-            <div  className="hidden md:flex">
-      <a href="/dashboard" className="font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
-      <a href="/team" className="font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">About</a>
-      <a href="/projects" className="font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Roadmap</a>
-      <a href="/reports" className="font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Jobs</a>
-      <a href="/reports" className="font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Contact</a>
-      <a href="/reports" className="font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">  <FontAwesomeIcon icon= {faGlobe }/>
+<div>
+
+        
+            
+            <div  className="hidden md:flex ">
+      <a href="/dashboard" className=" mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
+      <a href="/team" className=" mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">About</a>
+      <a href="/projects" className=" mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Roadmap</a>
+      <a href="/reports" className="mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Jobs</a>
+      <a href="/reports" className=" mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Contact</a>
+      <a href="/reports" className=" mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">  <FontAwesomeIcon icon= {faGlobe }/>
 </a>
 
       <div className='w-40 flex items-center md: flex'>
@@ -31,14 +35,14 @@ const Navbar = () => {
                     
                     </div>
 
-                  <button type="button" className="flex bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Login</button>
+                  <button type="button" className="flex bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-9 mx-4 rounded-full">Login</button>
 
 
     </div>
 
     {/* mobile button goes here */}
  <div  className='md:hidden flex items-center'>
-        <button type='button' className='mobile-menu-button'>
+        <button className='mobile-menu-button w-6 h-6' type='button' >
     <FontAwesomeIcon icon= {faBars}/>
     </button>
     </div>
@@ -47,13 +51,12 @@ const Navbar = () => {
     {/* mobile menu goes here */}
     <div className='mobile-menu hidden md:hidden'>
         
-mobile menu
-{/* <a href='/dashboard' className='block py-2 px-4 text-sm hover:bg-gray-200'>Home</a>
+<a href='/dashboard' className='block py-2 px-4 text-sm hover:bg-gray-200'>Home</a>
 <a href='/team' className='block py-2 px-4 text-sm hover:bg-gray-200'>About</a>
 <a href='/projects' className='block py-2 px-4 text-sm hover:bg-gray-200'>Roadmap</a>
 <a href='/reports' className='block py-2 px-4 text-sm hover:bg-gray-200'>Jobs</a>
 <a href='/reports' className='block py-2 px-4 text-sm hover:bg-gray-200'>Contact</a>
-<a href='/reports' className='block py-2 px-4 text-sm hover:bg-gray-200'>Home</a> */}
+<a href='/reports' className='block py-2 px-4 text-sm hover:bg-gray-200'>Home</a>
 
  </div>
 
