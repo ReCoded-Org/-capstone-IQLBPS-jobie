@@ -13,7 +13,7 @@ exports[`renders Education commponent correctly 1`] = `
       Education
     </h1>
     <button
-      className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full  left-10 top-10 "
+      className="bg-[#154360]  hover:bg-[#226086] text-white font-bold py-2 px-4 rounded-full  left-10 top-10 "
       onClick={[Function]}
       type="button"
     >
