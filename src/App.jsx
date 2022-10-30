@@ -2,12 +2,13 @@ import React from 'react';
 // import { Routes, Route } from "react-router-dom";
 import Hero from './components/Hero/Hero';
 import './App.css';
+import SaveButton from './components/SaveButton';
 
 function App() {
   return (
     <div className="App">
       <Hero />
-      <h1>Hello</h1>
+      <SaveButton/>
     </div>
   );
 }
