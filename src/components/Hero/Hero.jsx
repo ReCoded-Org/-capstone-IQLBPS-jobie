@@ -20,7 +20,7 @@ function Hero() {
           <input
             type="search"
             className="rounded-3xl px-6 py-2 outline-none absolute w-72 small:w-32 small:py-1.5 small:px-3 small:text-xs medium:w-52"
-            placeholder="Type to search"
+            placeholder={t("Type-to-search")}
           />
           <button
             type="submit"
