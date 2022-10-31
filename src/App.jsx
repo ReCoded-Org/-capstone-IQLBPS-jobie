@@ -14,10 +14,10 @@ import Experience from './components/EducationAndExperience/Experience';
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <MeetOurTeam teamMembers={teamMembers}/>
+      <Hero/> 
       <WyChooseUs />
       <Experience/>
+      <MeetOurTeam teamMembers={teamMembers}/>
       <Education/>
 
     </div>
