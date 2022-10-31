@@ -1,11 +1,11 @@
-import ApplyButton from '../UI/ApplyButton';
+import CustomButton from '../UI/Button/CustomButton';
 
 const LatestJobs = ({ headers, data }) => {
   return (
     <div className="bg-gray-100">
       <div className="max-w-[70%] large:max-w-[70%] medium:max-w-[80%] small:max-w-[85%] h-full mx-auto py-10 small:py-5">
         <h1 className="text-3xl small:text-xl text-secondary mb-10 small:mb-5 font-semibold">
-          {headers.title}
+          Latest Jobs
         </h1>
         <div className="flex justify-end">
           <label htmlFor="full-time" className="mr-4 small:mr-2 small:text-sm">
@@ -25,16 +25,16 @@ const LatestJobs = ({ headers, data }) => {
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead className="text-xs text-secondary bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
-                <th scope="col" className="py-3 px-6 small:py-2 small:px-3">
-                  {headers.first}
-                </th>
-                <th scope="col" className="py-3 px-6 small:py-2 small:px-3">
-                  {headers.second}
-                </th>
-                <th scope="col" className="py-3 px-6 small:py-2 small:px-3">
-                  {headers.third}
-                </th>
-                <td />
+                {headers.map((header) => {
+                  if (header === '') {
+                    return <td />;
+                  }
+                  return (
+                    <th scope="col" className="py-3 px-6 small:py-2 small:px-3">
+                      {header}
+                    </th>
+                  );
+                })}
               </tr>
             </thead>
             <tbody>
@@ -54,7 +54,7 @@ const LatestJobs = ({ headers, data }) => {
                       {rowData.date}
                     </td>
                     <td className="py-4 px-6 small:py-1 small:px-2 w-20">
-                      <ApplyButton />
+                      <CustomButton btnName="Apply" />
                     </td>
                   </tr>
                 );

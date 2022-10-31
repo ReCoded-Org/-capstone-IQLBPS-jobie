@@ -10,12 +10,7 @@ const data = [
   { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
   { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
 ];
-const header = {
-  title: 'Latest Jobs',
-  first: 'Position',
-  second: 'Salary',
-  third: 'Date',
-};
+const header = ['Position', 'Salary', 'Date', ''];
 function App() {
   return (
     <div>
