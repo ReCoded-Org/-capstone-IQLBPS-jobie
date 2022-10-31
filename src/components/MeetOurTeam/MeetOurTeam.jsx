@@ -1,8 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import data from "../../data/teamData.json"
 
-function MeetOurTeam({teamMembers}){
-    const memberCard = teamMembers.map((member)=>{
+function MeetOurTeam(){
+    const memberCard = data.map((member)=>{
         return(
          <div className="m-4"key={member.name}>
             <img className="rounded-full" src={member.src} alt={`${member.name} png`}/>
