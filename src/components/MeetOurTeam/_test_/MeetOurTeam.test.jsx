@@ -1,9 +1,10 @@
 import renderer from 'react-test-renderer';
-import MeetOurTeam from '../MeetOurTeam.jsx'
+import MeetOurTeam from '../MeetOurTeam.jsx';
+import {teamMembers} from "/home/marwa/capstone/ourteam/-capstone-IQLBPS-jobie/src/data/teamData.js";
 
 it('renders Meet Our Team component correctly', () => {
     const tree = renderer
-      .create(<MeetOurTeam/>)
+      .create(<MeetOurTeam teamMembers={teamMembers}/>)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

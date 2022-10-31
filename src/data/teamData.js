@@ -1,4 +1,4 @@
-[
+export const teamMembers = [
    {"name":"Allan Ahmed",
      "position":"Frontend Developer",
      "src":"/assets/meetOurTeam/allan.jpg",
