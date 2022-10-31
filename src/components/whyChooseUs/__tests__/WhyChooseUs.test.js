@@ -1,8 +1,8 @@
 import renderer from 'react-test-renderer';
 
-import Hero from './Hero';
+import WhyChooseUs from '../WhyChooseUs';
 
 it('renders correctly when the component matches the snapshot', () => {
-  const tree = renderer.create(<Hero />).toJSON();
+  const tree = renderer.create(<WhyChooseUs />).toJSON();
   expect(tree).toMatchSnapshot();
 });
