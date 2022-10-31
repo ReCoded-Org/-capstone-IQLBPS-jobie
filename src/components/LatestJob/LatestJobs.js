@@ -1,6 +1,47 @@
+import { useState } from 'react';
 import ApplyButton from '../UI/ApplyButton';
 
 const LatestJobs = ({ headers, data }) => {
+  const [fullTime, setFullTime] = useState(false);
+  const [partTime, setPartTime] = useState(false);
+  const [remote, setRemote] = useState(false);
+  const handleFullTime = () => {
+    setFullTime((prev) => !prev);
+  };
+  const handlePartTime = () => {
+    setPartTime((prev) => !prev);
+  };
+  const handleRemote = () => {
+    setRemote((prev) => !prev);
+  };
+  const filteredJobs = data.filter((job) => {
+    switch (true) {
+      case partTime && remote:
+        return job.partTime && job.remote;
+
+      case fullTime && remote:
+        return job.fullTime && job.remote;
+
+      case fullTime && partTime:
+        return job.fullTime && job.partTime;
+
+      case fullTime:
+        return job.fullTime;
+
+      case partTime:
+        return job.partTime;
+
+      case remote:
+        return job.remote;
+
+      default:
+        return true;
+    }
+  });
+  // const filteredJobs = data
+  //   .filter((job) => fullTime && job.fullTime)
+  //   .filter((job) => remote && job.remote)
+  //   .filter((job) => partTime && job.partTime);
   return (
     <div className="bg-gray-100">
       <div className="max-w-[70%] large:max-w-[70%] medium:max-w-[80%] small:max-w-[85%] h-full mx-auto py-10 small:py-5">
@@ -9,15 +50,33 @@ const LatestJobs = ({ headers, data }) => {
         </h1>
         <div className="flex justify-end">
           <label htmlFor="full-time" className="mr-4 small:mr-2 small:text-sm">
-            <input type="checkbox" id="full-time" className="mr-2 small:mr-1" />
+            <input
+              type="checkbox"
+              id="full-time"
+              className="mr-2 small:mr-1"
+              onChange={handleFullTime}
+              checked={fullTime}
+            />
             Full Time
           </label>
           <label htmlFor="part-time" className="mr-4 small:mr-2 small:text-sm">
-            <input type="checkbox" id="part-time" className="mr-2 small:mr-1" />
+            <input
+              type="checkbox"
+              id="part-time"
+              className="mr-2 small:mr-1"
+              onChange={handlePartTime}
+              checked={partTime}
+            />
             Part Time
           </label>
           <label htmlFor="remote" className="small:text-sm">
-            <input type="checkbox" id="remote" className="mr-2 small:mr-1" />
+            <input
+              type="checkbox"
+              id="remote"
+              className="mr-2 small:mr-1"
+              onChange={handleRemote}
+              checked={remote}
+            />
             Remote
           </label>
         </div>
@@ -38,7 +97,7 @@ const LatestJobs = ({ headers, data }) => {
               </tr>
             </thead>
             <tbody>
-              {data.map((rowData) => {
+              {filteredJobs.map((rowData) => {
                 return (
                   <tr className="bg-white dark:bg-gray-800 small:text-xs">
                     <th

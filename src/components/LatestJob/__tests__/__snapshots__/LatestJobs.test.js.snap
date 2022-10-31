@@ -20,8 +20,10 @@ exports[`renders Latest Jobs correctly 1`] = `
         htmlFor="full-time"
       >
         <input
+          checked={false}
           className="mr-2 small:mr-1"
           id="full-time"
+          onChange={[Function]}
           type="checkbox"
         />
         Full Time
@@ -31,8 +33,10 @@ exports[`renders Latest Jobs correctly 1`] = `
         htmlFor="part-time"
       >
         <input
+          checked={false}
           className="mr-2 small:mr-1"
           id="part-time"
+          onChange={[Function]}
           type="checkbox"
         />
         Part Time
@@ -42,8 +46,10 @@ exports[`renders Latest Jobs correctly 1`] = `
         htmlFor="remote"
       >
         <input
+          checked={false}
           className="mr-2 small:mr-1"
           id="remote"
+          onChange={[Function]}
           type="checkbox"
         />
         Remote
