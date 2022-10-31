@@ -1,4 +1,3 @@
-import React from 'react';
 import Hero from './components/Hero/Hero';
 import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
 import './App.css';
