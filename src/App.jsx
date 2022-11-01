@@ -3,7 +3,7 @@ import React from 'react';
 
 import Hero from './components/Hero/Hero';
 import './App.css';
-import Showcase from './components/companyShowcaseComponent/CompanyShowcaseComponent';
+import Showcase from './components/companyShowcaseComponent/showcase';
 
 function App() {
   return (
