@@ -3,13 +3,12 @@ import React from 'react';
 
 import Hero from './components/Hero/Hero';
 import './App.css';
-import Showcase from './components/companyShowcaseComponent/CompanyShowcaseComponent';
 
 function App() {
   return (
     <div className="App">
       <Hero />
-     <Showcase/>
+      <h1>Hello</h1>
     </div>
   );
 }
