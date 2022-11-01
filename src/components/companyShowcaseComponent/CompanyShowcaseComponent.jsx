@@ -7,7 +7,7 @@ const data = [
         'detail': details
     },
     {
-        'name':'Part Time Jobs',
+        'name':'Part Time Jobs ',
         'detail': details
     },
     {
