@@ -26,12 +26,16 @@ const LatestJobs = ({ headers, data }) => {
             <thead className="text-xs text-secondary bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
                 {headers.map((header) => {
-                  if (header === '') {
-                    return <td />;
+                  if (header.title === '') {
+                    return <td key={header.id} />;
                   }
                   return (
-                    <th scope="col" className="py-3 px-6 small:py-2 small:px-3">
-                      {header}
+                    <th
+                      scope="col"
+                      className="py-3 px-6 small:py-2 small:px-3"
+                      key={header.id}
+                    >
+                      {header.title}
                     </th>
                   );
                 })}
@@ -40,7 +44,10 @@ const LatestJobs = ({ headers, data }) => {
             <tbody>
               {data.map((rowData) => {
                 return (
-                  <tr className="bg-white dark:bg-gray-800 small:text-xs">
+                  <tr
+                    className="bg-white dark:bg-gray-800 small:text-xs"
+                    key={rowData.id}
+                  >
                     <th
                       scope="row"
                       className="py-4 px-6 small:py-1 small:px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
