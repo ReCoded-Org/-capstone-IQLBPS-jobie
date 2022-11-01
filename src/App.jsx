@@ -1,6 +1,8 @@
 import React from 'react';
 import Hero from './components/Hero/Hero';
 import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
+import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
+import {showCaseData} from "./data/showCaseData"
 import './App.css';
 import LatestJobs from './components/LatestJob/LatestJobs';
 
@@ -16,6 +18,7 @@ function App() {
   return (
     <div>
       <Hero />
+      <CompanyShowcaseComponent showCaseData={showCaseData}/>
       <LatestJobs data={data} headers={header} />
       <WyChooseUs />
     </div>
