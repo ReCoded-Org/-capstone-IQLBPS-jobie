@@ -1,5 +1,8 @@
 import React from 'react';
+<<<<<<< HEAD
 // import { Routes, Route } from "react-router-dom";
+=======
+>>>>>>> 6459caba160cd823fad5bcd6340c123014d8badb
 import Hero from './components/Hero/Hero';
 
 import MeetOurTeam from './components/MeetOurTeam/MeetOurTeam';
@@ -20,6 +23,7 @@ const data = [
 const header = ['Position', 'Salary', 'Date', ''];
 function App() {
   return (
+<<<<<<< HEAD
     <div>
       <Hero/> 
       <LatestJobs data={data} headers={header} />
@@ -28,6 +32,15 @@ function App() {
       <MeetOurTeam teamMembers={teamMembers}/>
       {/* <Education/> */}
 
+=======
+    <div className="App">
+      <Hero/> 
+      <WyChooseUs />
+      <Experience/>
+      <MeetOurTeam teamMembers={teamMembers}/>
+      <LatestJobs data={data} headers={header} />
+      <Education/>
+>>>>>>> 6459caba160cd823fad5bcd6340c123014d8badb
     </div>
   );
 }
