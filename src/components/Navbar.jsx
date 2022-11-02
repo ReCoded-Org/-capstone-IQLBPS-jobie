@@ -1,71 +1,74 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faGlobe, faBars} from '@fortawesome/free-solid-svg-icons'
+/* eslint-disable */
+/* eslint-disable no-console, no-control-regex*/
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMagnifyingGlass,
+  faGlobe,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react";
+import Button from "./Button";
 
 const Navbar = () => {
+  let Links = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/" },
+    { name: "Roadmap", link: "/" },
+    { name: "Jobs", link: "/" },
+    { name: "Contact", link: "/" },
+  ];
 
-    return (
-        
-       
-        <nav className="flex justify-evenly space-x-4 float-center my-6 ">
-            <div className='flex  items-center  md:flex'>
-            <img src='/logo.svg' alt='logo' className='h-8 md:flex md:h-12'/>
-            </div>
-<div>
+  let [open, setOpen] = useState(false);
 
-        
-            
-            <div  className="hidden md:flex ">
-      <a href="/dashboard" className=" mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
-      <a href="/team" className=" mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">About</a>
-      <a href="/projects" className=" mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Roadmap</a>
-      <a href="/reports" className="mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Jobs</a>
-      <a href="/reports" className=" mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Contact</a>
-      <a href="/reports" className=" mx-4 font-small px-1 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">  <FontAwesomeIcon icon= {faGlobe }/>
-</a>
+  return (
+    <div className="shadow-md w-full fixed top-0 left-0">
+      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+        <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
+          <span className="text-3xl text-indigo-600 mr-1 pt-2">
+            <img src="/logo.svg" alt="logo" className="h-8 md:flex md:h-12" />
+          </span>
+        </div>
+        <div
+          onClick={() => setOpen(!open)} //set open if close.
+          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+        >
+          <ion-icon name={open ? "close" : "menu"}></ion-icon>
+        </div>
 
-      <div className='w-40 flex items-center md: flex'>
-      <input
-      
-                    type="text"
-                    className=" block w-full px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 w-full"
-                    placeholder="Search..."/>
-                    <button type="button" className='-ml-6'>
-                     <FontAwesomeIcon icon= {faMagnifyingGlass }/>
-                    </button>
-                    
-                    </div>
+        <ul
+          className={`mx-5 md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+            open ? "top-20" : "top-[-490px]"
+          }`}
+        >
+          {Links.map((link) => (
+            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
+              <a
+                href={link.link}
+                className="text-gray-800 hover:text-gray-400 duration-500"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
 
-                  <button type="button" className="flex bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-9 mx-4 rounded-full">Login</button>
+          <FontAwesomeIcon icon={faGlobe} className="mx-5" />
+          <div className="w-60 flex items-center md: flex ">
+            <input
+              type="text"
+              className=" block w-full px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 w-full"
+              placeholder="Search..."
+            />
+            <button type="button" className="-ml-6">
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </button>
+          </div>
 
-
+          <Button>Login</Button>
+        </ul>
+      </div>
     </div>
+  );
+};
 
-    {/* mobile button goes here */}
- <div  className='md:hidden flex items-center'>
-        <button className='mobile-menu-button w-6 h-6' type='button' >
-    <FontAwesomeIcon icon= {faBars}/>
-    </button>
-    </div>
-    
-    </div>
-    {/* mobile menu goes here */}
-    <div className='mobile-menu hidden md:hidden'>
-        
-<a href='/dashboard' className='block py-2 px-4 text-sm hover:bg-gray-200'>Home</a>
-<a href='/team' className='block py-2 px-4 text-sm hover:bg-gray-200'>About</a>
-<a href='/projects' className='block py-2 px-4 text-sm hover:bg-gray-200'>Roadmap</a>
-<a href='/reports' className='block py-2 px-4 text-sm hover:bg-gray-200'>Jobs</a>
-<a href='/reports' className='block py-2 px-4 text-sm hover:bg-gray-200'>Contact</a>
-<a href='/reports' className='block py-2 px-4 text-sm hover:bg-gray-200'>Home</a>
-
- </div>
-
- 
-    </nav>
-
-
-
-    )
-}
-
-export default Navbar
+export default Navbar;

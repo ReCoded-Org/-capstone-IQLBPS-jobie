@@ -6,20 +6,13 @@ import { store } from './app/store';
 import App from './App';
 import './index.css';
 
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render( <React.StrictMode >
-    <Provider store = { store } >
+<Provider store = { store } >    
     <BrowserRouter><App /></BrowserRouter>
 
     </Provider> </React.StrictMode>
 );
-
-const btn = document.querySelector('button.mobile-menu-button');
-const menu = document.querySelector('.mobile-menu');
-
-
-btn.addEventListener('click', ()=> {
-    menu.classList.toggle("hidden")
-});
