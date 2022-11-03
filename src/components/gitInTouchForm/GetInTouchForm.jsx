@@ -1,8 +1,10 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+// import React, { useRef } from 'react';
+
+ // import emailjs from '@emailjs/browser';
+
 
 export default function GetInTouchForm() {
    const schema = yup.object().shape({
@@ -11,7 +13,12 @@ export default function GetInTouchForm() {
      email: yup.string().email().required('Your Email is Required!'),
      message: yup.string().required('Your Message is Required!'),
    });
-
+  const isValid=() => {
+    return schema;
+  }
+ const onSubmit = (data) => {
+   console.log(data);
+ };
    const {
      register,
      handleSubmit,
@@ -20,30 +27,29 @@ export default function GetInTouchForm() {
      resolver: yupResolver(schema),
    });
 
-  const form = useRef();
+//  const form = useRef();
   
-const sendEmail = (data,e) => {
-     console.log('hey');
-     e.preventDefault();
+// const sendEmail = (data,e) => {
+//      console.log('hey');
+//      e.preventDefault();
 
-     emailjs
-       .sendForm(
-         'service_21dgncx',
-         'template_o6d93pf',
-         form.current,
-         'THcaIEhH6x_Hp_92h'
-       )
-       .then(
-         (result) => {
-           console.log(result.text);
-         },
-         (error) => {
-           console.log(error.text);
-         }
-       );
-     e.target.reset();
-   };
-  
+//      emailjs
+//        .sendForm(
+//          'service_21dgncx',
+//          'template_o6d93pf',
+//          form.current,
+//          'THcaIEhH6x_Hp_92h'
+//        )
+//        .then(
+//          (result) => {
+//            console.log(result.text);
+//          },
+//          (error) => {
+//            console.log(error.text);
+//          }
+//        );
+//      e.target.reset();
+//    };
 
 
   return (
@@ -55,23 +61,21 @@ const sendEmail = (data,e) => {
         </h1>
         <form
           className="flex flex-col gap-3 mt-10"
-          onSubmit={handleSubmit(sendEmail)}
-          
-          ref={form}
+          onSubmit={handleSubmit(onSubmit)}
         >
           <div className="flex flex-col  gap-3">
             <div className="flex flex-auto justify-center  gap-2 small:flex-col medium:flex-col">
               <label className="flex flex-col" htmlFor="name">
                 {' '}
                 <p className="text-left text-lg subpixel-antialiased text-slate-600 font-semibold">
-                  {' '}
+                  
                   Name{' '}
                 </p>
                 <input
                   className="px-6 py-2   border-2 border-gray-900"
                   type="text"
                   placeholder="Name"
-                name='firstName'
+                  name="firstName"
                   {...register('firstName')}
                   id="n44ame"
                 />
@@ -88,7 +92,7 @@ const sendEmail = (data,e) => {
                 <input
                   className="px-6 py-2   border-2 border-gray-900"
                   type="text"
-                  name='lastName'
+                  name="lastName"
                   placeholder="Last Name"
                   {...register('lastName')}
                   id="nam3e"
@@ -107,7 +111,7 @@ const sendEmail = (data,e) => {
               </p>
               <input
                 className="px-3 py-2   border-2 border-gray-900"
-                name='email'
+                name="email"
                 placeholder="example@email.com"
                 type="text"
                 {...register('email')}
@@ -127,12 +131,11 @@ const sendEmail = (data,e) => {
               <textarea
                 className="border-2 border-gray-900"
                 {...register('message')}
-                name='message'
+                name="message"
                 cols="30"
                 rows="3"
-              >
-                {' '}
-              </textarea>
+              />
+
               <p className="text-sm text-red-500 text-left">
                 {errors.message?.message}
               </p>
@@ -142,6 +145,7 @@ const sendEmail = (data,e) => {
           <div className="flex justify-start">
             <button
               type="submit"
+              disabled={!isValid}
               className="bg-accent ml-[150px] mt-5  text-white font-bold hover:bg-red-500 py-3 px-8 rounded-full small:ml-0 medium:ml-0"
             >
               Send
