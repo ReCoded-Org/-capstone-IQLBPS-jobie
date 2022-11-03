@@ -5,8 +5,8 @@ import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 function Login() {
   return (
-    <div className=" my-12">
-      <h1 className="font-inter font-extrabold text-2xl mb-6">Log in</h1>
+    <div className=" my-52">
+      <h1 className="font-inter font-black text-2xl mb-6">Log in</h1>
       <div className="w-full max-w-sm mx-auto">
         <form>
           <div className="mb-4">
