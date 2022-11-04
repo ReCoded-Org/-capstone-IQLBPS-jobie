@@ -30,7 +30,7 @@ const LatestJobs = ({ headers, data }) => {
                     return <td />;
                   }
                   return (
-                    <th scope="col" className="py-3 px-6 small:py-2 small:px-3">
+                    <th key={header} scope="col" className="py-3 px-6 small:py-2 small:px-3">
                       {header}
                     </th>
                   );

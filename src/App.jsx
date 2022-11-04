@@ -1,5 +1,7 @@
 import React from 'react';
 import Hero from './components/Hero/Hero';
+import MeetOurTeam from './components/MeetOurTeam/MeetOurTeam';
+import {teamMembers} from "./data/teamData";
 import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
 import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
 import {showCaseData} from "./data/showCaseData"
@@ -24,6 +26,7 @@ function App() {
       <HowItWorks/>
       <CompanyShowcaseComponent showCaseData={showCaseData}/>
       <LatestJobs data={data} headers={header} />
+      <MeetOurTeam teamMembers={teamMembers}/>
       <WyChooseUs />
       <Experience/>
       <Education/>
