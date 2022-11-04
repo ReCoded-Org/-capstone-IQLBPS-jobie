@@ -1,6 +1,8 @@
 import React from 'react';
 import Hero from './components/Hero/Hero';
 import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
+import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
+import {showCaseData} from "./data/showCaseData"
 import './App.css';
 import Education from './components/EducationAndExperience/Education';
 import Experience from './components/EducationAndExperience/Experience';
@@ -20,6 +22,7 @@ function App() {
     <div>
       <Hero />
       <HowItWorks/>
+      <CompanyShowcaseComponent showCaseData={showCaseData}/>
       <LatestJobs data={data} headers={header} />
       <WyChooseUs />
       <Experience/>
