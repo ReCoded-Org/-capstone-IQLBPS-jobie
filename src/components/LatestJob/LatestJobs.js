@@ -14,34 +14,16 @@ const LatestJobs = ({ headers, data }) => {
   const handleRemote = () => {
     setRemote((prev) => !prev);
   };
-  const filteredJobs = data.filter((job) => {
-    switch (true) {
-      case partTime && remote:
-        return job.partTime && job.remote;
-
-      case fullTime && remote:
-        return job.fullTime && job.remote;
-
-      case fullTime && partTime:
-        return job.fullTime && job.partTime;
-
-      case fullTime:
-        return job.fullTime;
-
-      case partTime:
-        return job.partTime;
-
-      case remote:
-        return job.remote;
-
-      default:
-        return true;
-    }
-  });
-  // const filteredJobs = data
-  //   .filter((job) => fullTime && job.fullTime)
-  //   .filter((job) => remote && job.remote)
-  //   .filter((job) => partTime && job.partTime);
+  const filteredJobs = data.filter(
+    (job) =>
+      (partTime && job.partTime && !fullTime && !remote) ||
+      (fullTime && job.fullTime && !partTime && !remote) ||
+      (remote && job.remote && !partTime && !fullTime) ||
+      (!remote && partTime && job.partTime && fullTime && job.fullTime) ||
+      (remote && job.remote && partTime && job.partTime && !fullTime) ||
+      (remote && job.remote && !partTime && fullTime && job.fullTime) ||
+      !(remote || partTime || fullTime)
+  );
   return (
     <div className="bg-gray-100">
       <div className="max-w-[70%] large:max-w-[70%] medium:max-w-[80%] small:max-w-[85%] h-full mx-auto py-10 small:py-5">
