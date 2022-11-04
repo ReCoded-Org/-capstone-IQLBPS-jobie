@@ -8,6 +8,7 @@ import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
 import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
 import { showCaseData } from './data/showCaseData';
 import './App.css';
+import Categories from './components/Categories/Categories';
 import Education from './components/EducationAndExperience/Education';
 import Experience from './components/EducationAndExperience/Experience';
 import LatestJobs from './components/LatestJob/LatestJobs';
@@ -26,6 +27,7 @@ function App() {
   return (
     <div>
       <Hero />
+      <Categories/>
       <h1>{t('hello')}</h1>
       <Localize />
       <HowItWorks />
