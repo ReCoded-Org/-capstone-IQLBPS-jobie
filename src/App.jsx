@@ -1,14 +1,47 @@
 import React from 'react';
-// import { Routes, Route } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import Hero from './components/Hero/Hero';
+import Localize from './Localize';
+import MeetOurTeam from './components/MeetOurTeam/MeetOurTeam';
+import { teamMembers } from './data/teamData';
+import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
+import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
+import { showCaseData } from './data/showCaseData';
 import './App.css';
 import ContactSkills from './components/ProfileEdit/contact_skills_page';
+import JobsShowcase from './components/JobsShowcase/JobsShowcase';
+import { showcaseData } from './data';
+import Categories from './components/Categories/Categories';
+import Education from './components/EducationAndExperience/Education';
+import Experience from './components/EducationAndExperience/Experience';
+import LatestJobs from './components/LatestJob/LatestJobs';
+import HowItWorks from './components/About/HowItWorks/HowItWorks';
 
+const data = [
+  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
+  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
+  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
+  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
+  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
+];
+const header = ['Position', 'Salary', 'Date', ''];
 function App() {
+  const { t } = useTranslation();
   return (
-    <div className="App">
+    <div>
       <Hero />
-<ContactSkills/>
+      <ContactSkills/>
+      <JobsShowcase showcaseArray={showcaseData} />
+      <Categories />
+      <h1>{t('hello')}</h1>
+      <Localize />
+      <HowItWorks />
+      <CompanyShowcaseComponent showCaseData={showCaseData} />
+      <LatestJobs data={data} headers={header} />
+      <MeetOurTeam teamMembers={teamMembers} />
+      <WyChooseUs />
+      <Experience />
+      <Education />
     </div>
   );
 }
