@@ -11,12 +11,12 @@ const Filter = () => {
           </h6>
           <img src="/assets/filterComponent/dropdown-svgrepo-com.svg" alt="" />
         </div>
-        <div className=" inputs grid-cols-2 grid-rows-2 gap-3 inline-grid pb-3 ml-3 gap-x-20 object-left">
+        <div className="  inputs -ml-20 grid-cols-2 grid-rows-2 gap-3 inline-grid pb-3  gap-x-20 object-left ">
           <p className="text-secondary text-left font-semibold text-l ">From</p>
           <p className="text-secondary text-left font-semibold text-l">To</p>
-          <input type="text" className="w-20 round" />
+          <input type="text" className="w-20 rounded-md" />
 
-          <input type="text" className="w-20 round" />
+          <input type="text" className="w-20 rounded-md" />
         </div>
       </div>
 
@@ -27,7 +27,7 @@ const Filter = () => {
         </h6>
         <button
           type="button"
-          className=" group relative flex justify-center items-center bg-white border focus:outline-none shadow text-secondary rounded focus:ring ring-zinc-200 "
+          className=" group relative flex justify-center items-center bg-white border focus:outline-none shadow text-secondary rounded focus:ring ring-zinc-200  ml-3"
         >
           <p className="px-4">
             Choose all that applies... <img src="vector.png" alt="" />
@@ -68,7 +68,7 @@ const Filter = () => {
         </h6>
         <button
           type="button"
-          className=" group relative flex justify-center items-center bg-white border focus:outline-none shadow text-secondary rounded focus:ring ring-zinc-200 "
+          className=" group relative flex justify-center items-center bg-white border focus:outline-none shadow text-secondary rounded focus:ring ring-zinc-200 ml-3 "
         >
           <p className="px-4">Choose all that applies...</p>
           <span>
@@ -108,7 +108,7 @@ const Filter = () => {
         </h6>
         <button
           type="button"
-          className=" group relative flex justify-center items-center bg-white border focus:outline-none shadow text-secondary rounded focus:ring ring-zinc-200 "
+          className=" group relative flex justify-center items-center bg-white border focus:outline-none shadow text-secondary rounded focus:ring ring-zinc-200 ml-3"
         >
           <p className="px-4">Choose all that applies...</p>
           <span>
@@ -189,7 +189,7 @@ const Filter = () => {
         </h6>
         <button
           type="button"
-          className=" group relative flex justify-center items-center bg-white border focus:outline-none shadow text-secondary rounded focus:ring ring-zinc-200 "
+          className=" group relative flex justify-center items-center bg-white border focus:outline-none shadow text-secondary rounded focus:ring ring-zinc-200 ml-3"
         >
           <p className="px-4">Choose all that applies...</p>
           <span>
