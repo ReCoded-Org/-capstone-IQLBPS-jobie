@@ -9,6 +9,7 @@ import CompanyShowcaseComponent from './components/companyShowcaseComponent/Comp
 import { showCaseData } from './data/showCaseData';
 import './App.css';
 import SaveButton from './components/SaveButton';
+import Categories from './components/Categories/Categories';
 import Education from './components/EducationAndExperience/Education';
 import Experience from './components/EducationAndExperience/Experience';
 import LatestJobs from './components/LatestJob/LatestJobs';
@@ -28,6 +29,7 @@ function App() {
     <div>
       <Hero />
       <SaveButton/>
+      <Categories/>
       <h1>{t('hello')}</h1>
       <Localize />
       <HowItWorks />
