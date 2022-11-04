@@ -36,7 +36,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json,snap}' --config ./.prettierrc",
+    "fix": "prettier --write \"./src/pages/**/*.js*\"  \"!./src/pages/**/*/*.snap\" \"./src/components/**/*.js*\" \"!./src/components/**/*/*.snap*\" \"./src/data/*.js\" "
   },
   "eslintConfig": {
     "extends": [
