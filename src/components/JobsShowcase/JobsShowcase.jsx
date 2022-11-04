@@ -6,6 +6,7 @@ const JobsShowcase = ({ showcaseArray }) => {
       {showcaseArray.map((data) => {
         return (
           <Showcase
+            key={data.id}
             header={data.header}
             body={data.body}
             button={data.button}
