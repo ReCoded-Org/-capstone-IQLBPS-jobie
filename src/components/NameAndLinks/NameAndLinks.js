@@ -3,7 +3,7 @@ import React from 'react';
 const NameAndLinks = () => {
   return (
     <div className="">
-      <div className="  flex flex-row pt-6  pl-44 ">
+      <div className="  flex flex-row pt-6  pl-44  small:pl-10 ">
         <div className="bg-black  pt-6 p-10  " >
             <img  src='https://i.pinimg.com/236x/44/ab/21/44ab21be0821eed03d0943dd5662def8.jpg' className='w-20 bg-blue-100' alt=''/>
         </div>
@@ -22,14 +22,14 @@ const NameAndLinks = () => {
         </button>
       </div>
       </div>
-      <div className="pt-6 pl-44">
+      <div className="pt-32  pb-32 pl-44 small:pl-10 ">
+      <h1 className='mb-4 text-4xl  text-dark-gray md:text-5xl lg:text-6x  pb-7 text-left' >Resume File</h1>
+
         <form>
-        {/* <label className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Your Email</label> */}
           <div className="relative">
             <div className="flex absolute  items-center ">
-                
               <input
-                className=" p-6 pl-60  pr-60  rounded-lg border border-gray-300 "
+                className="  p-6 pl-44 pr-96   small:pl-18 small:pr-32  medium:pl-44  medium:pr-24  rounded-lg border border-gray-300 "
                 placeholder="No File Selected"
                 required
               />
