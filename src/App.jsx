@@ -7,6 +7,8 @@ import { teamMembers } from './data/teamData';
 import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
 import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
 import { showCaseData } from './data/showCaseData';
+import FilterResults from './components/FilterResults/FilterResults';
+import { filterData } from './data/filterData';
 import './App.css';
 import Categories from './components/Categories/Categories';
 import Education from './components/EducationAndExperience/Education';
@@ -21,11 +23,13 @@ const data = [
   { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
   { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
 ];
+
 const header = ['Position', 'Salary', 'Date', ''];
 function App() {
   const { t } = useTranslation();
   return (
     <div>
+      <FilterResults filterData={ filterData }/> 
       <Hero />
       <Categories/>
       <h1>{t('hello')}</h1>
