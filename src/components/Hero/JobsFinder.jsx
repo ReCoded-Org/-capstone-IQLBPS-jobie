@@ -3,7 +3,7 @@ import React from 'react'
 function JobsFinder() {
   return (
     <div className="App  bg-gray-200  flex-col justify-around  py-[50px]  ">
-      <div >
+      <div className="flex  flex-col">
         <div>
           <h1 className="text-3xl font-medium text-dark-gray leading-loose ">
             {' '}
