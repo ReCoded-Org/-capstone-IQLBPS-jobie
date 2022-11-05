@@ -1,24 +1,23 @@
 import { useForm } from 'react-hook-form';
+
 import { yupResolver } from '@hookform/resolvers/yup';
+
+import React, { useRef } from 'react';
+
+import emailjs from '@emailjs/browser';
+
 import * as yup from 'yup';
-// import React, { useRef } from 'react';
-
- // import emailjs from '@emailjs/browser';
-
 
 export default function GetInTouchForm() {
+
    const schema = yup.object().shape({
      firstName: yup.string().required('Your Full Name is Required!'),
      lastName: yup.string().required('Your Last Name is Required!'),
      email: yup.string().email().required('Your Email is Required!'),
      message: yup.string().required('Your Message is Required!'),
    });
-  const isValid=() => {
-    return schema;
-  }
- const onSubmit = (data) => {
-   console.log(data);
- };
+ 
+
    const {
      register,
      handleSubmit,
@@ -27,29 +26,29 @@ export default function GetInTouchForm() {
      resolver: yupResolver(schema),
    });
 
-//  const form = useRef();
+ const form = useRef();
   
-// const sendEmail = (data,e) => {
-//      console.log('hey');
-//      e.preventDefault();
+const sendEmail = () => {
+     console.log('hey');
+    //  e.preventDefault();
 
-//      emailjs
-//        .sendForm(
-//          'service_21dgncx',
-//          'template_o6d93pf',
-//          form.current,
-//          'THcaIEhH6x_Hp_92h'
-//        )
-//        .then(
-//          (result) => {
-//            console.log(result.text);
-//          },
-//          (error) => {
-//            console.log(error.text);
-//          }
-//        );
-//      e.target.reset();
-//    };
+     emailjs
+       .sendForm(
+         'service_21dgncx',
+         'template_o6d93pf',
+       form.current,
+         'THcaIEhH6x_Hp_92h'
+       )
+       .then(
+         (result) => {
+           console.log(result.text);
+         },
+         (error) => {
+           console.log(error.text);
+         }
+       );
+    form.current.reset();
+   };
 
 
   return (
@@ -61,14 +60,14 @@ export default function GetInTouchForm() {
         </h1>
         <form
           className="flex flex-col gap-3 mt-10"
-          onSubmit={handleSubmit(onSubmit)}
+       ref={form}
+          onSubmit={handleSubmit(sendEmail)}
         >
           <div className="flex flex-col  gap-3">
             <div className="flex flex-auto justify-center  gap-2 small:flex-col medium:flex-col">
               <label className="flex flex-col" htmlFor="name">
                 {' '}
                 <p className="text-left text-lg subpixel-antialiased text-slate-600 font-semibold">
-                  
                   Name{' '}
                 </p>
                 <input
@@ -80,7 +79,7 @@ export default function GetInTouchForm() {
                   id="n44ame"
                 />
                 <p className="text-sm text-red-500 text-left">
-                  {errors.firstName?.message}
+                  {errors?.firstName?.message}
                 </p>
               </label>
               <label className="flex flex-col" htmlFor="name">
@@ -98,7 +97,7 @@ export default function GetInTouchForm() {
                   id="nam3e"
                 />
                 <p className="text-sm text-red-500 text-left">
-                  {errors.lastName?.message}
+                  {errors?.lastName?.message}
                 </p>
               </label>{' '}
             </div>
@@ -118,7 +117,7 @@ export default function GetInTouchForm() {
                 id="name1"
               />
               <p className="text-sm text-red-500 text-left">
-                {errors.email?.message}
+                {errors?.email?.message}
               </p>
             </label>
           </div>
@@ -137,7 +136,7 @@ export default function GetInTouchForm() {
               />
 
               <p className="text-sm text-red-500 text-left">
-                {errors.message?.message}
+                {errors?.message?.message}
               </p>
             </label>
           </div>
@@ -145,7 +144,7 @@ export default function GetInTouchForm() {
           <div className="flex justify-start">
             <button
               type="submit"
-              disabled={!isValid}
+              
               className="bg-accent ml-[150px] mt-5  text-white font-bold hover:bg-red-500 py-3 px-8 rounded-full small:ml-0 medium:ml-0"
             >
               Send
