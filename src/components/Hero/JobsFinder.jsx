@@ -2,8 +2,8 @@ import React from 'react'
 
 function JobsFinder() {
   return (
-    <div className="   bg-gray-200  flex-col justify-around  items-center py-16 ">
-      <div className='flex justify-center'>
+    <div className="App  bg-gray-200  flex-col justify-around  py-[50px]  ">
+      <div >
         <div>
           <h1 className="text-3xl font-medium text-dark-gray leading-loose ">
             {' '}
