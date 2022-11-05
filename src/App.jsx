@@ -15,6 +15,7 @@ import Education from './components/EducationAndExperience/Education';
 import Experience from './components/EducationAndExperience/Experience';
 import LatestJobs from './components/LatestJob/LatestJobs';
 import HowItWorks from './components/About/HowItWorks/HowItWorks';
+import OurCollaborators from './components/OurCollaborators/OurCollaborators';
 
 const data = [
   {
@@ -91,6 +92,7 @@ function App() {
   const { t } = useTranslation();
   return (
     <div>
+      <OurCollaborators/>
       <Hero />
       <JobsShowcase showcaseArray={showcaseData} />
       <Categories />

@@ -1,13 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Company Showcase Component correctly 1`] = `
+exports[`renders Our Collaborators Component correctly 1`] = `
 <section
   className="flex flex-col bg-gray-500/5 justify-center items-center"
 >
   <h2
-    className=" font-inter text-center text-blue-900 font-semibold  text-xs mt-5 mb-8 md:text-2xl"
+    className=" font-inter text-center text-blue-900 font-semibold text-xs mt-5 mb-8 md:text-5xl"
   >
-    More than 20,000 companies are using our service to hire their employees.
+    Our 
+    <span
+      className="text-accent"
+    >
+      Collaborators
+    </span>
   </h2>
   <div
     className="grid grid-cols-5 grid-rows-2 gap-x-5 place-content-center items-center w-4/6"
