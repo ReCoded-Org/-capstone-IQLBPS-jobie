@@ -12,6 +12,8 @@ import Login from "./components/Login/Login";
 import SignUp from "./components/signup/SignUp";
 import CompanyShowcaseComponent from "./components/companyShowcaseComponent/CompanyShowcaseComponent";
 import { showCaseData } from "./data/showCaseData";
+import FilterResults from './components/FilterResults/FilterResults';
+import { filterData } from './data/filterData';
 import "./App.css";
 import SaveButton from "./components/UI/Button/SaveButton";
 import Categories from "./components/Categories/Categories";
@@ -94,12 +96,14 @@ const header = [
   { title: "Date", id: 3 },
   { title: "", id: 4 },
 ];
+
 function App() {
   const { t } = useTranslation();
   return (
     <div className="App">
       <Navbar />
       <Hero />
+      <FilterResults filterData={ filterData }/> 
       <Login />
       <BasicInfoEdit />
       <SignUp />
