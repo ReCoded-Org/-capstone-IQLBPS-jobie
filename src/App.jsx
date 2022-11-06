@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import AboutUsComponent from './components/AboutUsComponent/AboutUsComponent';
 import Hero from './components/Hero/Hero';
 import Localize from './Localize';
 import MeetOurTeam from './components/MeetOurTeam/MeetOurTeam';
@@ -101,6 +102,7 @@ function App() {
       <LatestJobs data={data} headers={header} />
       <MeetOurTeam teamMembers={teamMembers} />
       <WyChooseUs />
+      <AboutUsComponent />
       <Experience />
       <Education />
     </div>
