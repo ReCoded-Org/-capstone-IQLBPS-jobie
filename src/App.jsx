@@ -108,7 +108,7 @@ function App() {
       <JobsFinder/>
       <FilterResults filterData={ filterData }/> 
       <Login />
-      <OurCollaborators/>
+      <OurCollaborators showCaseData={showCaseData}  />
       <BasicInfoEdit />
       <SignUp />
       <SaveButton />
