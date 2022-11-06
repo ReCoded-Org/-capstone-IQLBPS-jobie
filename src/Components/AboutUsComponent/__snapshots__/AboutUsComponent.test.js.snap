@@ -10,7 +10,8 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
     <h1
       className="font-semibold text-5xl  ml-56 small:ml-8	medium:ml-8 large:ml-8  text-green-600  "
     >
-       About 
+       
+      About 
       <span
         className="text-secondary  "
       >
