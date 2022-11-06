@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import Navbar from "./components/Navbar/Navbar";
 import AboutUsComponent from './components/AboutUsComponent/AboutUsComponent';
 import Hero from './components/Hero/Hero';
 import Localize from './Localize';
@@ -94,14 +96,15 @@ function App() {
   const { t } = useTranslation();
   return (
     <div className="App">
+      <Navbar />
       <Hero />
-      <SaveButton/>
-      <Categories/>
+      <SaveButton />
+      <Categories />
       <WyChooseUs />
       <GetInTouchForm />
       <JobsShowcase showcaseArray={showcaseData} />
       <Categories />
-      <h1>{t('hello')}</h1>
+      <h1>{t("hello")}</h1>
       <Localize />
       <HowItWorks />
       <CompanyShowcaseComponent showCaseData={showCaseData} />
