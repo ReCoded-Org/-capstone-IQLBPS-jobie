@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import AboutUsComponent from './components/AboutUsComponent/AboutUsComponent';
 import Hero from './components/Hero/Hero';
 import NameAndLinks from "./components/NameAndLinks/NameAndLinks";
 import Localize from './Localize';
@@ -9,11 +10,12 @@ import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
 import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
 import { showCaseData } from './data/showCaseData';
 import './App.css';
+import Education from './components/EducationAndExperience/Education';
+import Experience from './components/EducationAndExperience/Experience';
+import GetInTouchForm from './components/gitInTouchForm/GetInTouchForm';
 import JobsShowcase from './components/JobsShowcase/JobsShowcase';
 import { showcaseData } from './data';
 import Categories from './components/Categories/Categories';
-import Education from './components/EducationAndExperience/Education';
-import Experience from './components/EducationAndExperience/Experience';
 import LatestJobs from './components/LatestJob/LatestJobs';
 import HowItWorks from './components/About/HowItWorks/HowItWorks';
 
@@ -91,9 +93,11 @@ const header = [
 function App() {
   const { t } = useTranslation();
   return (
-    <div>
+    <div className="App">
       <Hero />
       <NameAndLinks />
+      <WyChooseUs />
+      <GetInTouchForm />
       <JobsShowcase showcaseArray={showcaseData} />
       <Categories />
       <h1>{t('hello')}</h1>
@@ -103,6 +107,7 @@ function App() {
       <LatestJobs data={data} headers={header} />
       <MeetOurTeam teamMembers={teamMembers} />
       <WyChooseUs />
+      <AboutUsComponent />
       <Experience />
       <Education />
     </div>
