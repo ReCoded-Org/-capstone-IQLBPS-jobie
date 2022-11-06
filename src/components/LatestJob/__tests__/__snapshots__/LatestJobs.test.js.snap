@@ -20,8 +20,10 @@ exports[`renders Latest Jobs correctly 1`] = `
         htmlFor="full-time"
       >
         <input
+          checked={false}
           className="mr-2 small:mr-1"
           id="full-time"
+          onChange={[Function]}
           type="checkbox"
         />
         Full Time
@@ -31,8 +33,10 @@ exports[`renders Latest Jobs correctly 1`] = `
         htmlFor="part-time"
       >
         <input
+          checked={false}
           className="mr-2 small:mr-1"
           id="part-time"
+          onChange={[Function]}
           type="checkbox"
         />
         Part Time
@@ -42,8 +46,10 @@ exports[`renders Latest Jobs correctly 1`] = `
         htmlFor="remote"
       >
         <input
+          checked={false}
           className="mr-2 small:mr-1"
           id="remote"
+          onChange={[Function]}
           type="checkbox"
         />
         Remote
@@ -88,7 +94,7 @@ exports[`renders Latest Jobs correctly 1`] = `
               className="py-4 px-6 small:py-1 small:px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               scope="row"
             >
-              Web Developer
+              Web Developer f
             </th>
             <td
               className="py-4 px-6 small:py-1 small:px-2"
@@ -104,7 +110,9 @@ exports[`renders Latest Jobs correctly 1`] = `
               className="py-4 px-6 small:py-1 small:px-2 w-20"
             >
               <button
-                className="w-25 h-7 bg-white text-accent border-2  border-accent rounded-3xl px-5 small:w-15 small:h-5  small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
+                className="w-25 h-7 bg-white text-accent border-2 
+ border-accent rounded-3xl px-5 small:w-15 small:h-5 
+ small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
                 type="button"
               >
                 Apply
@@ -118,7 +126,7 @@ exports[`renders Latest Jobs correctly 1`] = `
               className="py-4 px-6 small:py-1 small:px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               scope="row"
             >
-              Web Developer
+              Web Developer p
             </th>
             <td
               className="py-4 px-6 small:py-1 small:px-2"
@@ -134,7 +142,9 @@ exports[`renders Latest Jobs correctly 1`] = `
               className="py-4 px-6 small:py-1 small:px-2 w-20"
             >
               <button
-                className="w-25 h-7 bg-white text-accent border-2  border-accent rounded-3xl px-5 small:w-15 small:h-5  small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
+                className="w-25 h-7 bg-white text-accent border-2 
+ border-accent rounded-3xl px-5 small:w-15 small:h-5 
+ small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
                 type="button"
               >
                 Apply
@@ -148,7 +158,7 @@ exports[`renders Latest Jobs correctly 1`] = `
               className="py-4 px-6 small:py-1 small:px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               scope="row"
             >
-              Web Developer
+              Web Developer fr
             </th>
             <td
               className="py-4 px-6 small:py-1 small:px-2"
@@ -164,7 +174,9 @@ exports[`renders Latest Jobs correctly 1`] = `
               className="py-4 px-6 small:py-1 small:px-2 w-20"
             >
               <button
-                className="w-25 h-7 bg-white text-accent border-2  border-accent rounded-3xl px-5 small:w-15 small:h-5  small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
+                className="w-25 h-7 bg-white text-accent border-2 
+ border-accent rounded-3xl px-5 small:w-15 small:h-5 
+ small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
                 type="button"
               >
                 Apply
@@ -178,7 +190,7 @@ exports[`renders Latest Jobs correctly 1`] = `
               className="py-4 px-6 small:py-1 small:px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               scope="row"
             >
-              Web Developer
+              Web Developer pr
             </th>
             <td
               className="py-4 px-6 small:py-1 small:px-2"
@@ -194,7 +206,9 @@ exports[`renders Latest Jobs correctly 1`] = `
               className="py-4 px-6 small:py-1 small:px-2 w-20"
             >
               <button
-                className="w-25 h-7 bg-white text-accent border-2  border-accent rounded-3xl px-5 small:w-15 small:h-5  small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
+                className="w-25 h-7 bg-white text-accent border-2 
+ border-accent rounded-3xl px-5 small:w-15 small:h-5 
+ small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
                 type="button"
               >
                 Apply
@@ -208,7 +222,7 @@ exports[`renders Latest Jobs correctly 1`] = `
               className="py-4 px-6 small:py-1 small:px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               scope="row"
             >
-              Web Developer
+              Web Developer fr
             </th>
             <td
               className="py-4 px-6 small:py-1 small:px-2"
@@ -224,7 +238,73 @@ exports[`renders Latest Jobs correctly 1`] = `
               className="py-4 px-6 small:py-1 small:px-2 w-20"
             >
               <button
-                className="w-25 h-7 bg-white text-accent border-2  border-accent rounded-3xl px-5 small:w-15 small:h-5  small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
+                className="w-25 h-7 bg-white text-accent border-2 
+ border-accent rounded-3xl px-5 small:w-15 small:h-5 
+ small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
+                type="button"
+              >
+                Apply
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="bg-white dark:bg-gray-800 small:text-xs"
+          >
+            <th
+              className="py-4 px-6 small:py-1 small:px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              scope="row"
+            >
+              Web Developer r
+            </th>
+            <td
+              className="py-4 px-6 small:py-1 small:px-2"
+            >
+              2000$-3000$
+            </td>
+            <td
+              className="py-4 px-6 small:py-1 small:px-2"
+            >
+              10/10/2022
+            </td>
+            <td
+              className="py-4 px-6 small:py-1 small:px-2 w-20"
+            >
+              <button
+                className="w-25 h-7 bg-white text-accent border-2 
+ border-accent rounded-3xl px-5 small:w-15 small:h-5 
+ small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
+                type="button"
+              >
+                Apply
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="bg-white dark:bg-gray-800 small:text-xs"
+          >
+            <th
+              className="py-4 px-6 small:py-1 small:px-2 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              scope="row"
+            >
+              Web Developer fp
+            </th>
+            <td
+              className="py-4 px-6 small:py-1 small:px-2"
+            >
+              2000$-3000$
+            </td>
+            <td
+              className="py-4 px-6 small:py-1 small:px-2"
+            >
+              10/10/2022
+            </td>
+            <td
+              className="py-4 px-6 small:py-1 small:px-2 w-20"
+            >
+              <button
+                className="w-25 h-7 bg-white text-accent border-2 
+ border-accent rounded-3xl px-5 small:w-15 small:h-5 
+ small:rounded-xs small:px-2 hover:border-primary hover:text-primary"
                 type="button"
               >
                 Apply
