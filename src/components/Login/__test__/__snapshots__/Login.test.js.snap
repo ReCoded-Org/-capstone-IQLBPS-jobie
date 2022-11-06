@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when the component matches the snapshot 1`] = `
+<div
+  className=" my-52"
+>
+  <h1
+    className="font-inter font-black text-2xl mb-6"
+  >
+    Log in
+  </h1>
+  <div
+    className="w-full max-w-sm mx-auto"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="mb-4"
+      >
+        <input
+          className="shadow border-2 border-black rounded-md w-full py-2 px-3 text-dark-gray leading-tight focus:outline-1 focus:shadow-outline"
+          id="email"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="John@example.com                                                   "
+          type="email"
+        />
+        <error
+          className="text-primary font-inter"
+        />
+      </div>
+      <div
+        className="mb-4 font-inter"
+      >
+        <input
+          className="shadow border-2 border-black rounded-md w-full py-2 px-3 text-dark-gray leading-tight focus:outline-1 focus:shadow-outline"
+          id="password"
+          name="password"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Password                                                                     "
+          type="password"
+        />
+        <error
+          className="text-primary font-inter"
+        />
+      </div>
+      <div
+        className="mb-4"
+      >
+        <button
+          className="w-full bg-accent font-inter text-white rounded-md py-1 hover:bg-red-500"
+          type="submit"
+        >
+          Log in
+        </button>
+      </div>
+      <div
+        className="mb-4"
+      >
+        <p
+          className="text-dark-gray"
+        >
+          Don't Have an Account?
+           
+          <span
+            className="font-semibold"
+          >
+            Sign up
+          </span>
+        </p>
+      </div>
+      <div>
+        <button
+          className=" text-black border-t-2 border-l-2 border-r-4 border-b-4 border-black py-0.5 px-8 rounded-lg bg-white hover:shadow-md"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-google pr-3 text-2xl font-bold"
+            data-icon="google"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 488 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          Log in with
+          <span
+            className="font-bold"
+          >
+             Google
+          </span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
