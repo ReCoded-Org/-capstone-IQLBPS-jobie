@@ -25,6 +25,7 @@ import { showcaseData } from "./data";
 import LatestJobs from "./components/LatestJob/LatestJobs";
 import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import OurCollaborators from './components/OurCollaborators/OurCollaborators';
+import JobsFinder from "./components/Hero/JobsFinder"
 
 const data = [
   {
