@@ -15,8 +15,6 @@ import GetInTouchForm from './components/gitInTouchForm/GetInTouchForm';
 import JobsShowcase from './components/JobsShowcase/JobsShowcase';
 import { showcaseData } from './data';
 import Categories from './components/Categories/Categories';
-import Education from './components/EducationAndExperience/Education';
-import Experience from './components/EducationAndExperience/Experience';
 import LatestJobs from './components/LatestJob/LatestJobs';
 import HowItWorks from './components/About/HowItWorks/HowItWorks';
 
@@ -97,7 +95,7 @@ function App() {
     <div className="App">
       <Hero />
       <WyChooseUs />
-       <GetInTouchForm/>
+      <GetInTouchForm />
       <JobsShowcase showcaseArray={showcaseData} />
       <Categories />
       <h1>{t('hello')}</h1>

@@ -133,7 +133,6 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
       >
         <button
           className="bg-accent ml-[150px] mt-5  text-white font-bold hover:bg-red-500 py-3 px-8 rounded-full small:ml-0 medium:ml-0"
-          disabled={false}
           type="submit"
         >
           Send

@@ -9,47 +9,44 @@ import emailjs from '@emailjs/browser';
 import * as yup from 'yup';
 
 export default function GetInTouchForm() {
+  const schema = yup.object().shape({
+    firstName: yup.string().required('Your Full Name is Required!'),
+    lastName: yup.string().required('Your Last Name is Required!'),
+    email: yup.string().email().required('Your Email is Required!'),
+    message: yup.string().required('Your Message is Required!'),
+  });
 
-   const schema = yup.object().shape({
-     firstName: yup.string().required('Your Full Name is Required!'),
-     lastName: yup.string().required('Your Last Name is Required!'),
-     email: yup.string().email().required('Your Email is Required!'),
-     message: yup.string().required('Your Message is Required!'),
-   });
- 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
 
-   const {
-     register,
-     handleSubmit,
-     formState: { errors },
-   } = useForm({
-     resolver: yupResolver(schema),
-   });
+  const form = useRef();
 
- const form = useRef();
-  
-const sendEmail = () => {
-     console.log('hey');
+  const sendEmail = () => {
+    console.log('hey');
     //  e.preventDefault();
 
-     emailjs
-       .sendForm(
-         'service_21dgncx',
-         'template_o6d93pf',
-       form.current,
-         'THcaIEhH6x_Hp_92h'
-       )
-       .then(
-         (result) => {
-           console.log(result.text);
-         },
-         (error) => {
-           console.log(error.text);
-         }
-       );
+    emailjs
+      .sendForm(
+        'service_21dgncx',
+        'template_o6d93pf',
+        form.current,
+        'THcaIEhH6x_Hp_92h'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     form.current.reset();
-   };
-
+  };
 
   return (
     <div className="flex  justify-center my-[100px] gap-3 small:flex-col ">
@@ -60,7 +57,7 @@ const sendEmail = () => {
         </h1>
         <form
           className="flex flex-col gap-3 mt-10"
-       ref={form}
+          ref={form}
           onSubmit={handleSubmit(sendEmail)}
         >
           <div className="flex flex-col  gap-3">
@@ -144,7 +141,6 @@ const sendEmail = () => {
           <div className="flex justify-start">
             <button
               type="submit"
-              
               className="bg-accent ml-[150px] mt-5  text-white font-bold hover:bg-red-500 py-3 px-8 rounded-full small:ml-0 medium:ml-0"
             >
               Send
