@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from "react-i18next";
 
 function Hero() {
   const { t } = useTranslation();
@@ -12,19 +12,19 @@ function Hero() {
           </Trans>
         </h1>
         <h3 className="text-xl text-white medium:text-yellow-30 font-inter small:text-xs medium:text-lg large:xl">
-          {t('find-your-job')}
-        </h3>{' '}
+          {t("find-your-job")}
+        </h3>{" "}
         <div className=" mt-5 w-48 small:w-36 medium:w-56 large:w-72">
           <input
             type="search"
             className="rounded-3xl px-6 py-2 outline-none absolute w-72 small:w-32 small:py-1.5 small:px-3 small:text-xs medium:w-52"
-            placeholder={t('Type-to-search')}
+            placeholder={t("Type-to-search")}
           />
           <button
             type="submit"
             className="py-2 bg-accent px-5 rounded-3xl text-white relative  left-52 hover:bg-red-500 small:py-1.5 small:px-3 small:text-xs small:left-24 medium:left-36 "
           >
-            {t('search')}
+            {t("search")}
           </button>
         </div>
       </div>
