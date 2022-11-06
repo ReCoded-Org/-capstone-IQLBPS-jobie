@@ -1,8 +1,11 @@
-import renderer from 'react-test-renderer';
+import renderer from "react-test-renderer";
+import Hero from "../Hero";
 
-import Hero from '../Hero';
-
-it('renders correctly when the component matches the snapshot', () => {
+jest.mock("react-i18next", () => ({
+  useTranslation: () => ({ t: (key) => key }),
+  Trans: ({ children }) => children,
+}));
+it("renders correctly when the component matches the snapshot", () => {
   const tree = renderer.create(<Hero />).toJSON();
   expect(tree).toMatchSnapshot();
 });

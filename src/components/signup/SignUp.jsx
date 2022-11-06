@@ -1,5 +1,5 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
+import React from "react";
+import { useForm } from "react-hook-form";
 
 function SignUp() {
   const {
@@ -19,10 +19,10 @@ function SignUp() {
               id="username"
               type="text"
               placeholder="Username                                                                    &#xF007;"
-              {...register('name', { required: true })}
+              {...register("name", { required: true })}
             />
             <error className="text-primary font-inter">
-              {errors.name?.type === 'required' && 'Please Enter your Name'}
+              {errors.name?.type === "required" && "Please Enter your Name"}
             </error>
           </div>
           <div className="mb-4">
@@ -31,15 +31,15 @@ function SignUp() {
               id="email"
               type="email"
               placeholder="John@example.com                                                    &#xF007;"
-              {...register('email', {
+              {...register("email", {
                 required: true,
                 pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i,
               })}
             />
             <error className="text-primary font-inter">
-              {errors.email?.type === 'required' && 'Please Enter an Email'}
-              {errors.email?.type === 'pattern' &&
-                'Entered email is in wrong format'}
+              {errors.email?.type === "required" && "Please Enter an Email"}
+              {errors.email?.type === "pattern" &&
+                "Entered email is in wrong format"}
             </error>
           </div>
           <div className="mb-4 font-inter">
@@ -48,19 +48,19 @@ function SignUp() {
               id="password"
               type="password"
               placeholder="Password                                                                     &#xF023;"
-              {...register('password', {
+              {...register("password", {
                 required: true,
                 minLength: 8,
                 maxLength: 20,
               })}
             />
             <error className="text-primary font-inter">
-              {errors.password?.type === 'required' &&
-                'Please Enter a Password'}
-              {errors.password?.type === 'minLength' &&
-                'Entered password is less than 8 characters'}
-              {errors.password?.type === 'maxLength' &&
-                'Entered password is more than 20 characters'}
+              {errors.password?.type === "required" &&
+                "Please Enter a Password"}
+              {errors.password?.type === "minLength" &&
+                "Entered password is less than 8 characters"}
+              {errors.password?.type === "maxLength" &&
+                "Entered password is more than 20 characters"}
             </error>
           </div>
           <div className="mb-4">
@@ -73,7 +73,7 @@ function SignUp() {
           </div>
           <div className="mb-4">
             <p className="text-dark-gray">
-              Already Have an Account?{' '}
+              Already Have an Account?{" "}
               <span className="font-semibold">Log in</span>
             </p>
           </div>
