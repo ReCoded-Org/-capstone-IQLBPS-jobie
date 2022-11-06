@@ -8,5 +8,6 @@ export const showCaseData = {
     "airbnb",
     "spotify",
     "yahoo",
-    "netflix",
-  ],
+    "netflix"
+  ]
+}
