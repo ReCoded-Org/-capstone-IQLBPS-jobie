@@ -92,7 +92,7 @@ function App() {
   const { t } = useTranslation();
   return (
     <div>
-      <OurCollaborators/>
+      <OurCollaborators showCaseData={showCaseData} />
       <Hero />
       <JobsShowcase showcaseArray={showcaseData} />
       <Categories />
