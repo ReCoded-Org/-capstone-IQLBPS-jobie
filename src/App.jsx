@@ -1,7 +1,6 @@
 import React from 'react';
-import './App.css';
-import BasicInfoEdit from './components/BasicInfoEdit';
 import { useTranslation } from 'react-i18next';
+import BasicInfoEdit from './components/BasicInfoEdit';
 import Navbar from "./components/Navbar/Navbar";
 import AboutUsComponent from './components/AboutUsComponent/AboutUsComponent';
 import Hero from './components/Hero/Hero';
