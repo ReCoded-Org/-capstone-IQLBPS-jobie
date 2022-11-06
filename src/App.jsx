@@ -9,6 +9,7 @@ import MeetOurTeam from './components/MeetOurTeam/MeetOurTeam';
 import { teamMembers } from './data/teamData';
 import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
 import Login from './components/Login/Login';
+import SignUp from './components/signup/SignUp';
 import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
 import { showCaseData } from './data/showCaseData';
 import './App.css';
@@ -100,6 +101,7 @@ function App() {
       <Navbar />
       <Hero />
       <Login />
+      <SignUp />
       <SaveButton />
       <Categories />
       <WyChooseUs />
