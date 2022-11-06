@@ -24,6 +24,7 @@ import JobsShowcase from "./components/JobsShowcase/JobsShowcase";
 import { showcaseData } from "./data";
 import LatestJobs from "./components/LatestJob/LatestJobs";
 import HowItWorks from "./components/About/HowItWorks/HowItWorks";
+import OurCollaborators from './components/OurCollaborators/OurCollaborators';
 
 const data = [
   {
@@ -105,6 +106,7 @@ function App() {
       <Hero />
       <FilterResults filterData={ filterData }/> 
       <Login />
+      <OurCollaborators/>
       <BasicInfoEdit />
       <SignUp />
       <SaveButton />
