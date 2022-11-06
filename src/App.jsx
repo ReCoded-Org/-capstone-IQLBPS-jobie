@@ -95,15 +95,8 @@ function App() {
     <div>
       <RoadMaps />
       <Hero />
-      <FilterResults filterData={filterData} />
-      <Login />
-      <OurCollaborators />
-      <BasicInfoEdit />
-      <SignUp />
-      <SaveButton />
       <Categories />
       <WyChooseUs />
-      <GetInTouchForm />
       <JobsShowcase showcaseArray={showcaseData} />
       <Categories />
       <h1>{t("hello")}</h1>
@@ -113,7 +106,6 @@ function App() {
       <LatestJobs data={data} headers={header} />
       <MeetOurTeam teamMembers={teamMembers} />
       <WyChooseUs />
-      <AboutUsComponent />
       <Experience />
       <Education />
     </div>
