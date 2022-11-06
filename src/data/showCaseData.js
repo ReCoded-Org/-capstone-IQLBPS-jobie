@@ -1,6 +1,4 @@
 export const showCaseData = {
-  header:
-    "More than 20,000 companies are using our service to hire their employees.",
   companies: [
     "facebook",
     "amazon",
@@ -10,6 +8,6 @@ export const showCaseData = {
     "airbnb",
     "spotify",
     "yahoo",
-    "netflix",
-  ],
-};
+    "netflix"
+  ]
+}
