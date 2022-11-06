@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import AboutUsComponent from './components/AboutUsComponent/AboutUsComponent';
 import Hero from './components/Hero/Hero';
 import Localize from './Localize';
