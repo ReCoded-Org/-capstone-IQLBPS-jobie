@@ -5,10 +5,9 @@
 
 :root {
   --primary: #f00;
-  --secondary:#3F525B;
-  --accent: #EC7063;
-  --dark-gray: #34495E;
-
+  --secondary: #3f525b;
+  --accent: #ec7063;
+  --dark-gray: #34495e;
 }
 body {
   margin: 0;
@@ -24,3 +23,6 @@ code {
     monospace;
 }
 
+input {
+  font-family: FontAwesome;
+}
