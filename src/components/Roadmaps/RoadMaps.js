@@ -1,5 +1,5 @@
-import RoadMap from './RoadMap';
-import { data } from '../../data/RoadMapsData';
+import RoadMap from "./RoadMap";
+import { data } from "../../data/RoadMapsData";
 
 const RoadMaps = () => {
   return (
