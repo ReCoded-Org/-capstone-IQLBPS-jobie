@@ -22,10 +22,7 @@ import Experience from "./components/EducationAndExperience/Experience";
 import GetInTouchForm from "./components/gitInTouchForm/GetInTouchForm";
 import JobsShowcase from "./components/JobsShowcase/JobsShowcase";
 import { showcaseData } from "./data";
-import Categories from './components/Categories/Categories';
 import LatestJobs from "./components/LatestJob/LatestJobs";
-import Education from './components/EducationAndExperience/Education';
-import Experience from './components/EducationAndExperience/Experience';
 import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 
 const data = [
@@ -105,8 +102,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <FilterResults filterData={ filterData }/> 
       <Hero />
+      <FilterResults filterData={ filterData }/> 
       <Login />
       <BasicInfoEdit />
       <SignUp />

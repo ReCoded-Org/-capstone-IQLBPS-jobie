@@ -1,7 +1,7 @@
-import { Fragment } from 'react';
-import { Menu, Transition } from '@headlessui/react';
+import { Fragment } from "react";
+import { Menu, Transition } from "@headlessui/react";
 
-function FilterButton(){
+function FilterButton() {
   return (
     <Menu
       as="div"
@@ -12,7 +12,9 @@ function FilterButton(){
         <Menu.Button
           data-testid="filter-botton-toggle"
           className="rounded-full bg-gray-300 mr-5 mt-5 pl-5 pr-5 text-lg duration-500 hover:bg-accent"
-        > Sort results by
+        >
+          {" "}
+          Sort results by
         </Menu.Button>
       </div>
 
@@ -33,11 +35,12 @@ function FilterButton(){
                   data-testid="language-button-option"
                   aria-hidden="true"
                   className={`${
-                    active ? 'bg-white text-secondary rounded' : 'text-black-500'
+                    active
+                      ? "bg-white text-secondary rounded"
+                      : "text-black-500"
                   }`}
                 >
                   <h3>Newest</h3>
-
                 </div>
               )}
             </Menu.Item>
@@ -47,11 +50,12 @@ function FilterButton(){
                   data-testid="language-button-option"
                   aria-hidden="true"
                   className={`${
-                    active ? 'bg-white text-secondary rounded' : 'text-black-500'
+                    active
+                      ? "bg-white text-secondary rounded"
+                      : "text-black-500"
                   }`}
                 >
                   <h3>Oldest</h3>
-
                 </div>
               )}
             </Menu.Item>
@@ -60,6 +64,6 @@ function FilterButton(){
       </Transition>
     </Menu>
   );
-};
+}
 
 export default FilterButton;
