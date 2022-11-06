@@ -16,7 +16,6 @@ import Experience from './components/EducationAndExperience/Experience';
 import GetInTouchForm from './components/gitInTouchForm/GetInTouchForm';
 import JobsShowcase from './components/JobsShowcase/JobsShowcase';
 import { showcaseData } from './data';
-import Categories from './components/Categories/Categories';
 import LatestJobs from './components/LatestJob/LatestJobs';
 import HowItWorks from './components/About/HowItWorks/HowItWorks';
 
