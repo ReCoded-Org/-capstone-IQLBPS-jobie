@@ -27,7 +27,8 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
       <h4
         className="font-semibold text-dark-gray text-xl small:text-base"
       >
-         Design
+         
+        Design
       </h4>
       <p
         className="text-gray-600 text-base small:text-sm"
