@@ -1,6 +1,6 @@
-import { useForm } from 'react-hook-form';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { useForm } from "react-hook-form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 function Login() {
   const {
@@ -20,15 +20,15 @@ function Login() {
               id="email"
               type="email"
               placeholder="John@example.com                                                   &#xF007;"
-              {...register('email', {
+              {...register("email", {
                 required: true,
                 pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/i,
               })}
             />
             <error className="text-primary font-inter">
-              {errors.email?.type === 'required' && 'Please enter an email'}
-              {errors.email?.type === 'pattern' &&
-                'Entered email is in wrong format'}
+              {errors.email?.type === "required" && "Please enter an email"}
+              {errors.email?.type === "pattern" &&
+                "Entered email is in wrong format"}
             </error>
           </div>
           <div className="mb-4 font-inter">
@@ -37,7 +37,7 @@ function Login() {
               id="password"
               type="password"
               placeholder="Password                                                                     &#xF023;"
-              {...register('password', {
+              {...register("password", {
                 required: true,
                 minLength: 8,
                 maxLength: 20,
@@ -45,12 +45,12 @@ function Login() {
             />
 
             <error className="text-primary font-inter">
-              {errors.password?.type === 'required' &&
-                'Please enter a password'}
-              {errors.password?.type === 'minLength' &&
-                'Entered password is less than 8 characters'}
-              {errors.password?.type === 'maxLength' &&
-                'Entered password is more than 20 characters'}
+              {errors.password?.type === "required" &&
+                "Please enter a password"}
+              {errors.password?.type === "minLength" &&
+                "Entered password is less than 8 characters"}
+              {errors.password?.type === "maxLength" &&
+                "Entered password is more than 20 characters"}
             </error>
           </div>
           <div className="mb-4">
@@ -63,7 +63,7 @@ function Login() {
           </div>
           <div className="mb-4">
             <p className="text-dark-gray">
-              Don&apos;t Have an Account?{' '}
+              Don&apos;t Have an Account?{" "}
               <span className="font-semibold">Sign up</span>
             </p>
           </div>
