@@ -8,6 +8,8 @@ import './index.css';
 import './i18n/config';
 
 
+import 'font-awesome/css/font-awesome.min.css';
+
 const container = document.getElementById('root');
 const root = createRoot(container);
 

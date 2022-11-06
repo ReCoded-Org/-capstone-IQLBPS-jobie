@@ -1,5 +1,5 @@
 import renderer from "react-test-renderer";
-import Hero from "./Hero";
+import Hero from "../Hero";
 
 jest.mock("react-i18next", () => ({
   useTranslation: () => ({ t: (key) => key }),

@@ -8,6 +8,7 @@ import Localize from './Localize';
 import MeetOurTeam from './components/MeetOurTeam/MeetOurTeam';
 import { teamMembers } from './data/teamData';
 import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
+import Login from './components/Login/Login';
 import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
 import { showCaseData } from './data/showCaseData';
 import './App.css';
@@ -98,6 +99,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <Login />
       <SaveButton />
       <Categories />
       <WyChooseUs />
