@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 
-function FilterButton() {
+function FilterButton({handleChange}) {
+
   return (
     <Menu
       as="div"
@@ -34,6 +35,7 @@ function FilterButton() {
                 <div
                   data-testid="language-button-option"
                   aria-hidden="true"
+                  onClick={(e)=>handleChange('newest',e)}
                   className={`${
                     active
                       ? "bg-white text-secondary rounded"
@@ -49,6 +51,7 @@ function FilterButton() {
                 <div
                   data-testid="language-button-option"
                   aria-hidden="true"
+                  onClick={(e)=>handleChange('oldest',e)}
                   className={`${
                     active
                       ? "bg-white text-secondary rounded"
