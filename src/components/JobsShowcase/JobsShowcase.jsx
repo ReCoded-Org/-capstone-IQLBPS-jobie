@@ -1,4 +1,4 @@
-import Showcase from './Showcase';
+import Showcase from "./Showcase";
 
 const JobsShowcase = ({ showcaseArray }) => {
   return (
