@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import CustomButton from '../UI/Button/CustomButton';
+import { useState } from "react";
+import CustomButton from "../UI/Button/CustomButton";
 
 const LatestJobs = ({ headers, data }) => {
   const [fullTime, setFullTime] = useState(false);
@@ -67,7 +67,7 @@ const LatestJobs = ({ headers, data }) => {
             <thead className="text-xs text-secondary bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
                 {headers.map((header) => {
-                  if (header.title === '') {
+                  if (header.title === "") {
                     return <td key={header.id} />;
                   }
                   return (
