@@ -1,6 +1,5 @@
-export const showCaseData=
-{"header":"More than 20,000 companies are using our service to hire their employees.",
-"companies":[ 
+export const showCaseData = {
+  companies: [
     "facebook",
     "amazon",
     "microsoft",
@@ -10,5 +9,5 @@ export const showCaseData=
     "spotify",
     "yahoo",
     "netflix"
-]   
+  ]
 }
