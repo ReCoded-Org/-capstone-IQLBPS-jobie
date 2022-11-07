@@ -1,5 +1,5 @@
-function CompanyDisplay({showCaseData}){
-const topRowComanpies = showCaseData.companies.slice(0, 5).map((company) => {
+function CompanyDisplay({ showCaseData }) {
+  const topRowComanpies = showCaseData.companies.slice(0, 5).map((company) => {
     return (
       <a
         key={`${company}`}
@@ -37,15 +37,15 @@ const topRowComanpies = showCaseData.companies.slice(0, 5).map((company) => {
       );
     });
 
-    return(
-        <>
-        <div className="grid grid-cols-5 grid-rows-2 gap-x-5 place-content-center items-center w-4/6">
+  return (
+    <>
+      <div className="grid grid-cols-5 grid-rows-2 gap-x-5 place-content-center items-center w-4/6">
         {topRowComanpies}
       </div>
-        <div className="grid grid-cols-4 gap-x-5 place-content-center items-center w-5/6">
+      <div className="grid grid-cols-4 gap-x-5 place-content-center items-center w-5/6">
         {bottomRowComanpies}
       </div>
-      </>
-    )
+    </>
+  );
 }
 export default CompanyDisplay;
