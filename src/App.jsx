@@ -1,24 +1,25 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import AboutUsComponent from './components/AboutUsComponent/AboutUsComponent';
-import Hero from './components/Hero/Hero';
-import Localize from './Localize';
-import MeetOurTeam from './components/MeetOurTeam/MeetOurTeam';
-import { teamMembers } from './data/teamData';
-import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
-import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
-import { showCaseData } from './data/showCaseData';
-import './App.css';
-import ContactSkills from './components/ProfileEdit/contact_skills_page';
-import JobsShowcase from './components/JobsShowcase/JobsShowcase';
-import { showcaseData } from './data';
-import SaveButton from './components/UI/Button/SaveButton';
-import Categories from './components/Categories/Categories';
-import Education from './components/EducationAndExperience/Education';
-import Experience from './components/EducationAndExperience/Experience';
-import GetInTouchForm from './components/gitInTouchForm/GetInTouchForm';
-import LatestJobs from './components/LatestJob/LatestJobs';
-import HowItWorks from './components/About/HowItWorks/HowItWorks';
+import React from "react";
+import { useTranslation } from "react-i18next";
+import AboutUsComponent from "./components/AboutUsComponent/AboutUsComponent";
+import Hero from "./components/Hero/Hero";
+import Localize from "./Localize";
+import MeetOurTeam from "./components/MeetOurTeam/MeetOurTeam";
+import { teamMembers } from "./data/teamData";
+import WyChooseUs from "./components/whyChooseUs/WhyChooseUs";
+import CompanyShowcaseComponent from "./components/companyShowcaseComponent/CompanyShowcaseComponent";
+import { showCaseData } from "./data/showCaseData";
+import "./App.css";
+import ContactSkills from "./components/ProfileEdit/contact_skills_page";
+import JobsShowcase from "./components/JobsShowcase/JobsShowcase";
+import { showcaseData } from "./data";
+import SaveButton from "./components/UI/Button/SaveButton";
+import Categories from "./components/Categories/Categories";
+import Education from "./components/EducationAndExperience/Education";
+import Experience from "./components/EducationAndExperience/Experience";
+import GetInTouchForm from "./components/gitInTouchForm/GetInTouchForm";
+import LatestJobs from "./components/LatestJob/LatestJobs";
+import HowItWorks from "./components/About/HowItWorks/HowItWorks";
+import Navbar from "./components/Navbar/Navbar";
 
 const data = [
   {
@@ -98,9 +99,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <ContactSkills/>
-      <SaveButton/>
-      <Categories/>
+      <ContactSkills />
+      <SaveButton />
+      <Categories />
       <WyChooseUs />
       <GetInTouchForm />
       <JobsShowcase showcaseArray={showcaseData} />
