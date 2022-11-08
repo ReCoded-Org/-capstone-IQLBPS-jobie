@@ -1,19 +1,19 @@
-import { useForm } from 'react-hook-form';
+import { useForm } from "react-hook-form";
 
-import { yupResolver } from '@hookform/resolvers/yup';
+import { yupResolver } from "@hookform/resolvers/yup";
 
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
-import * as yup from 'yup';
+import * as yup from "yup";
 
 export default function GetInTouchForm() {
   const schema = yup.object().shape({
-    firstName: yup.string().required('Your Full Name is Required!'),
-    lastName: yup.string().required('Your Last Name is Required!'),
-    email: yup.string().email().required('Your Email is Required!'),
-    message: yup.string().required('Your Message is Required!'),
+    firstName: yup.string().required("Your Full Name is Required!"),
+    lastName: yup.string().required("Your Last Name is Required!"),
+    email: yup.string().email().required("Your Email is Required!"),
+    message: yup.string().required("Your Message is Required!"),
   });
 
   const {
@@ -27,15 +27,15 @@ export default function GetInTouchForm() {
   const form = useRef();
 
   const sendEmail = () => {
-    console.log('hey');
+    console.log("hey");
     //  e.preventDefault();
 
     emailjs
       .sendForm(
-        'service_21dgncx',
-        'template_o6d93pf',
+        "service_21dgncx",
+        "template_o6d93pf",
         form.current,
-        'THcaIEhH6x_Hp_92h'
+        "THcaIEhH6x_Hp_92h"
       )
       .then(
         (result) => {
@@ -52,7 +52,7 @@ export default function GetInTouchForm() {
     <div className="flex  justify-center my-[100px] gap-3 small:flex-col ">
       <div className="flex-1 justify-center   m-5 small:m-5">
         <h1 className="text-4xl subpixel-antialiased text-slate-600 font-semibold">
-          {' '}
+          {" "}
           Get in touch
         </h1>
         <form
@@ -63,16 +63,16 @@ export default function GetInTouchForm() {
           <div className="flex flex-col  gap-3">
             <div className="flex flex-auto justify-center  gap-2 small:flex-col medium:flex-col">
               <label className="flex flex-col" htmlFor="name">
-                {' '}
+                {" "}
                 <p className="text-left text-lg subpixel-antialiased text-slate-600 font-semibold">
-                  Name{' '}
+                  Name{" "}
                 </p>
                 <input
                   className="px-6 py-2   border-2 border-gray-900"
                   type="text"
                   placeholder="Name"
                   name="firstName"
-                  {...register('firstName')}
+                  {...register("firstName")}
                   id="n44ame"
                 />
                 <p className="text-sm text-red-500 text-left">
@@ -80,27 +80,27 @@ export default function GetInTouchForm() {
                 </p>
               </label>
               <label className="flex flex-col" htmlFor="name">
-                {' '}
+                {" "}
                 <p className="text-left text-lg subpixel-antialiased text-slate-600 font-semibold">
-                  {' '}
-                  Last name{' '}
+                  {" "}
+                  Last name{" "}
                 </p>
                 <input
                   className="px-6 py-2   border-2 border-gray-900"
                   type="text"
                   name="lastName"
                   placeholder="Last Name"
-                  {...register('lastName')}
+                  {...register("lastName")}
                   id="nam3e"
                 />
                 <p className="text-sm text-red-500 text-left">
                   {errors?.lastName?.message}
                 </p>
-              </label>{' '}
+              </label>{" "}
             </div>
           </div>
           <div className="mx-[125px] small:mx-0 medium:mx-0">
-            {' '}
+            {" "}
             <label htmlFor="email" className="flex justify-center flex-col ">
               <p className="text-left text-lg subpixel-antialiased text-slate-600 font-semibold">
                 Email :
@@ -110,7 +110,7 @@ export default function GetInTouchForm() {
                 name="email"
                 placeholder="example@email.com"
                 type="text"
-                {...register('email')}
+                {...register("email")}
                 id="name1"
               />
               <p className="text-sm text-red-500 text-left">
@@ -119,14 +119,14 @@ export default function GetInTouchForm() {
             </label>
           </div>
           <div className="mx-[125px] small:mx-0 medium:mx-0">
-            {' '}
+            {" "}
             <label htmlFor="email" className="flex justify-center flex-col ">
               <p className="text-left text-lg subpixel-antialiased text-slate-600 font-semibold">
                 Message :
               </p>
               <textarea
                 className="border-2 border-gray-900"
-                {...register('message')}
+                {...register("message")}
                 name="message"
                 cols="30"
                 rows="3"
@@ -156,7 +156,7 @@ export default function GetInTouchForm() {
 
         <div className=" flex-col text-2xl text-center   gap-10">
           <div className="flex flex-row justify-center  gap-3 mb-7">
-            {' '}
+            {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -176,7 +176,7 @@ export default function GetInTouchForm() {
                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
               />
             </svg>
-            <p>As Sulaimaniyah ,Iraq </p>{' '}
+            <p>As Sulaimaniyah ,Iraq </p>{" "}
           </div>
           <div className="flex flex-row justify-center gap-3 mb-7">
             <svg
@@ -193,10 +193,10 @@ export default function GetInTouchForm() {
                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
               />
             </svg>
-            <p> +964 750 113 0495 </p>{' '}
+            <p> +964 750 113 0495 </p>{" "}
           </div>
           <div className="flex flex-row justify-center gap-3 mb-7">
-            {' '}
+            {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -210,7 +210,7 @@ export default function GetInTouchForm() {
                 d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
               />
             </svg>
-            <p> jobie.contact@.com </p>{' '}
+            <p> jobie.contact@.com </p>{" "}
           </div>
           <div className="flex flex-row justify-center gap-3 mb-7 ">
             <svg
@@ -227,7 +227,7 @@ export default function GetInTouchForm() {
                 d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p>9:00 - 17:00</p>{' '}
+            <p>9:00 - 17:00</p>{" "}
           </div>
         </div>
       </div>

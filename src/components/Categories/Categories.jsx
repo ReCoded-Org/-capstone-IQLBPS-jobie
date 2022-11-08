@@ -18,7 +18,7 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
-            {' '}
+            {" "}
             Design
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
