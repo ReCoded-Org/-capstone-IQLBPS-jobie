@@ -51,7 +51,7 @@ export default function Contact() {
         </div>
       </div>
       <div>
-      <h1>Skills</h1>
+      <h1 className='text-3xl text-dark-gray'>Skills</h1>
       <p>No Skills added yet</p>
       </div>
     </div>
