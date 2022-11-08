@@ -97,7 +97,6 @@ function App() {
     <div>
       <RoadMaps />
       <Hero />
-      <AboutHero />
       <JobsFinder />
       <OurCollaborators showCaseData={showCaseData} />
       <Categories />
