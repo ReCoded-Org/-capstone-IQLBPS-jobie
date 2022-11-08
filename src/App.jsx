@@ -15,6 +15,8 @@ import Education from "./components/EducationAndExperience/Education";
 import Experience from "./components/EducationAndExperience/Experience";
 import LatestJobs from "./components/LatestJob/LatestJobs";
 import HowItWorks from "./components/About/HowItWorks/HowItWorks";
+import OurCollaborators from "./components/OurCollaborators/OurCollaborators";
+import JobsFinder from "./components/Hero/JobsFinder";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
 
 const data = [
@@ -95,6 +97,8 @@ function App() {
     <div>
       <RoadMaps />
       <Hero />
+      <JobsFinder />
+      <OurCollaborators showCaseData={showCaseData} />
       <Categories />
       <WyChooseUs />
       <JobsShowcase showcaseArray={showcaseData} />
