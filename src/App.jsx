@@ -1,17 +1,20 @@
 import React from 'react';
 
+import Hero from './components/Hero/Hero';
+import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
 import './App.css';
-
-import Filter from './components/filter/Filter';
+import Education from './components/EducationAndExperience/Education';
+import Experience from './components/EducationAndExperience/Experience';
+import AboutHero from './components/aboutHero/AboutHero';
 
 function App() {
   return (
     <div className="App">
-      {/* <Hero />
+      <Hero />
+      <AboutHero />
       <WyChooseUs />
       <Experience />
-      <Education /> */}
-      <Filter />
+      <Education />
     </div>
   );
 }

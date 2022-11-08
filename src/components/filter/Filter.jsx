@@ -48,7 +48,7 @@ const Filter = () => {
               />
             </svg>
           </span>
-          <div className="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded ">
+          <div className="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded group-focus:z-10">
             <ul className="text-left border rounded">
               <li className="px-4 py-1 hover:bg-gray-100 border-b">Iraq</li>
               <li className="px-4 py-1 hover:bg-gray-100 border-b">Lebanon</li>
@@ -87,8 +87,8 @@ const Filter = () => {
               />
             </svg>
           </span>
-          <div className="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded">
-            <ul className="text-left border rounded">
+          <div className="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded group-focus:z-10">
+            <ul className="text-left border rounded ">
               <li className="px-4 py-1 hover:bg-gray-100 border-b">
                 Full-time
               </li>
@@ -127,7 +127,7 @@ const Filter = () => {
               />
             </svg>
           </span>
-          <div className="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded">
+          <div className="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded group-focus:z-10">
             <ul className="text-left border rounded">
               <li className="px-4 py-1 hover:bg-gray-100 border-b">Tech </li>
               <li className="px-4 py-1 hover:bg-gray-100 border-b">Design</li>
@@ -208,8 +208,8 @@ const Filter = () => {
               />
             </svg>
           </span>
-          <div className="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded">
-            <ul className="text-left border rounded">
+          <div className="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded group-focus:z-10">
+            <ul className="text-left border rounded hover:z-3">
               <li className="px-4 py-1 hover:bg-gray-100 border-b">Entry</li>
               <li className="px-4 py-1 hover:bg-gray-100 border-b">Junior</li>
               <li className="px-4 py-1 hover:bg-gray-100 border-b">Senior</li>
