@@ -60,7 +60,7 @@ const data = [
     position: 'Web Developer fr',
     salary: '2000$-3000$',
     date: '10/10/2022',
-    fullTime: true,
+    fullTime: true,              
     partTime: false,
     remote: true,
     id: 5,

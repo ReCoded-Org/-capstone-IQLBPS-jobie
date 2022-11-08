@@ -35,13 +35,13 @@ const NameAndLinks = () => {
           <div className="relative">
             <div className="flex absolute  items-center ">
               <input
-                className="  p-6 pl-44 pr-96   small:pl-18 small:pr-32  medium:pl-44  medium:pr-24  rounded-lg border border-gray-300 "
+                className="  p-6 pl-44 pr-96   small:pl-24 small:pr-8  medium:pl-44  medium:pr-24  rounded-lg border border-gray-300 "
                 placeholder="No File Selected"
                 required
               />
               <button
                 type="button"
-                className="text-white absolute left-8 rounded-full bg-dark-gray  w-32 hover:bg-[#226086] font-bold  px-4 py-2 "
+                className="text-white absolute left-8 rounded-full bg-dark-gray small:w-20 small:left-3 small:px-1 w-32 hover:bg-[#226086] font-bold  px-4 py-2 "
               >
                 Choose
               </button>
