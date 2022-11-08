@@ -1,8 +1,7 @@
 import renderer from 'react-test-renderer';
-
-import WhyChooseUs from './WhyChooseUs';
+import JobsFinder from './JobsFinder';
 
 it('renders correctly when the component matches the snapshot', () => {
-  const tree = renderer.create(<WhyChooseUs />).toJSON();
+  const tree = renderer.create(<JobsFinder/>).toJSON();
   expect(tree).toMatchSnapshot();
 });
