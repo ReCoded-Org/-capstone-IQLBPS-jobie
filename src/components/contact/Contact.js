@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function Contact() {
   return (
@@ -49,7 +49,6 @@ export default function Contact() {
       </div>
       <div>
         <h1 className="text-3xl text-dark-gray pb-28 small:text-xl">Skills</h1>
-        
       </div>
     </div>
   );
