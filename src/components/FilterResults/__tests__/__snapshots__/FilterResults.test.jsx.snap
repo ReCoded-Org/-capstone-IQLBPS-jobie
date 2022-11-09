@@ -1,0 +1,505 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Company Showcase Component correctly 1`] = `
+<div
+  className="bg-gray-500/5"
+>
+  <div
+    className="flex justify-between"
+  >
+    <h2
+      className="ml-5 mt-5 text-lg"
+    >
+       
+      Total
+       
+      <span
+        className="text-accent font-semibold"
+      >
+         
+        7
+         
+      </span>
+      Results
+    </h2>
+    <div
+      className="relative inline-block text-left"
+      data-headlessui-state=""
+      data-testid="filter-button"
+    >
+      <div>
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="rounded-full bg-gray-300 mr-5 mt-5 pl-5 pr-5 text-lg duration-500 hover:bg-accent"
+          data-headlessui-state=""
+          data-testid="filter-botton-toggle"
+          id="headlessui-menu-button-:r0:"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          type="button"
+        >
+           
+          Sort results by
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="rounded-md grid justify-items-center gap-3 m-5 bg-white drop-shadow-xl grid-cols-2 grid-rows-4 md:grid-cols-5 md:grid-rows-2"
+  >
+    <img
+      alt="hiring company logo"
+      className="order-1 col-span-2 h-20  md:row-span-2 md:col-span-1 md:scale-60 object-contain md:h-28 md:order-1"
+      src="/assets/filterResults/Murex.png"
+    />
+    <h2
+      className="order-4 font-semibold text-center md:font-semibold md:mt-3  md:order-2"
+    >
+      DevOps Engineer
+    </h2>
+    <h2
+      className="order-5 md:font-semibold md:mt-3 md:order-3"
+    >
+      Remote
+    </h2>
+    <h2
+      className="order-6  font-semibold md:font-semibold md:mt-3 md:order-4 "
+    >
+      $5000-$1000
+    </h2>
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-bookmark order-3 md:mt-3 md:order-5"
+      data-icon="bookmark"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <h2
+      className="order-8 font-semibold mb-5 md:font-normal md:order-6"
+    >
+       
+      Murex
+    </h2>
+    <h2
+      className="order-9 mb-5 md:order-7"
+    >
+       
+      Full Time
+    </h2>
+    <h2
+      className="order-7 md:order-8"
+    >
+       
+      Monthly
+    </h2>
+    <h2
+      className="order-2 font-semibold md:font-normal md:order-9"
+    >
+       
+      07/12/2022
+    </h2>
+  </div>
+  <div
+    className="rounded-md grid justify-items-center gap-3 m-5 bg-white drop-shadow-xl grid-cols-2 grid-rows-4 md:grid-cols-5 md:grid-rows-2"
+  >
+    <img
+      alt="hiring company logo"
+      className="order-1 col-span-2 h-20  md:row-span-2 md:col-span-1 md:scale-60 object-contain md:h-28 md:order-1"
+      src="/assets/filterResults/Murex.png"
+    />
+    <h2
+      className="order-4 font-semibold text-center md:font-semibold md:mt-3  md:order-2"
+    >
+      DevOps Engineer
+    </h2>
+    <h2
+      className="order-5 md:font-semibold md:mt-3 md:order-3"
+    >
+      Remote
+    </h2>
+    <h2
+      className="order-6  font-semibold md:font-semibold md:mt-3 md:order-4 "
+    >
+      $4000-$6000
+    </h2>
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-bookmark order-3 md:mt-3 md:order-5"
+      data-icon="bookmark"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <h2
+      className="order-8 font-semibold mb-5 md:font-normal md:order-6"
+    >
+       
+      Murex
+    </h2>
+    <h2
+      className="order-9 mb-5 md:order-7"
+    >
+       
+      Internship
+    </h2>
+    <h2
+      className="order-7 md:order-8"
+    >
+       
+      Monthly
+    </h2>
+    <h2
+      className="order-2 font-semibold md:font-normal md:order-9"
+    >
+       
+      06/26/2022
+    </h2>
+  </div>
+  <div
+    className="rounded-md grid justify-items-center gap-3 m-5 bg-white drop-shadow-xl grid-cols-2 grid-rows-4 md:grid-cols-5 md:grid-rows-2"
+  >
+    <img
+      alt="hiring company logo"
+      className="order-1 col-span-2 h-20  md:row-span-2 md:col-span-1 md:scale-60 object-contain md:h-28 md:order-1"
+      src="/assets/filterResults/EAB.png"
+    />
+    <h2
+      className="order-4 font-semibold text-center md:font-semibold md:mt-3  md:order-2"
+    >
+      Associate Data Scientist
+    </h2>
+    <h2
+      className="order-5 md:font-semibold md:mt-3 md:order-3"
+    >
+      Remote
+    </h2>
+    <h2
+      className="order-6  font-semibold md:font-semibold md:mt-3 md:order-4 "
+    >
+      $2500-$4500
+    </h2>
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-bookmark order-3 md:mt-3 md:order-5"
+      data-icon="bookmark"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <h2
+      className="order-8 font-semibold mb-5 md:font-normal md:order-6"
+    >
+       
+      EAB
+    </h2>
+    <h2
+      className="order-9 mb-5 md:order-7"
+    >
+       
+      Part Time
+    </h2>
+    <h2
+      className="order-7 md:order-8"
+    >
+       
+      Monthly
+    </h2>
+    <h2
+      className="order-2 font-semibold md:font-normal md:order-9"
+    >
+       
+      06/19/2022
+    </h2>
+  </div>
+  <div
+    className="rounded-md grid justify-items-center gap-3 m-5 bg-white drop-shadow-xl grid-cols-2 grid-rows-4 md:grid-cols-5 md:grid-rows-2"
+  >
+    <img
+      alt="hiring company logo"
+      className="order-1 col-span-2 h-20  md:row-span-2 md:col-span-1 md:scale-60 object-contain md:h-28 md:order-1"
+      src="/assets/filterResults/EAB.png"
+    />
+    <h2
+      className="order-4 font-semibold text-center md:font-semibold md:mt-3  md:order-2"
+    >
+      Data Analyst
+    </h2>
+    <h2
+      className="order-5 md:font-semibold md:mt-3 md:order-3"
+    >
+      Remote
+    </h2>
+    <h2
+      className="order-6  font-semibold md:font-semibold md:mt-3 md:order-4 "
+    >
+      $6500-$8000
+    </h2>
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-bookmark order-3 md:mt-3 md:order-5"
+      data-icon="bookmark"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <h2
+      className="order-8 font-semibold mb-5 md:font-normal md:order-6"
+    >
+       
+      EAB
+    </h2>
+    <h2
+      className="order-9 mb-5 md:order-7"
+    >
+       
+      Full Time
+    </h2>
+    <h2
+      className="order-7 md:order-8"
+    >
+       
+      Monthly
+    </h2>
+    <h2
+      className="order-2 font-semibold md:font-normal md:order-9"
+    >
+       
+      06/19/2022
+    </h2>
+  </div>
+  <div
+    className="rounded-md grid justify-items-center gap-3 m-5 bg-white drop-shadow-xl grid-cols-2 grid-rows-4 md:grid-cols-5 md:grid-rows-2"
+  >
+    <img
+      alt="hiring company logo"
+      className="order-1 col-span-2 h-20  md:row-span-2 md:col-span-1 md:scale-60 object-contain md:h-28 md:order-1"
+      src="/assets/filterResults/EAB.png"
+    />
+    <h2
+      className="order-4 font-semibold text-center md:font-semibold md:mt-3  md:order-2"
+    >
+      Network Engineer
+    </h2>
+    <h2
+      className="order-5 md:font-semibold md:mt-3 md:order-3"
+    >
+      Remote
+    </h2>
+    <h2
+      className="order-6  font-semibold md:font-semibold md:mt-3 md:order-4 "
+    >
+      $5000-$8000
+    </h2>
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-bookmark order-3 md:mt-3 md:order-5"
+      data-icon="bookmark"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <h2
+      className="order-8 font-semibold mb-5 md:font-normal md:order-6"
+    >
+       
+      EAB
+    </h2>
+    <h2
+      className="order-9 mb-5 md:order-7"
+    >
+       
+      Full Time
+    </h2>
+    <h2
+      className="order-7 md:order-8"
+    >
+       
+      Monthly
+    </h2>
+    <h2
+      className="order-2 font-semibold md:font-normal md:order-9"
+    >
+       
+      06/19/2022
+    </h2>
+  </div>
+  <div
+    className="rounded-md grid justify-items-center gap-3 m-5 bg-white drop-shadow-xl grid-cols-2 grid-rows-4 md:grid-cols-5 md:grid-rows-2"
+  >
+    <img
+      alt="hiring company logo"
+      className="order-1 col-span-2 h-20  md:row-span-2 md:col-span-1 md:scale-60 object-contain md:h-28 md:order-1"
+      src="/assets/filterResults/EAB.png"
+    />
+    <h2
+      className="order-4 font-semibold text-center md:font-semibold md:mt-3  md:order-2"
+    >
+      Junior Netwoek Engineer
+    </h2>
+    <h2
+      className="order-5 md:font-semibold md:mt-3 md:order-3"
+    >
+      Remote
+    </h2>
+    <h2
+      className="order-6  font-semibold md:font-semibold md:mt-3 md:order-4 "
+    >
+      $-$
+    </h2>
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-bookmark order-3 md:mt-3 md:order-5"
+      data-icon="bookmark"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <h2
+      className="order-8 font-semibold mb-5 md:font-normal md:order-6"
+    >
+       
+      EAB
+    </h2>
+    <h2
+      className="order-9 mb-5 md:order-7"
+    >
+       
+      Full Time
+    </h2>
+    <h2
+      className="order-7 md:order-8"
+    >
+       
+      Monthly
+    </h2>
+    <h2
+      className="order-2 font-semibold md:font-normal md:order-9"
+    >
+       
+      06/05/2021
+    </h2>
+  </div>
+  <div
+    className="rounded-md grid justify-items-center gap-3 m-5 bg-white drop-shadow-xl grid-cols-2 grid-rows-4 md:grid-cols-5 md:grid-rows-2"
+  >
+    <img
+      alt="hiring company logo"
+      className="order-1 col-span-2 h-20  md:row-span-2 md:col-span-1 md:scale-60 object-contain md:h-28 md:order-1"
+      src="/assets/filterResults/EAB.png"
+    />
+    <h2
+      className="order-4 font-semibold text-center md:font-semibold md:mt-3  md:order-2"
+    >
+      Creative Project Manager
+    </h2>
+    <h2
+      className="order-5 md:font-semibold md:mt-3 md:order-3"
+    >
+      Remote
+    </h2>
+    <h2
+      className="order-6  font-semibold md:font-semibold md:mt-3 md:order-4 "
+    >
+      $5000-$6000
+    </h2>
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-bookmark order-3 md:mt-3 md:order-5"
+      data-icon="bookmark"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    <h2
+      className="order-8 font-semibold mb-5 md:font-normal md:order-6"
+    >
+       
+      EAB
+    </h2>
+    <h2
+      className="order-9 mb-5 md:order-7"
+    >
+       
+      Full Time
+    </h2>
+    <h2
+      className="order-7 md:order-8"
+    >
+       
+      Monthly
+    </h2>
+    <h2
+      className="order-2 font-semibold md:font-normal md:order-9"
+    >
+       
+      01/01/2022
+    </h2>
+  </div>
+</div>
+`;
