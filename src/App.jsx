@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import AboutUsComponent from "./components/AboutUsComponent/AboutUsComponent";
 import Hero from "./components/Hero/Hero";
+import AboutHero from "./components/aboutHero/AboutHero";
 import Localize from "./Localize";
 import MeetOurTeam from "./components/MeetOurTeam/MeetOurTeam";
 import { teamMembers } from "./data/teamData";
@@ -9,17 +9,17 @@ import WyChooseUs from "./components/whyChooseUs/WhyChooseUs";
 import CompanyShowcaseComponent from "./components/companyShowcaseComponent/CompanyShowcaseComponent";
 import { showCaseData } from "./data/showCaseData";
 import "./App.css";
-import ContactSkills from "./components/ProfileEdit/contact_skills_page";
 import JobsShowcase from "./components/JobsShowcase/JobsShowcase";
 import { showcaseData } from "./data";
-import SaveButton from "./components/UI/Button/SaveButton";
 import Categories from "./components/Categories/Categories";
 import Education from "./components/EducationAndExperience/Education";
 import Experience from "./components/EducationAndExperience/Experience";
-import GetInTouchForm from "./components/gitInTouchForm/GetInTouchForm";
 import LatestJobs from "./components/LatestJob/LatestJobs";
 import HowItWorks from "./components/About/HowItWorks/HowItWorks";
-import Navbar from "./components/Navbar/Navbar";
+import OurCollaborators from "./components/OurCollaborators/OurCollaborators";
+import JobsFinder from "./components/Hero/JobsFinder";
+import RoadMaps from "./components/Roadmaps/RoadMaps";
+import ContactSkills from "./components/ProfileEdit/contact_skills_page";
 
 const data = [
   {
@@ -96,14 +96,15 @@ const header = [
 function App() {
   const { t } = useTranslation();
   return (
-    <div className="App">
-      <Navbar />
+    <div>
+      <RoadMaps />
       <Hero />
+      <AboutHero />
       <ContactSkills />
-      <SaveButton />
+      <JobsFinder />
+      <OurCollaborators showCaseData={showCaseData} />
       <Categories />
       <WyChooseUs />
-      <GetInTouchForm />
       <JobsShowcase showcaseArray={showcaseData} />
       <Categories />
       <h1>{t("hello")}</h1>
@@ -113,7 +114,6 @@ function App() {
       <LatestJobs data={data} headers={header} />
       <MeetOurTeam teamMembers={teamMembers} />
       <WyChooseUs />
-      <AboutUsComponent />
       <Experience />
       <Education />
     </div>
