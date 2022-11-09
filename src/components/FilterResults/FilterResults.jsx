@@ -1,27 +1,29 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
-import { useState } from 'react';
+import { useState } from "react";
 import FilterButton from "./FilterButton";
 
 function FilterResults({ filterData }) {
-  const [data, setData] = useState(filterData)
-  const newArray=filterData.map((key)=>(
-      { ...key, date: new Date(key.postingDate)}
-     ))
-  
-    //  console.log(newArray)
+  const [data, setData] = useState(filterData);
+  const newArray = filterData.map((key) => ({
+    ...key,
+    date: new Date(key.postingDate),
+  }));
 
-   const handleChange = (props)=>{
+  //  console.log(newArray)
+
+  const handleChange = (props) => {
     // console.log(props)
-    if (props==='newest'){
-        const sortingDataByNewest = newArray.sort((a, b) => b.date - a.date)
-        // console.log('newest data', sortingDataByNewest)
-        setData(sortingDataByNewest)
-    } else{
-      const sortingDataByOldest = newArray.sort((a, b) => a.date - b.date)
+    if (props === "newest") {
+      const sortingDataByNewest = newArray.sort((a, b) => b.date - a.date);
+      // console.log('newest data', sortingDataByNewest)
+      setData(sortingDataByNewest);
+    } else {
+      const sortingDataByOldest = newArray.sort((a, b) => a.date - b.date);
       // console.log('oldest data', sortingDataByOldest)
-      setData(sortingDataByOldest)
-    }}
+      setData(sortingDataByOldest);
+    }
+  };
 
   const jobCard = data.map((job) => {
     return (
@@ -72,7 +74,7 @@ function FilterResults({ filterData }) {
           </span>
           Results
         </h2>
-        <FilterButton handleChange={handleChange}/>
+        <FilterButton handleChange={handleChange} />
       </div>
       {jobCard}
     </div>
