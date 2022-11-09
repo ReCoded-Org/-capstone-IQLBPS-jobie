@@ -16,6 +16,8 @@ import Experience from "./components/EducationAndExperience/Experience";
 import LatestJobs from "./components/LatestJob/LatestJobs";
 import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
+import WorkinExperience from "./components/WorkinExperience/WorkinExperience";
+import { usersData } from "./data/usersData";
 
 const data = [
   {
@@ -93,6 +95,8 @@ function App() {
   const { t } = useTranslation();
   return (
     <div>
+      
+      <WorkinExperience usersData={usersData}/>
       <RoadMaps />
       <Hero />
       <Categories />
@@ -105,6 +109,7 @@ function App() {
       <CompanyShowcaseComponent showCaseData={showCaseData} />
       <LatestJobs data={data} headers={header} />
       <MeetOurTeam teamMembers={teamMembers} />
+
       <WyChooseUs />
       <Experience />
       <Education />
