@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Hero from "./components/Hero/Hero";
+import AboutHero from "./components/aboutHero/AboutHero";
 import Localize from "./Localize";
 import MeetOurTeam from "./components/MeetOurTeam/MeetOurTeam";
 import { teamMembers } from "./data/teamData";
@@ -59,10 +60,10 @@ const data = [
     id: 4,
   },
   {
-    position: 'Web Developer fr',
-    salary: '2000$-3000$',
-    date: '10/10/2022',
-    fullTime: true,              
+    position: "Web Developer fr",
+    salary: "2000$-3000$",
+    date: "10/10/2022",
+    fullTime: true,
     partTime: false,
     remote: true,
     id: 5,
@@ -100,6 +101,7 @@ function App() {
       <FilterResults filterData={filterData}/>
       <RoadMaps />
       <Hero />
+      <AboutHero />
       <JobsFinder />
       <OurCollaborators showCaseData={showCaseData} />
       <Categories />
