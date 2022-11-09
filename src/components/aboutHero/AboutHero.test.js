@@ -1,8 +1,8 @@
-import renderer from 'react-test-renderer';
+import renderer from "react-test-renderer";
 
-import AboutHero from './AboutHero';
+import AboutHero from "./AboutHero";
 
-it('renders correctly when the component matches the snapshot', () => {
+it("renders correctly when the component matches the snapshot", () => {
   const tree = renderer.create(<AboutHero />).toJSON();
   expect(tree).toMatchSnapshot();
 });
