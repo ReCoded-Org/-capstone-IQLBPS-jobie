@@ -16,6 +16,7 @@ import Experience from "./components/EducationAndExperience/Experience";
 import LatestJobs from "./components/LatestJob/LatestJobs";
 import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
+import Navbar from "./components/Navbar/Navbar"
 
 const data = [
   {
@@ -93,6 +94,7 @@ function App() {
   const { t } = useTranslation();
   return (
     <div>
+      <Navbar />
       <RoadMaps />
       <Hero />
       <Categories />
@@ -108,6 +110,7 @@ function App() {
       <WyChooseUs />
       <Experience />
       <Education />
+
     </div>
   );
 }
