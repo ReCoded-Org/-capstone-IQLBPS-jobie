@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="flex justify-start flex-col">
         <h1 className="text-3xl text-dark-gray small:text-xl">Contact</h1>
         <div className="flex  justify-center  flex-col pt-4 ">
-          <div className="pb-3">
+          <div className="pb-3 flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -19,8 +19,10 @@ export default function Contact() {
                 clipRule="evenodd"
               />
             </svg>
+            <span className="pl-3">Erbil</span>
+
           </div>
-          <div className="pb-3 ">
+          <div className="pb-3 flex ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -30,8 +32,10 @@ export default function Contact() {
               <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
               <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
             </svg>
+            <span className="pl-3">allan@re-coded.com</span>
+
           </div>
-          <div className="">
+          <div className=" flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -44,11 +48,21 @@ export default function Contact() {
                 clipRule="evenodd"
               />
             </svg>
+            <span className="pl-3">+964-750-797-3373</span>
+
           </div>
         </div>
       </div>
       <div>
-        <h1 className="text-3xl text-dark-gray pb-28 small:text-xl">Skills</h1>
+        <h1 className="text-3xl text-dark-gray pb-3 small:text-xl">Skills</h1>
+        <div>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>React</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
