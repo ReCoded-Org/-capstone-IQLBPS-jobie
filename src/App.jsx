@@ -18,6 +18,7 @@ import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import OurCollaborators from "./components/OurCollaborators/OurCollaborators";
 import JobsFinder from "./components/Hero/JobsFinder";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
+import CombiningFilterComponents from "./components/CombiningComponents/CombiningFilterComponents";
 
 const data = [
   {
@@ -57,10 +58,10 @@ const data = [
     id: 4,
   },
   {
-    position: 'Web Developer fr',
-    salary: '2000$-3000$',
-    date: '10/10/2022',
-    fullTime: true,              
+    position: "Web Developer fr",
+    salary: "2000$-3000$",
+    date: "10/10/2022",
+    fullTime: true,
     partTime: false,
     remote: true,
     id: 5,
@@ -95,6 +96,8 @@ function App() {
   const { t } = useTranslation();
   return (
     <div>
+    
+      <CombiningFilterComponents />
       <RoadMaps />
       <Hero />
       <JobsFinder />
