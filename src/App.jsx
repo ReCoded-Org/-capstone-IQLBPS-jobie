@@ -16,6 +16,8 @@ import Experience from "./components/EducationAndExperience/Experience";
 import LatestJobs from "./components/LatestJob/LatestJobs";
 import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
+import BookmarkedJobs from "./components/BookmarkedJobs/BookmarkedJobs";
+
 
 const data = [
   {
@@ -108,6 +110,7 @@ function App() {
       <WyChooseUs />
       <Experience />
       <Education />
+      <BookmarkedJobs />
     </div>
   );
 }
