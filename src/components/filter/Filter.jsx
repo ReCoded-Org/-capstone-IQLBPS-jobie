@@ -51,9 +51,43 @@ const Filter = () => {
     });
   };
 
- 
+  const categoryHandler = (e) => {
+    setFilter({
+      ...filter,
+      category: e.target.value,
+   })
+ }
 
 
+  const levelHandler = (e) => {
+    setFilter({
+      ...filter,
+      workLevel: e.target.value,
+
+    })
+  }
+
+//    const experienceHandler = (e) => {
+//   setFilter({
+//     ...filter,
+//     experience: e.target.id,
+//   })
+//  }
+
+const handleCheck = (e) => {
+
+const checkboxes = Array.from(
+  document.getElementsByClassName('checkbox')
+);
+
+  /* eslint-disable-next-line no-plusplus */
+  for (let i=0; i<checkboxes.length; i++){
+    if (checkboxes[i].id !== e.target.id)
+    checkboxes[i].checked = false;
+  }
+}
+
+  
   return (
     <div className="flex ">
       <div className=" w-screen bg-gray-100 h-screen p-5 flex flex-col items-center">
@@ -172,7 +206,7 @@ const Filter = () => {
                 fillRule="nonzero"
               />
             </svg>
-            <select className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56">
+            <select className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56" value={filter.category} onChange={(e)=>{categoryHandler(e)}}>
               <option>Choose a category</option>
               <option>Technology</option>
               <option>Marketing</option>
@@ -186,27 +220,28 @@ const Filter = () => {
           <h6 className="text-secondary text-left pb-2 font-bold text-xl">
             Work Exeperience
           </h6>
+
           <div className="flex flex-col text-left">
             <div className="checkbox-container">
-              <input type="checkbox" id="one" />
+              <input type="checkbox" id="one" className="checkbox" onClick={(e) =>handleCheck(e)}  />
               <span className="text-secondary font-semibold text-l pl-2">
                 One
               </span>
             </div>
             <div className="checkbox-container">
-              <input type="checkbox" id="two" />
+              <input type="checkbox" id="two" className="checkbox" onClick={(e) =>handleCheck(e)} />
               <span className="text-secondary font-semibold text-l pl-2">
                 Two
               </span>
             </div>
             <div className="checkbox-container">
-              <input type="checkbox" id="three" />
+              <input type="checkbox" id="three" className="checkbox" onClick={(e) =>handleCheck(e)}  />
               <span className="text-secondary font-semibold text-l pl-2">
                 Three
               </span>
             </div>
             <div className="checkbox-container">
-              <input type="checkbox" id="four" />
+              <input type="checkbox" id="four" className="checkbox" onClick={(e) =>handleCheck(e)} />
               <span className="text-secondary font-semibold text-l pl-2">
                 Four+
               </span>
@@ -231,7 +266,7 @@ const Filter = () => {
                 fillRule="nonzero"
               />
             </svg>
-            <select className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56" >
+            <select className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56" value={filter.workLevel} onChange={(e) => {levelHandler(e)}}>
               <option>Choose a level</option>
               <option>Junior</option>
               <option>Mid</option>
