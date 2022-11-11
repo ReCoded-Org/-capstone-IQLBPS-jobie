@@ -67,12 +67,12 @@ const Filter = () => {
     })
   }
 
-//    const experienceHandler = (e) => {
-//   setFilter({
-//     ...filter,
-//     experience: e.target.id,
-//   })
-//  }
+   const experienceHandler = (e) => {
+  setFilter({
+    ...filter,
+    experience: e.target.id,
+  })
+ }
 
 const handleCheck = (e) => {
 
@@ -87,6 +87,10 @@ const checkboxes = Array.from(
   }
 }
 
+const experienceClickHandler = (e) =>{
+experienceHandler(e);
+handleCheck(e);
+}
   
   return (
     <div className="flex ">
@@ -216,32 +220,32 @@ const checkboxes = Array.from(
         </div>
 
         {/* EXPERIENCE */}
-        <div className="experience pb-3 pt-3">
-          <h6 className="text-secondary text-left pb-2 font-bold text-xl">
+        <div className="experience pb-3 pt-3 ">
+          <h6 className="text-secondary pb-3 text-left font-bold text-xl">
             Work Exeperience
           </h6>
 
-          <div className="flex flex-col text-left">
+          <div className="flex flex-col text-left ">
             <div className="checkbox-container">
-              <input type="checkbox" id="one" className="checkbox" onClick={(e) =>handleCheck(e)}  />
+              <input type="checkbox" id="one" className="checkbox" onClick={(e) =>experienceClickHandler(e)}  />
               <span className="text-secondary font-semibold text-l pl-2">
                 One
               </span>
             </div>
             <div className="checkbox-container">
-              <input type="checkbox" id="two" className="checkbox" onClick={(e) =>handleCheck(e)} />
+              <input type="checkbox" id="two" className="checkbox" onClick={(e) =>experienceClickHandler(e)} />
               <span className="text-secondary font-semibold text-l pl-2">
                 Two
               </span>
             </div>
             <div className="checkbox-container">
-              <input type="checkbox" id="three" className="checkbox" onClick={(e) =>handleCheck(e)}  />
+              <input type="checkbox" id="three" className="checkbox" onClick={(e) =>experienceClickHandler(e)}  />
               <span className="text-secondary font-semibold text-l pl-2">
                 Three
               </span>
             </div>
             <div className="checkbox-container">
-              <input type="checkbox" id="four" className="checkbox" onClick={(e) =>handleCheck(e)} />
+              <input type="checkbox" id="four" className="checkbox" onClick={(e) =>experienceClickHandler(e)} />
               <span className="text-secondary font-semibold text-l pl-2">
                 Four+
               </span>
