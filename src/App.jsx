@@ -6,11 +6,13 @@ import './App.css';
 import Education from './components/EducationAndExperience/Education';
 import Experience from './components/EducationAndExperience/Experience';
 import AboutHero from './components/aboutHero/AboutHero';
+import Filter from './components/filter/Filter';
 
 function App() {
   return (
     <div className="App">
       <Hero />
+      <Filter />
       <AboutHero />
       <WyChooseUs />
       <Experience />
