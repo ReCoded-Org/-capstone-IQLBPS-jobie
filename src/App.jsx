@@ -21,6 +21,7 @@ import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import OurCollaborators from "./components/OurCollaborators/OurCollaborators";
 import JobsFinder from "./components/Hero/JobsFinder";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
+import OurCustomers from "./components/OurCustomers/our_customers";
 
 const data = [
   {
@@ -101,6 +102,7 @@ function App() {
       <FilterResults filterData={filterData}/>
       <RoadMaps />
       <Hero />
+      <OurCustomers/>
       <AboutHero />
       <JobsFinder />
       <OurCollaborators showCaseData={showCaseData} />
