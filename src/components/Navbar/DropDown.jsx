@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 
-function FilterButton({ handleChange }) {
+function DropDown() {
   return (
     <Menu
       as="div"
@@ -11,10 +11,10 @@ function FilterButton({ handleChange }) {
       <div>
         <Menu.Button
           data-testid="filter-botton-toggle"
-          className="rounded-full bg-gray-300 mr-5 mt-5 pl-5 pr-5 text-lg duration-500 hover:bg-accent"
+          className="bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-9 mx-4 rounded-full"
         >
           {" "}
-          Sort results by
+          Account
         </Menu.Button>
       </div>
 
@@ -34,14 +34,13 @@ function FilterButton({ handleChange }) {
                 <div
                   data-testid="language-button-option"
                   aria-hidden="true"
-                  onClick={(e) => handleChange("newest", e)}
                   className={`${
                     active
                       ? "bg-white text-secondary rounded"
                       : "text-black-500"
                   }`}
                 >
-                  <h3>Newest</h3>
+                  <h3>View Profile</h3>
                 </div>
               )}
             </Menu.Item>
@@ -50,14 +49,28 @@ function FilterButton({ handleChange }) {
                 <div
                   data-testid="language-button-option"
                   aria-hidden="true"
-                  onClick={(e) => handleChange("oldest", e)}
                   className={`${
                     active
                       ? "bg-white text-secondary rounded"
                       : "text-black-500"
                   }`}
                 >
-                  <h3>Oldest</h3>
+                  <h3>Edit Profile</h3>
+                </div>
+              )}
+            </Menu.Item>
+            <Menu.Item>
+              {({ active }) => (
+                <div
+                  data-testid="language-button-option"
+                  aria-hidden="true"
+                  className={`${
+                    active
+                      ? "bg-white text-secondary rounded"
+                      : "text-black-500"
+                  }`}
+                >
+                  <h3>signout</h3>
                 </div>
               )}
             </Menu.Item>
@@ -68,4 +81,4 @@ function FilterButton({ handleChange }) {
   );
 }
 
-export default FilterButton;
+export default DropDown;
