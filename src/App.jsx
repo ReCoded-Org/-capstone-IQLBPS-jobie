@@ -22,6 +22,7 @@ import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import OurCollaborators from "./components/OurCollaborators/OurCollaborators";
 import JobsFinder from "./components/Hero/JobsFinder";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
+import Navbar from "./components/Navbar/Navbar"
 import CombiningFilterComponents from "./components/CombiningComponents/CombiningFilterComponents";
 
 const data = [
@@ -100,7 +101,7 @@ function App() {
   const { t } = useTranslation();
   return (
     <div>
-    
+      <Navbar />
       <CombiningFilterComponents />
       <FilterResults filterData={filterData}/>
       <RoadMaps />
@@ -122,6 +123,7 @@ function App() {
       <WyChooseUs />
       <Experience />
       <Education />
+
     </div>
   );
 }
