@@ -8,6 +8,8 @@ import { teamMembers } from "./data/teamData";
 import WyChooseUs from "./components/whyChooseUs/WhyChooseUs";
 import CompanyShowcaseComponent from "./components/companyShowcaseComponent/CompanyShowcaseComponent";
 import { showCaseData } from "./data/showCaseData";
+import FilterResults from "./components/FilterResults/FilterResults";
+import {filterData} from "./data/filterData"
 import "./App.css";
 import JobsShowcase from "./components/JobsShowcase/JobsShowcase";
 import { showcaseData } from "./data";
@@ -97,6 +99,7 @@ function App() {
   const { t } = useTranslation();
   return (
     <div>
+      <FilterResults filterData={filterData}/>
       <RoadMaps />
       <Hero />
       <AboutHero />
