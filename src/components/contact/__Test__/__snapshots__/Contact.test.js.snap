@@ -55,7 +55,7 @@ exports[`renders Contact 1`] = `
         <span
           className="pl-3"
         >
-          allan@re-coded.com
+          allan@gmail.com
         </span>
       </div>
       <div
@@ -76,7 +76,7 @@ exports[`renders Contact 1`] = `
         <span
           className="pl-3"
         >
-          +964-750-797-3373
+          +964-750-444-4444
         </span>
       </div>
     </div>
