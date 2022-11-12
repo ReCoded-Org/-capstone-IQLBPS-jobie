@@ -16,8 +16,8 @@ import Experience from "./components/EducationAndExperience/Experience";
 import LatestJobs from "./components/LatestJob/LatestJobs";
 import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
-import WorkinExperience from "./components/WorkinExperience/WorkinExperience";
-import { usersData } from "./data/usersData";
+import UserProfile from "./components/UserProfile/UserProfile";
+import { users } from "./data/usersData";
 
 const data = [
   {
@@ -96,7 +96,7 @@ function App() {
   return (
     <div>
       
-      <WorkinExperience usersData={usersData}/>
+      <UserProfile users={users}/>
       <RoadMaps />
       <Hero />
       <Categories />
