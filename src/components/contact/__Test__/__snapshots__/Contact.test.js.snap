@@ -16,7 +16,7 @@ exports[`renders Contact 1`] = `
       className="flex  justify-center  flex-col pt-4 "
     >
       <div
-        className="pb-3"
+        className="pb-3 flex"
       >
         <svg
           className="w-6 h-6 text-dark-gray small:w-4"
@@ -30,9 +30,14 @@ exports[`renders Contact 1`] = `
             fillRule="evenodd"
           />
         </svg>
+        <span
+          className="pl-3"
+        >
+          Erbil
+        </span>
       </div>
       <div
-        className="pb-3 "
+        className="pb-3 flex "
       >
         <svg
           className="w-6 h-6 text-dark-gray small:w-4  "
@@ -47,9 +52,14 @@ exports[`renders Contact 1`] = `
             d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
           />
         </svg>
+        <span
+          className="pl-3"
+        >
+          allan@re-coded.com
+        </span>
       </div>
       <div
-        className=""
+        className=" flex"
       >
         <svg
           className="w-6 h-6 text-dark-gray small:w-4"
@@ -63,15 +73,36 @@ exports[`renders Contact 1`] = `
             fillRule="evenodd"
           />
         </svg>
+        <span
+          className="pl-3"
+        >
+          +964-750-797-3373
+        </span>
       </div>
     </div>
   </div>
   <div>
     <h1
-      className="text-3xl text-dark-gray pb-28 small:text-xl"
+      className="text-3xl text-dark-gray pb-3 small:text-xl"
     >
       Skills
     </h1>
+    <div>
+      <ul>
+        <li>
+          HTML
+        </li>
+        <li>
+          CSS
+        </li>
+        <li>
+          JS
+        </li>
+        <li>
+          React
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 `;

@@ -20,7 +20,6 @@ export default function Contact() {
               />
             </svg>
             <span className="pl-3">Erbil</span>
-
           </div>
           <div className="pb-3 flex ">
             <svg
@@ -33,7 +32,6 @@ export default function Contact() {
               <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
             </svg>
             <span className="pl-3">allan@re-coded.com</span>
-
           </div>
           <div className=" flex">
             <svg
@@ -49,7 +47,6 @@ export default function Contact() {
               />
             </svg>
             <span className="pl-3">+964-750-797-3373</span>
-
           </div>
         </div>
       </div>
