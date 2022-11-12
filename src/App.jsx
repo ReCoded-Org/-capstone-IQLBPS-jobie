@@ -1,12 +1,16 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Hero from "./components/Hero/Hero";
+import AboutHero from "./components/aboutHero/AboutHero";
 import Localize from "./Localize";
 import MeetOurTeam from "./components/MeetOurTeam/MeetOurTeam";
 import { teamMembers } from "./data/teamData";
+import Contact from "./components/contact/Contact";
 import WyChooseUs from "./components/whyChooseUs/WhyChooseUs";
 import CompanyShowcaseComponent from "./components/companyShowcaseComponent/CompanyShowcaseComponent";
 import { showCaseData } from "./data/showCaseData";
+import FilterResults from "./components/FilterResults/FilterResults";
+import {filterData} from "./data/filterData"
 import "./App.css";
 import JobsShowcase from "./components/JobsShowcase/JobsShowcase";
 import { showcaseData } from "./data";
@@ -18,6 +22,8 @@ import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import OurCollaborators from "./components/OurCollaborators/OurCollaborators";
 import JobsFinder from "./components/Hero/JobsFinder";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
+import Navbar from "./components/Navbar/Navbar"
+import CombiningFilterComponents from "./components/CombiningComponents/CombiningFilterComponents";
 
 const data = [
   {
@@ -95,8 +101,13 @@ function App() {
   const { t } = useTranslation();
   return (
     <div>
+      <Navbar />
+      <CombiningFilterComponents />
+      <FilterResults filterData={filterData}/>
       <RoadMaps />
       <Hero />
+      <Contact />
+      <AboutHero />
       <JobsFinder />
       <OurCollaborators showCaseData={showCaseData} />
       <Categories />
@@ -112,6 +123,7 @@ function App() {
       <WyChooseUs />
       <Experience />
       <Education />
+
     </div>
   );
 }
