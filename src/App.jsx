@@ -5,6 +5,7 @@ import AboutHero from "./components/aboutHero/AboutHero";
 import Localize from "./Localize";
 import MeetOurTeam from "./components/MeetOurTeam/MeetOurTeam";
 import { teamMembers } from "./data/teamData";
+import Contact from "./components/contact/Contact";
 import WyChooseUs from "./components/whyChooseUs/WhyChooseUs";
 import CompanyShowcaseComponent from "./components/companyShowcaseComponent/CompanyShowcaseComponent";
 import { showCaseData } from "./data/showCaseData";
@@ -22,6 +23,7 @@ import OurCollaborators from "./components/OurCollaborators/OurCollaborators";
 import JobsFinder from "./components/Hero/JobsFinder";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
 import Navbar from "./components/Navbar/Navbar"
+import CombiningFilterComponents from "./components/CombiningComponents/CombiningFilterComponents";
 
 const data = [
   {
@@ -100,8 +102,11 @@ function App() {
   return (
     <div>
       <Navbar />
+      <CombiningFilterComponents />
+      <FilterResults filterData={filterData}/>
       <RoadMaps />
       <Hero />
+      <Contact />
       <AboutHero />
       <JobsFinder />
       <OurCollaborators showCaseData={showCaseData} />
