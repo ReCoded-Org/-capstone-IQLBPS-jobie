@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { filterData } from '../../data/filterData';
+import { useState } from "react";
+import { filterData } from "../../data/filterData";
 
 function JobsFinder({ setData }) {
   const [text, setText] = useState("");
@@ -10,16 +10,16 @@ function JobsFinder({ setData }) {
     if (text === "") {
       console.log("first");
     } else {
-      setData(filterData.filter(item => {
-        if (item.position.toLowerCase().includes(text.toLocaleLowerCase())) {
-          console.log(item);
-          return item;
-          
-        }  
+      setData(
+        filterData.filter((item) => {
+          if (item.position.toLowerCase().includes(text.toLocaleLowerCase())) {
+            console.log(item);
+            return item;
+          }
           return null;
-        }))
+        })
+      );
     }
-    
   };
   return (
     <div className="App  bg-gray-200  flex-col justify-around  py-[50px]  ">
