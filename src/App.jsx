@@ -24,6 +24,7 @@ import JobsFinder from "./components/Hero/JobsFinder";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
 import Navbar from "./components/Navbar/Navbar"
 import CombiningFilterComponents from "./components/CombiningComponents/CombiningFilterComponents";
+import Filter from './components/filter/Filter';
 
 const data = [
   {
@@ -107,6 +108,7 @@ function App() {
       <RoadMaps />
       <Hero />
       <Contact />
+      <Filter />
       <AboutHero />
       <JobsFinder />
       <OurCollaborators showCaseData={showCaseData} />
