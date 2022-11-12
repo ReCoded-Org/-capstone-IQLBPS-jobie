@@ -11,8 +11,12 @@ function BookmarkedJobs() {
           alt="hiring company logo"
         />
         <div className="pl-6 grow">
-          <h1 className="font-bold text-2xl text-dark-gray medium:text-base small:text-sm">DevOps Engineer</h1>
-          <h1 className="text-xl text-secondary font-semibold medium:text-sm small:text-xs">Murex</h1>
+          <h1 className="font-bold text-2xl text-dark-gray medium:text-base small:text-sm">
+            DevOps Engineer
+          </h1>
+          <h1 className="text-xl text-secondary font-semibold medium:text-sm small:text-xs">
+            Murex
+          </h1>
 
           <div className="flex pt-6">
             <div className="flex  items-center">
@@ -30,7 +34,9 @@ function BookmarkedJobs() {
                   d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>{" "}
-              <p className="text-base medium:text-sm small:text-xs">Full-time</p>
+              <p className="text-base medium:text-sm small:text-xs">
+                Full-time
+              </p>
             </div>
             <div className="flex  pl-12 items-center">
               <svg
@@ -63,7 +69,9 @@ function BookmarkedJobs() {
               clipRule="evenodd"
             />
           </svg>{" "}
-          <p className="font-semibold pl-2 text-dark-gray medium:text-sm small:text-xs">Closed</p>
+          <p className="font-semibold pl-2 text-dark-gray medium:text-sm small:text-xs">
+            Closed
+          </p>
         </div>
       </div>
 
@@ -77,7 +85,9 @@ function BookmarkedJobs() {
           <h1 className="font-bold text-2xl text-dark-gray medium:text-base small:text-sm">
             Front-end Developer
           </h1>
-          <h1 className="text-xl text-secondary font-semibold medium:text-sm small:text-xs">Murex</h1>
+          <h1 className="text-xl text-secondary font-semibold medium:text-sm small:text-xs">
+            Murex
+          </h1>
 
           <div className="flex  pt-6">
             <div className="flex  items-center">
@@ -95,7 +105,9 @@ function BookmarkedJobs() {
                   d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>{" "}
-              <p className="text-base medium:text-sm small:text-xs">Part-time</p>
+              <p className="text-base medium:text-sm small:text-xs">
+                Part-time
+              </p>
             </div>
             <div className="flex pl-12 items-center">
               <svg
@@ -111,7 +123,9 @@ function BookmarkedJobs() {
                 />
                 <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
               </svg>
-              <p className="text-base medium:text-sm small:text-xs">Internship</p>{" "}
+              <p className="text-base medium:text-sm small:text-xs">
+                Internship
+              </p>{" "}
             </div>
           </div>
         </div>
@@ -128,7 +142,9 @@ function BookmarkedJobs() {
               clipRule="evenodd"
             />
           </svg>
-          <p className="font-semibold pl-2 medium:text-sm small:text-xs">Open</p>
+          <p className="font-semibold pl-2 medium:text-sm small:text-xs">
+            Open
+          </p>
         </div>
       </div>
 
@@ -142,7 +158,9 @@ function BookmarkedJobs() {
           <h1 className="font-bold text-2xl text-dark-gray medium:text-base small:text-sm">
             Associate Data Scientist
           </h1>
-          <h1 className="text-xl text-secondary font-semibold medium:text-sm small:text-xs">EAB</h1>
+          <h1 className="text-xl text-secondary font-semibold medium:text-sm small:text-xs">
+            EAB
+          </h1>
 
           <div className="flex pt-6">
             <div className="flex  items-center">
@@ -160,7 +178,9 @@ function BookmarkedJobs() {
                   d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>{" "}
-              <p className="text-base medium:text-sm small:text-xs">Part-time</p>
+              <p className="text-base medium:text-sm small:text-xs">
+                Part-time
+              </p>
             </div>
             <div className="flex pl-12 items-center">
               <svg
@@ -193,7 +213,9 @@ function BookmarkedJobs() {
               clipRule="evenodd"
             />
           </svg>
-          <p className="font-semibold pl-2 medium:text-sm small:text-xs">Open</p>
+          <p className="font-semibold pl-2 medium:text-sm small:text-xs">
+            Open
+          </p>
         </div>
       </div>
     </div>
