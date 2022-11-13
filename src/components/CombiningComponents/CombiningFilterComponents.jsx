@@ -8,16 +8,17 @@ function CombiningFilterComponents() {
   const [data, setData] = useState(filterData);
 
   return (
-    <div className="App px-7">
+    <div className="App bg-gray-200  px-7 bg-gray-200 ">
       <div>
         {" "}
         <JobsFinder setData={setData} />
       </div>
       <div className="flex px-6 small:flex-col-reverse ">
-        <Filter />
+        <Filter setData={setData} filterData={filterData} />
         {/* here we check if result exists if yes pass it to card else pass the
         data instead */}
-        {data && <FilterResults setData={setData} data={data} />}
+        <FilterResults setData={setData} data={data}/>
+        {/* {data && <FilterResults setData={setData} data={data} />} */}
       </div>
     </div>
   );

@@ -3,11 +3,12 @@ export const filterData = [
     src: "/assets/filterResults/Murex.png",
     position: "DevOps Engineer",
     jobModel: "Remote",
-    salary: "$5000-$1000",
+    salary: "$1000-$5000",
     employer: "Murex",
     jobType: "Full Time",
     payFreq: "Monthly",
     postingDate: "07/12/2022",
+    location: "Iraq",
     id: "1",
   },
   {
@@ -19,6 +20,7 @@ export const filterData = [
     jobType: "Internship",
     payFreq: "Monthly",
     postingDate: "06/26/2022",
+    location: "Lebanon",
     id: "2",
   },
   {
@@ -30,6 +32,7 @@ export const filterData = [
     jobType: "Part Time",
     payFreq: "Monthly",
     postingDate: "06/19/2022",
+    location: "Iraq",
     id: "3",
   },
   {
@@ -41,6 +44,7 @@ export const filterData = [
     jobType: "Full Time",
     payFreq: "Monthly",
     postingDate: "06/19/2022",
+    location: "Syria",
     id: "4",
   },
   {
@@ -52,6 +56,7 @@ export const filterData = [
     jobType: "Full Time",
     payFreq: "Monthly",
     postingDate: "06/19/2022",
+    location: "Yemen",
     id: "5",
   },
   {
@@ -63,6 +68,7 @@ export const filterData = [
     jobType: "Full Time",
     payFreq: "Monthly",
     postingDate: "06/05/2021",
+    location: "Kuwait",
     id: "6",
   },
   {
@@ -74,6 +80,7 @@ export const filterData = [
     jobType: "Full Time",
     payFreq: "Monthly",
     postingDate: "01/01/2022",
+    location: "Lebanon",
     id: "7",
   },
 ];
