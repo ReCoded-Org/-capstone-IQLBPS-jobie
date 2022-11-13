@@ -25,6 +25,7 @@ import RoadMaps from "./components/Roadmaps/RoadMaps";
 import Navbar from "./components/Navbar/Navbar"
 import CombiningFilterComponents from "./components/CombiningComponents/CombiningFilterComponents";
 import Filter from './components/filter/Filter';
+import Footer from "./components/Footer/Footer";
 
 const data = [
   {
@@ -125,7 +126,7 @@ function App() {
       <WyChooseUs />
       <Experience />
       <Education />
-
+      <Footer />
     </div>
   );
 }
