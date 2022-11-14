@@ -3,6 +3,7 @@ import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import FilterButton from "./FilterButton";
 
 function FilterResults({ setData, data }) {
+
   const handleChange = (props) => {
     const newArray = data?.map((key) => ({
       ...key,
@@ -23,9 +24,8 @@ function FilterResults({ setData, data }) {
         <h2 className="ml-5 mt-5 text-lg">
           {" "}
           Total{" "}
-          <span className="text-accent font-semibold">
-            {" "}
-            {data.length}{" "}
+          <span className="text-accent mr-1 font-semibold">
+          {data?.length}
           </span>
           Results
         </h2>
@@ -50,7 +50,7 @@ function FilterResults({ setData, data }) {
                   {job.jobModel}
                 </h2>
                 <h2 className="order-6  font-semibold md:font-semibold md:mt-3 md:order-4 ">
-                  {job.salary}
+                  ${job.minSalary} - ${job.maxSalary}
                 </h2>
                 <FontAwesomeIcon
                   className="order-3 md:mt-3 md:order-5"

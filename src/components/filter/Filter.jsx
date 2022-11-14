@@ -1,10 +1,19 @@
 import { useEffect, useState } from 'react';
 
 const Filter = ({ setData, filterData }) => {
+  
+// obtaining min and max values for salary range from filterData.js to be set as initial states // 
+ const minSalaryArray = filterData.map(item=>(item.minSalary))
+ const minSalaryValue = Math.min(...minSalaryArray)
+
+ const maximumSalaryArray = filterData.map(item=>(item.maxSalary))
+ const maxSalaryValue = Math.max(...maximumSalaryArray)
+
+
   const [filter, setFilter] = useState({
     salary: {
-      min: '',
-      max: '',
+      min: `${minSalaryValue}`,
+      max: `${maxSalaryValue}`,
     },
 
     location: '',
@@ -37,17 +46,12 @@ const Filter = ({ setData, filterData }) => {
   useEffect(()=>{
     setData(
       filterData.filter((item)=> {
-      //  console.log(item)
-      const salaryRange = item.salary.split('-')
-      const salaryAsNum = salaryRange.map(number => number.substring(1))
-      const maxSalary = salaryAsNum.splice(1)
-      const minSalary = salaryAsNum.splice(salaryAsNum.length-1)
-      if (minSalary>=filter.salary.min && maxSalary<=filter.salary.max){
-        return item
-      } 
-      return null;
-     })
-     )
+      if (item.minSalary>=filter.salary.min && item.minSalary<=filter.salary.max){
+            return item
+          } 
+          return null;
+         })
+    )
  },[filter.salary])
 
 
