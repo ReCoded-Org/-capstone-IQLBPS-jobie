@@ -3,7 +3,6 @@ import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import FilterButton from "./FilterButton";
 
 function FilterResults({ setData, data }) {
-
   const handleChange = (props) => {
     const newArray = data?.map((key) => ({
       ...key,
@@ -24,9 +23,7 @@ function FilterResults({ setData, data }) {
         <h2 className="ml-5 mt-5 text-lg">
           {" "}
           Total{" "}
-          <span className="text-accent mr-1 font-semibold">
-          {data?.length}
-          </span>
+          <span className="text-accent mr-1 font-semibold">{data?.length}</span>
           Results
         </h2>
         <FilterButton handleChange={handleChange} />

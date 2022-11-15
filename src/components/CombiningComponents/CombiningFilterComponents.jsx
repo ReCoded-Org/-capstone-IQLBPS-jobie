@@ -17,7 +17,7 @@ function CombiningFilterComponents() {
         <Filter setData={setData} filterData={filterData} />
         {/* here we check if result exists if yes pass it to card else pass the
         data instead */}
-        <FilterResults setData={setData} data={data}/>
+        <FilterResults setData={setData} data={data} />
       </div>
     </div>
   );
