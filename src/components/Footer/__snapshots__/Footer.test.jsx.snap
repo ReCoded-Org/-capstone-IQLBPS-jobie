@@ -14,7 +14,7 @@ exports[`Footer Component Render Footer Correctly 1`] = `
       <img
         alt="Jobie"
         className="h-[3.7rem] small:mx-auto medium:mx-auto"
-        src="/logo.svg"
+        src="/logo-white.svg"
       />
       <p
         className="mt-4 max-w-[25rem] text-sm small:text-base text-white text-justify small:text-center py-7 small:max-w-[33rem]"
