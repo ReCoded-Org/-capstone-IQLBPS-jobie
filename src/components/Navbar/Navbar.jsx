@@ -5,10 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
   faGlobe,
-  faBars,
+  faCaretDown,
 } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import Button from "./Button";
+import Dropdown from "./DropDown";
 
 const Navbar = () => {
   let Links = [
@@ -18,9 +19,9 @@ const Navbar = () => {
     { name: "Jobs", link: "/" },
     { name: "Contact", link: "/" },
   ];
-
+  const isAuthenticated = true;
   let [open, setOpen] = useState(false);
-
+  const [openDropDown, setOpenDropDown] = useState(false);
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
@@ -63,8 +64,7 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </button>
           </div>
-
-          <Button>Login</Button>
+          {isAuthenticated ? <Dropdown /> : <Button>Login</Button>}
         </ul>
       </div>
     </div>
