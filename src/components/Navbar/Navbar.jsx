@@ -10,14 +10,15 @@ import {
 import React, { useState } from "react";
 import Button from "./Button";
 import Dropdown from "./DropDown";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Roadmap", link: "/" },
-    { name: "Jobs", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "About", link: "/about-us" },
+    { name: "Roadmap", link: "/roadmap" },
+    { name: "Jobs", link: "/jobs" },
+    { name: "Contact", link: "/contact" },
   ];
   const isAuthenticated = true;
   let [open, setOpen] = useState(false);
@@ -44,12 +45,12 @@ const Navbar = () => {
         >
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
-              <a
-                href={link.link}
+              <Link
+                to={link.link}
                 className="text-gray-800 hover:text-gray-400 duration-500"
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
 
