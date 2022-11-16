@@ -17,14 +17,14 @@ function OurCustomers() {
         />
         <OurCustomerCard
           props={{
-           detail,
+            detail,
             name: "Shady Bot",
             title: "DevOps @ Google",
           }}
         />
         <OurCustomerCard
           props={{
-          detail,
+            detail,
             name: "Shady Bot",
             title: "DevOps @ Google",
           }}
