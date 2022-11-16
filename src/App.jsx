@@ -13,7 +13,7 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<h1>Home page</h1>} />
+        <Route path="/" element={<Index />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about-us" element={<AboutPage />} />
@@ -21,7 +21,6 @@ function App() {
         <Route path="/jobs" element={<h1>jobs page</h1>} />
         <Route path="/contact" element={<h1>contact us page</h1>} />
       </Routes>
-      <ProfilePage userData={userData}/>
     </div>
   );
 }

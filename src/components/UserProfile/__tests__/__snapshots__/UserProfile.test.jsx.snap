@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Users Profile Component correctly 1`] = `
+Array [
+  <h1
+    className="text-lg  flex justify-left  font-bold font-weight: 700 bg-[#f8f8f8]"
+  >
+    User Profile
+  </h1>,
+  <h2
+    className="text-lg  flex justify-left font-bold bg-[#f8f8f8]"
+  >
+    Work Experience
+  </h2>,
+  <div
+    className="text-lg  flex justify-center font-bold bg-[#f8f8f8]"
+  >
+    <ul>
+      <li>
+        Company:
+         
+        <div
+          className="text-slate-500 hover:text-orange-600 text-md"
+        >
+           
+          Murex
+        </div>
+      </li>
+      <li>
+        Postion:
+         
+        <div
+          className="text-slate-500 hover:text-orange-600 text-md"
+        >
+           
+          DevOps Engineer
+           
+        </div>
+      </li>
+      <li>
+        Postion:
+         
+        <div
+          className="text-slate-500 hover:text-orange-600 text-md"
+        >
+           
+          Iraq
+        </div>
+      </li>
+      <li>
+        Emploment Type:
+         
+        <div
+          className="text-slate-500 hover:text-orange-600 text-md"
+        >
+           
+          Full-Time
+           
+        </div>
+      </li>
+      <li>
+        Emploment Date:
+         
+        <div
+          className="text-slate-500 hover:text-orange-600 text-md"
+        >
+           
+          2015-06-21
+        </div>
+      </li>
+    </ul>
+  </div>,
+  <h2
+    className="text-lg  flex justify-left font-bold bg-[#f8f8f8]"
+  >
+    Education
+  </h2>,
+  <div
+    className="text-lg  flex justify-center font-bold bg-[#f8f8f8]"
+  >
+    <ul>
+      <li>
+        University:
+         
+        <div
+          className="text-slate-500 hover:text-orange-600 text-md"
+        >
+           
+          Salahaddin
+           
+        </div>
+      </li>
+      <li>
+        Major:
+         
+        <div
+          className="text-slate-500 hover:text-orange-600 text-md"
+        >
+           
+          Front-End Developer
+           
+        </div>
+      </li>
+      <li>
+        Graduation Date:
+         
+        <div
+          className="text-slate-500 hover:text-orange-600 text-md"
+        >
+          2014-01-07
+           
+        </div>
+      </li>
+    </ul>
+  </div>,
+]
+`;
