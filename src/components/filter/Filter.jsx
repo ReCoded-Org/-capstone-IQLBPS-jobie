@@ -1,21 +1,28 @@
-import { useState } from 'react';
+import { useEffect, useState } from "react";
 
-const Filter = () => {
+const Filter = ({ setData, filterData }) => {
+  // obtaining min and max values for salary range from filterData.js to be set as initial states //
+  const minSalaryArray = filterData.map((item) => item.minSalary);
+  const minSalaryValue = Math.min(...minSalaryArray);
+
+  const maximumSalaryArray = filterData.map((item) => item.maxSalary);
+  const maxSalaryValue = Math.max(...maximumSalaryArray);
+
   const [filter, setFilter] = useState({
     salary: {
-      min: '',
-      max: '',
+      min: `${minSalaryValue}`,
+      max: `${maxSalaryValue}`,
     },
 
-    location: '',
-    employmentType: '',
-    category: '',
-    experience: '',
-    workLevel: '',
+    location: "",
+    employmentType: "",
+    category: "",
+    experience: "",
+    workLevel: "",
   });
 
   const salaryHandler = (e) => {
-    if (e.target.name === 'min') {
+    if (e.target.name === "min") {
       setFilter({
         ...filter,
         salary: {
@@ -32,16 +39,36 @@ const Filter = () => {
         },
       });
     }
-    console.log(filter);
   };
 
-  const locationHandler = (e) => {
+  useEffect(() => {
+    setData(
+      filterData.filter((item) => {
+        if (
+          item.minSalary >= filter.salary.min &&
+          item.minSalary <= filter.salary.max
+        ) {
+          return item;
+        }
+        return null;
+      })
+    );
+  }, [filter.salary]);
 
+  const locationHandler = (e) => {
     setFilter({
       ...filter,
       location: e.target.value,
     });
-  
+
+    setData(
+      filterData.filter((item) => {
+        if (item.location === e.target.value) {
+          return item;
+        }
+        return null;
+      })
+    );
   };
 
   const employmentTypeHandler = (e) => {
@@ -55,49 +82,42 @@ const Filter = () => {
     setFilter({
       ...filter,
       category: e.target.value,
-   })
- }
-
+    });
+  };
 
   const levelHandler = (e) => {
     setFilter({
       ...filter,
       workLevel: e.target.value,
+    });
+  };
 
-    })
-  }
+  const experienceHandler = (e) => {
+    setFilter({
+      ...filter,
+      experience: e.target.id,
+    });
+  };
 
-   const experienceHandler = (e) => {
-  setFilter({
-    ...filter,
-    experience: e.target.id,
-  })
- }
+  const handleCheck = (e) => {
+    const checkboxes = Array.from(document.getElementsByClassName("checkbox"));
 
-const handleCheck = (e) => {
+    /* eslint-disable-next-line no-plusplus */
+    for (let i = 0; i < checkboxes.length; i++) {
+      if (checkboxes[i].id !== e.target.id) checkboxes[i].checked = false;
+    }
+  };
 
-const checkboxes = Array.from(
-  document.getElementsByClassName('checkbox')
-);
+  const experienceClickHandler = (e) => {
+    experienceHandler(e);
+    handleCheck(e);
+  };
 
-  /* eslint-disable-next-line no-plusplus */
-  for (let i=0; i<checkboxes.length; i++){
-    if (checkboxes[i].id !== e.target.id)
-    checkboxes[i].checked = false;
-  }
-}
-
-const experienceClickHandler = (e) =>{
-experienceHandler(e);
-handleCheck(e);
-}
-  
   return (
     <div className="flex ">
-      <div className=" w-screen bg-gray-100 h-screen p-5 flex flex-col items-center">
+      <div className="bg-gray-200 h-screen p-5 flex flex-col items-center">
         <h2 className="text-secondary font-bold text-3xl">Filter</h2>
 
-        <hr className="w-full" />
         {/* SALARY */}
         <div className="salary pl-3">
           <div className="flex space-between pt-3 pb-3 text-center">
@@ -153,7 +173,12 @@ handleCheck(e);
                     fillRule="nonzero"
                   />
                 </svg>
-                <select  className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56 " value={filter.location} onChange={(e) => locationHandler(e)}>
+                {/* <form onSubmit={handleChangeLocation}> */}
+                <select
+                  className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56 "
+                  value={filter.location}
+                  onChange={(e) => locationHandler(e)}
+                >
                   <option>Choose a location</option>
                   <option>Iraq</option>
                   <option>Jordan</option>
@@ -162,6 +187,7 @@ handleCheck(e);
                   <option>Lebanon</option>
                   <option>Kuwait</option>
                 </select>
+                {/* </form> */}
               </div>
             </div>
           </div>
@@ -184,7 +210,13 @@ handleCheck(e);
                 fillRule="nonzero"
               />
             </svg>
-            <select className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56 " value={filter.employmentType} onChange={(e) => {employmentTypeHandler(e)}}>
+            <select
+              className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56 "
+              value={filter.employmentType}
+              onChange={(e) => {
+                employmentTypeHandler(e);
+              }}
+            >
               <option>Choose type</option>
               <option>Full-time</option>
               <option>Part-time</option>
@@ -210,7 +242,13 @@ handleCheck(e);
                 fillRule="nonzero"
               />
             </svg>
-            <select className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56" value={filter.category} onChange={(e)=>{categoryHandler(e)}}>
+            <select
+              className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56"
+              value={filter.category}
+              onChange={(e) => {
+                categoryHandler(e);
+              }}
+            >
               <option>Choose a category</option>
               <option>Technology</option>
               <option>Marketing</option>
@@ -227,25 +265,45 @@ handleCheck(e);
 
           <div className="flex flex-col text-left ">
             <div className="checkbox-container">
-              <input type="checkbox" id="one" className="checkbox" onClick={(e) =>experienceClickHandler(e)}  />
+              <input
+                type="checkbox"
+                id="one"
+                className="checkbox"
+                onClick={(e) => experienceClickHandler(e)}
+              />
               <span className="text-secondary font-semibold text-l pl-2">
                 One
               </span>
             </div>
             <div className="checkbox-container">
-              <input type="checkbox" id="two" className="checkbox" onClick={(e) =>experienceClickHandler(e)} />
+              <input
+                type="checkbox"
+                id="two"
+                className="checkbox"
+                onClick={(e) => experienceClickHandler(e)}
+              />
               <span className="text-secondary font-semibold text-l pl-2">
                 Two
               </span>
             </div>
             <div className="checkbox-container">
-              <input type="checkbox" id="three" className="checkbox" onClick={(e) =>experienceClickHandler(e)}  />
+              <input
+                type="checkbox"
+                id="three"
+                className="checkbox"
+                onClick={(e) => experienceClickHandler(e)}
+              />
               <span className="text-secondary font-semibold text-l pl-2">
                 Three
               </span>
             </div>
             <div className="checkbox-container">
-              <input type="checkbox" id="four" className="checkbox" onClick={(e) =>experienceClickHandler(e)} />
+              <input
+                type="checkbox"
+                id="four"
+                className="checkbox"
+                onClick={(e) => experienceClickHandler(e)}
+              />
               <span className="text-secondary font-semibold text-l pl-2">
                 Four+
               </span>
@@ -270,7 +328,13 @@ handleCheck(e);
                 fillRule="nonzero"
               />
             </svg>
-            <select className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56" value={filter.workLevel} onChange={(e) => {levelHandler(e)}}>
+            <select
+              className="border border-gray-300 rounded-md text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none w-56"
+              value={filter.workLevel}
+              onChange={(e) => {
+                levelHandler(e);
+              }}
+            >
               <option>Choose a level</option>
               <option>Junior</option>
               <option>Mid</option>
@@ -279,7 +343,6 @@ handleCheck(e);
           </div>
         </div>
       </div>
-      <div className="w-full" />
     </div>
   );
 };

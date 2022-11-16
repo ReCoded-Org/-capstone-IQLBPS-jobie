@@ -1,4 +1,3 @@
-
 export const users = [
   {
     work: {
@@ -6,12 +5,12 @@ export const users = [
       Company: "Murex",
       Location: "Iraq",
       EmplomentType: "Full-Time",
-      EmplomentDate: "2015-06-21"
+      EmplomentDate: "2015-06-21",
     },
     education: {
       University: "Salahaddin",
       Major: "Front-End Developer",
-      EducationDate: "2014-01-07"
-    }
-  }   
-]
+      EducationDate: "2014-01-07",
+    },
+  },
+];
