@@ -6,6 +6,8 @@ import SignUp from "./components/signup/SignUp";
 import Login from "./components/Login/Login";
 import AboutPage from "./pages/about-us";
 import Index from "./pages/index";
+import UserProfile from "./components/UserProfile/UserProfile";
+import { users } from "./data/usersData";
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/jobs" element={<h1>jobs page</h1>} />
         <Route path="/contact" element={<h1>contact us page</h1>} />
       </Routes>
+      <UserProfile users={users} />
     </div>
   );
 }
