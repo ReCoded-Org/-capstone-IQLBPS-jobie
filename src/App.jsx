@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import SignUp from "./components/signup/SignUp";
 import Login from "./components/Login/Login";
 import AboutPage from "./pages/about-us";
+import ProfilePage from "./pages/profile";
+import {userData} from "./data/userData"
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route path="/jobs" element={<h1>jobs page</h1>} />
         <Route path="/contact" element={<h1>contact us page</h1>} />
       </Routes>
+      <ProfilePage userData={userData}/>
     </div>
   );
 }
