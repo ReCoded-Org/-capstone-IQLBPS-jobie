@@ -10,6 +10,8 @@ import {
 import React, { useState } from "react";
 import Button from "./Button";
 import Dropdown from "./DropDown";
+import { useTranslation } from 'react-i18next';
+
 
 const Navbar = () => {
   let Links = [
@@ -22,6 +24,14 @@ const Navbar = () => {
   const isAuthenticated = true;
   let [open, setOpen] = useState(false);
   const [openDropDown, setOpenDropDown] = useState(false);
+  const [isEnglish, setIsEnglish] = useState(true)
+
+  const { i18n } = useTranslation();
+
+  const handleTranslate = ()=> {
+    setIsEnglish(!isEnglish)
+    i18n.changeLanguage(isEnglish ? "en" : "ar");
+  }
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
@@ -40,8 +50,7 @@ const Navbar = () => {
         <ul
           className={`mx-5 md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-20" : "top-[-490px]"
-          }`}
-        >
+          }`} >
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
               <a
@@ -53,7 +62,7 @@ const Navbar = () => {
             </li>
           ))}
 
-          <FontAwesomeIcon icon={faGlobe} className="mx-5" />
+          <span onClick={handleTranslate} className="mx-3"><FontAwesomeIcon icon={faGlobe} className="mx-1" />{isEnglish ? "En" : "Ku"}</span>
           <div className="w-60 flex items-center md: flex ">
             <input
               type="text"
