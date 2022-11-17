@@ -1,44 +1,28 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import Hero from './components/Hero/Hero';
-import Localize from './Localize';
-import MeetOurTeam from './components/MeetOurTeam/MeetOurTeam';
-import { teamMembers } from './data/teamData';
-import WyChooseUs from './components/whyChooseUs/WhyChooseUs';
-import CompanyShowcaseComponent from './components/companyShowcaseComponent/CompanyShowcaseComponent';
-import { showCaseData } from './data/showCaseData';
-import './App.css';
-import SaveButton from './components/UI/Button/SaveButton';
-import Categories from './components/Categories/Categories';
-import Education from './components/EducationAndExperience/Education';
-import Experience from './components/EducationAndExperience/Experience';
-import LatestJobs from './components/LatestJob/LatestJobs';
-import HowItWorks from './components/About/HowItWorks/HowItWorks';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import SignUp from "./components/signup/SignUp";
+import Login from "./components/Login/Login";
+import AboutPage from "./pages/about-us";
+import Index from "./pages/index";
+import UserProfile from "./components/UserProfile/UserProfile";
+import { users } from "./data/usersData";
 
-const data = [
-  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
-  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
-  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
-  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
-  { position: 'Web Developer', salary: '2000$-3000$', date: '10/10/2022' },
-];
-const header = ['Position', 'Salary', 'Date', ''];
 function App() {
-  const { t } = useTranslation();
   return (
     <div>
-      <Hero />
-      <SaveButton/>
-      <Categories/>
-      <h1>{t('hello')}</h1>
-      <Localize />
-      <HowItWorks />
-      <CompanyShowcaseComponent showCaseData={showCaseData} />
-      <LatestJobs data={data} headers={header} />
-      <MeetOurTeam teamMembers={teamMembers} />
-      <WyChooseUs />
-      <Experience />
-      <Education />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/about-us" element={<AboutPage />} />
+        <Route path="/roadmap" element={<h1>Roadmap page</h1>} />
+        <Route path="/jobs" element={<h1>jobs page</h1>} />
+        <Route path="/contact" element={<h1>contact us page</h1>} />
+      </Routes>
+      <UserProfile users={users} />
     </div>
   );
 }
