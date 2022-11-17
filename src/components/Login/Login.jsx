@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 
 function Login() {
   const {
@@ -9,9 +10,10 @@ function Login() {
     handleSubmit,
   } = useForm();
   const onSubmit = (data) => console.log(data);
+  const { t } = useTranslation();
   return (
     <div className=" my-52">
-      <h1 className="font-inter font-black text-2xl mb-6">Log in</h1>
+      <h1 className="font-inter font-black text-2xl mb-6">{t('login')}</h1>
       <div className="w-full max-w-sm mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
@@ -58,13 +60,13 @@ function Login() {
               type="submit"
               className="w-full bg-accent font-inter text-white rounded-md py-1 hover:bg-red-500"
             >
-              Log in
+              {t('login-button')}
             </button>
           </div>
           <div className="mb-4">
             <p className="text-dark-gray">
-              Don&apos;t Have an Account?{" "}
-              <span className="font-semibold">Sign up</span>
+              {t('dont-have-account')}{" "}
+              <span className="font-semibold">{t("login-sign-up-button")}</span>
             </p>
           </div>
           <div>
@@ -76,7 +78,7 @@ function Login() {
                 icon={faGoogle}
                 className="pr-3 text-2xl font-bold"
               />
-              Log in with
+              {t('login-with')}
               <span className="font-bold"> Google</span>
             </button>
           </div>

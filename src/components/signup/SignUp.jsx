@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 function SignUp() {
   const {
@@ -8,9 +9,10 @@ function SignUp() {
     handleSubmit,
   } = useForm();
   const onSubmit = (data) => console.log(data);
+  const { t } = useTranslation();
   return (
     <div className=" my-52">
-      <h1 className="font-inter font-black text-2xl mb-6">Sign Up</h1>
+      <h1 className="font-inter font-black text-2xl mb-6">{t("sign-up")}</h1>
       <div className="w-full max-w-sm mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
@@ -68,13 +70,13 @@ function SignUp() {
               type="submit"
               className="w-full bg-accent font-inter text-white rounded-md py-1 hover:bg-red-500"
             >
-              Sign Up
+              {t('sign-up-button')}
             </button>
           </div>
           <div className="mb-4">
             <p className="text-dark-gray">
-              Already Have an Account?{" "}
-              <span className="font-semibold">Log in</span>
+              {t('already-have-account')}{" "}
+              <span className="font-semibold">{t('sign-up-login-button')}</span>
             </p>
           </div>
         </form>

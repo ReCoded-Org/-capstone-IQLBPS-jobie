@@ -1,6 +1,6 @@
 /* eslint-disable */
 /* eslint-disable no-console, no-control-regex*/
-
+import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
@@ -11,12 +11,13 @@ import React, { useState } from "react";
 import Button from "./Button";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   let Links = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Roadmap", link: "/" },
-    { name: "Jobs", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: t('nav-home'), link: "/" },
+    { name: t('nav-about'), link: "/" },
+    { name: t('nav-roadmap'), link: "/" },
+    { name: t('nav-jobs'), link: "/" },
+    { name: t('nav-contact'), link: "/" },
   ];
 
   let [open, setOpen] = useState(false);
@@ -64,7 +65,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <Button>Login</Button>
+          <Button>{t('nav-login')}</Button>
         </ul>
       </div>
     </div>

@@ -20,6 +20,7 @@ import LatestJobs from "./components/LatestJob/LatestJobs";
 import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import OurCollaborators from "./components/OurCollaborators/OurCollaborators";
 import JobsFinder from "./components/Hero/JobsFinder";
+import Hero from "./components/Hero/Hero";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
 
 const data = [
@@ -100,7 +101,7 @@ function App() {
   return (
     <div>
       <FilterResults filterData={filterData}/>
-      <RoadMaps />
+      <RoadMaps /> {/* This is not translated, the data comes from json */}
       <Hero />
       <AboutHero />
       <JobsFinder />

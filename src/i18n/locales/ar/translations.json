@@ -3,5 +3,51 @@
     "find-your-job" : "لێرە دەتوانی پیشەی خەونەکانت بدۆزییەوە",
     "search" : "گەڕان",
     "hello" : "سڵاو",
-    "Type-to-search": "بگەڕێ"
+    "Type-to-search": "بگەڕێ",
+    
+    "why-choose-us": "بۆ <1>ئێمە</1> هەڵبژێریت؟",
+    "n-vacancies-posted": "١٥ هەزار هەلی کار",
+    "posted": "دانراوە",
+    "n-vacancies-saved": "٥ هەزار هەلی کار",
+    "saved": "پاشەکەوت کراوە",
+    "n-cv": "١٢ هەزار CV",
+    "submitted": "پێشکەشکراوە",
+    "n-employees": "١٨ هەزار کارمەند",
+    "hired": "کاریان دەستکەوتووە",
+
+    "sign-up": "خۆتۆمارکردن",
+    "sign-up-button": "خۆتۆمارکردن",
+    "already-have-account": "هەژمارت هەیە؟",
+    "sign-up-login-button": "بچۆ ژوورەوە",
+
+    "our-collaborators": "<1>هاوبەشەکانمان</1>",
+
+    "nav-home": "سەرەکی",
+    "nav-about": "دەربارە",
+    "nav-roadmap": "نەخشەڕێگا",
+    "nav-jobs": "کارەکان",
+    "nav-contact": "پەیوەندی",
+    "nav-login": "چوونەژوورەوە",
+
+
+    "upload-photo": "وێنە باربکە",
+    "nal-delete": "سڕینەوە",
+    "resume-file": "فایلی سیڤی",
+    "choose-file": "فایل هەڵبژێرە",
+    "no-file-selected": "هیچ فایلێک بارنەکراوە",
+
+    "meet-our-team": "<1>تیمەکەمان</1> بناسە",
+
+    "login": "چوونەژوورەوە",
+    "login-button": "چوونەژوورەوە",
+    "dont-have-account": "هەژمارت نییە؟",
+    "login-sign-up-button": "خۆت تۆمار بکە",
+    "login-with": "چوونەژوورەوە بە",
+
+    "latest-jobs": "دوایین کارەکان",
+    "full-time": "تەواو کات",
+    "part-time": "نیوە کات",
+    "remote": "دەرەکی",
+
+    "apply-job": "داواکردن"
 }

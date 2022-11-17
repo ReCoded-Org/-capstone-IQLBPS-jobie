@@ -1,10 +1,13 @@
-import React from "react";
+import { useTranslation, Trans } from "react-i18next";
 
 function WhyChooseUs() {
+  const { t } = useTranslation();
   return (
     <div className=" bg-[#f8f8f8] ">
       <h1 className="text-5xl font-inter font-semibold text-dark-gray small:text-xl medium:text-3xl">
-        Why Choose <span className="text-accent">Us?</span>
+          <Trans i18nKey="why-choose-us">
+          Why Choose <span className="text-accent">Us?</span>
+          </Trans>    
       </h1>
       <div className="flex px-40 justify-around py-12 small:grid small:grid-rows-2 small:grid-flow-col small:gap-4 small:py-6 medium:grid medium:grid-rows-2 medium:grid-flow-col medium:gap-6 medium:py-7 large:gap-6">
         <div className="flex justify-between font-inter shadow-xl px-8  py-3 w-60 h-20 rounded-2xl border-2 border-white bg-white hover:scale-105 cursor-pointer small:w-44 small:h-16 small:px-4 small:py-2">
@@ -19,9 +22,9 @@ function WhyChooseUs() {
             </svg>
           </div>
           <div className="text-left small:pl-4 large:pl-5 ">
-            <p className="text-gray-600 text-sm small:text-xs">15k Vacancies</p>
+            <p className="text-gray-600 text-sm small:text-xs">{t("n-vacancies-posted")}</p>
             <h4 className="font-semibold text-dark-gray small:text-sm ">
-              Posted
+              {t("posted")}
             </h4>
           </div>
         </div>
@@ -41,8 +44,8 @@ function WhyChooseUs() {
             </svg>
           </div>
           <div className="text-left small:pl-4 large:pl-5">
-            <p className="text-gray-600 text-sm small:text-xs">5k Vacancies</p>
-            <h4 className="font-semibold text-dark-gray">Saved</h4>
+            <p className="text-gray-600 text-sm small:text-xs">{t("n-vacancies-saved")}</p>
+            <h4 className="font-semibold text-dark-gray">{t("saved")}</h4>
           </div>
         </div>
         <div className="flex justify-between font-inter shadow-xl px-8 py-3 w-60 h-20 rounded-2xl border-2 border-white bg-white hover:scale-105 cursor-pointer small:w-44 small:h-16 small:px-4 small:py-2">
@@ -62,8 +65,8 @@ function WhyChooseUs() {
             </svg>
           </div>
           <div className="text-left small:pl-4 large:pl-5">
-            <p className="text-gray-600 text-sm small:text-xs">12k CV</p>
-            <h4 className="font-semibold text-dark-gray">Submitted</h4>
+            <p className="text-gray-600 text-sm small:text-xs">{t("n-cv")}</p>
+            <h4 className="font-semibold text-dark-gray">{t("submitted")}</h4>
           </div>
         </div>
         <div className="flex justify-between font-inter shadow-xl px-8 py-3 w-60 h-20 rounded-2xl border-2 border-white bg-white hover:scale-105 cursor-pointer small:w-44 small:h-16 small:px-4 small:py-2">
@@ -84,8 +87,8 @@ function WhyChooseUs() {
             </svg>
           </div>
           <div className="text-left small:pl-4 large:pl-5">
-            <p className="text-gray-600 text-sm small:text-xs">18k Employees</p>
-            <h4 className="font-semibold text-dark-gray">Hired</h4>
+            <p className="text-gray-600 text-sm small:text-xs">{t("n-employees")}</p>
+            <h4 className="font-semibold text-dark-gray">{t("hired")}</h4>
           </div>
         </div>
       </div>

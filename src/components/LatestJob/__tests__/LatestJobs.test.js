@@ -72,6 +72,13 @@ const header = [
   { title: "Date", id: 3 },
   { title: "", id: 4 },
 ];
+
+jest.mock("react-i18next", () => ({
+  useTranslation: () => ({ t: (key) => key }),
+  Trans: ({ children }) => children,
+}));
+
+
 it("renders Latest Jobs correctly", () => {
   const tree = renderer
     .create(<LatestJobs headers={header} data={data} />)

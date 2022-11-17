@@ -3,5 +3,52 @@
     "find-your-job" : "Find your dream job now",
     "search" : "Search",
     "hello" : "Hello",
-    "Type-to-search": "Type to search"
+    "Type-to-search": "Type to search",
+
+    "why-choose-us": "Why Choose <1> Us? </1>",
+    "n-vacancies-posted": "15K Vacancies",
+    "posted": "Posted",
+    "n-vacancies-saved": "5K vacancies",
+    "saved": "Saved",
+    "n-cv": "12K CV",
+    "submitted": "Submitted",
+    "n-employees": "18k Employees",
+    "hired": "Hired",
+
+    "sign-up": "Sign Up",
+    "sign-up-button": "Sign Up",
+    "already-have-account": "Already Have an Account?",
+    "sign-up-login-button": "Log in",
+
+    "our-collaborators": "Our <1>Collaborators</1>",
+
+
+    "nav-home": "Home",
+    "nav-about": "About",
+    "nav-roadmap": "Roadmap",
+    "nav-jobs": "Jobs",
+    "nav-contact": "Contact",
+    "nav-login": "Login",
+
+    "upload-photo": "Upload Photo",
+    "nal-delete": "Delete",
+    "resume-file": "Resume File",
+    "choose-file": "Choose",
+    "no-file-selected": "No file selected",
+
+
+    "meet-our-team": "Meet Our <1>Team</1>",
+
+    "login": "Login",
+    "login-button": "Login",
+    "dont-have-account": "Don't Have an Account?",
+    "login-sign-up-button": "Sign Up",
+    "login-with": "Login with",
+
+    "latest-jobs": "Latest Jobs",
+    "full-time": "Full Time",
+    "part-time": "Part Time",
+    "remote": "Remote",
+
+    "apply-job": "Apply"
 }

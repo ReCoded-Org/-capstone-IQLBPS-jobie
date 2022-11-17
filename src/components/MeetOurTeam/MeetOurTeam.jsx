@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { Trans } from "react-i18next";
+
 
 function MeetOurTeam({ teamMembers }) {
   const memberCard = teamMembers.map((member) => {
@@ -30,7 +32,9 @@ function MeetOurTeam({ teamMembers }) {
   return (
     <section className="bg-gray-500/5">
       <h1 className="text-5xl text-secondary text-center py-8 font-semibold">
-        Meet Our <span className="text-accent">Team</span>
+        <Trans i18nKey="meet-our-team">
+          Meet Our <span className="text-accent">Team</span>
+        </Trans>
       </h1>
       <div className="grid md:grid-cols-3 place-content-center gap-x-20 gap-y-8 px-10">
         {memberCard}
