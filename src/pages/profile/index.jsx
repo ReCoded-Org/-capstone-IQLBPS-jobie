@@ -1,16 +1,14 @@
-import Contact from "../../components/contact/Contact"
-import SaveButton from "../../components/UI/Button/SaveButton"
+import Contact from "../../components/Contact/Contact"
+import NameAndLinks from "../../components/NameAndLinks/NameAndLinks"
+import UserProfile from "../../components/UserProfile/UserProfile"
+import {users} from "../../data/usersData"
 
-function ProfilePage({ userData }){
+function ProfilePage(){
     return(
-        <div className="flex flex-col align-items-center">
-         <img 
-         className="rounded-full scale-50"
-         src={userData.src} 
-         alt={userData.name}/>
-         <h1 className="text-3xl"> {userData.name} </h1>
+        <div className="flex flex-col align-items-center bg-gray-500/5">
+         <NameAndLinks/>
+         <UserProfile users={users}/>
          <Contact/>
-         <SaveButton/>
         </div>
     );
 }

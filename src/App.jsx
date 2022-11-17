@@ -6,12 +6,14 @@ import SignUp from "./components/signup/SignUp";
 import Login from "./components/Login/Login";
 import AboutPage from "./pages/about-us";
 import ProfilePage from "./pages/profile";
-import {userData} from "./data/userData"
+import Index from "./pages/index";
+// import NavBarUpdate from "./components/Navbar/NavBarUpdate"
 
 function App() {
   return (
     <div>
       <Navbar />
+      {/* <NavBarUpdate/> */}
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/sign-up" element={<SignUp />} />
@@ -21,6 +23,7 @@ function App() {
         <Route path="/jobs" element={<h1>jobs page</h1>} />
         <Route path="/contact" element={<h1>contact us page</h1>} />
       </Routes>
+      <ProfilePage/>
     </div>
   );
 }

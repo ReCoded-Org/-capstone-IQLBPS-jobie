@@ -11,7 +11,7 @@ function DropDown() {
       <div>
         <Menu.Button
           data-testid="filter-botton-toggle"
-          className="bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-9 mx-4 rounded-full"
+          className="bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-5 mx-3 rounded-full"
         >
           {" "}
           Account
@@ -27,7 +27,7 @@ function DropDown() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute left-0 md:right-0 z-10 mt-2 w-40 origin-center md:origin-top-right rounded-md bg-accent shadow-lg ring-1 ring-white ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute md:right-0 z-10 mt-2 w-40 origin-center md:origin-top-right rounded-md bg-accent shadow-lg ring-1 ring-white ring-opacity-5 focus:outline-none">
           <div>
             <Menu.Item>
               {({ active }) => (

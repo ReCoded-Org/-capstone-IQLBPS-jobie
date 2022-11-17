@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className=" bg-[#f8f8f8] flex justify-around items-center pt-20 pb-10 px-32 small:px-14 small:py-5 medium:py-6 medium:px-16 large:py-8 large:px-18">
-      <div className="flex justify-start flex-col">
-        <h1 className="text-3xl text-dark-gray small:text-xl">Contact</h1>
+    <div className="ml-9 flex flex-col md:flex-row justify-start pt-20 pb-10 px-32 small:px-14 small:py-5 medium:py-6 medium:px-16 large:py-8 large:px-18">
+      <div className="flex justify-start m-5 pr-10 flex-col">
+        <h1 className="text-3xl text-dark-gray font-semibold small:text-xl">Contact</h1>
         <div className="flex  justify-center  flex-col pt-4 ">
           <div className="pb-3 flex">
             <svg
@@ -50,8 +50,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div>
-        <h1 className="text-3xl text-dark-gray pb-3 small:text-xl">Skills</h1>
+      <div className="m-5 ml-9">
+        <h1 className="text-3xl font-semibold text-dark-gray lg:pb-3 small:text-xl">Skills</h1>
         <div>
           <ul>
             <li>HTML</li>
