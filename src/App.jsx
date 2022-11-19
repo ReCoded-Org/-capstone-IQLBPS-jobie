@@ -1,5 +1,9 @@
-import React from "react";
+/* eslint-disable no-console */
+import { React, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
+import { signup, selectUser, signout } from "./features/user/userSlice";
+import { auth, onAuthStateChanged } from "./firebase";
 import Hero from "./components/Hero/Hero";
 import AboutHero from "./components/aboutHero/AboutHero";
 import Localize from "./Localize";
@@ -9,7 +13,7 @@ import WyChooseUs from "./components/whyChooseUs/WhyChooseUs";
 import CompanyShowcaseComponent from "./components/companyShowcaseComponent/CompanyShowcaseComponent";
 import { showCaseData } from "./data/showCaseData";
 import FilterResults from "./components/FilterResults/FilterResults";
-import {filterData} from "./data/filterData"
+import { filterData } from "./data/filterData";
 import "./App.css";
 import JobsShowcase from "./components/JobsShowcase/JobsShowcase";
 import { showcaseData } from "./data";
@@ -21,6 +25,9 @@ import HowItWorks from "./components/About/HowItWorks/HowItWorks";
 import OurCollaborators from "./components/OurCollaborators/OurCollaborators";
 import JobsFinder from "./components/Hero/JobsFinder";
 import RoadMaps from "./components/Roadmaps/RoadMaps";
+import SignUp from "./components/signup/SignUp";
+import SignOut from "./components/signup/SignOut";
+import Login from "./components/Login/Login";
 
 const data = [
   {
@@ -95,10 +102,44 @@ const header = [
 ];
 
 function App() {
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    onAuthStateChanged(auth, (userAuth) => {
+      if (userAuth) {
+        // user is logged in
+        dispatch(
+          signup({
+            email: userAuth.email,
+            uid: userAuth.uid,
+            fullname: userAuth.fullname,
+            password: userAuth.password,
+          })
+        );
+      } else {
+        dispatch(signout());
+      }
+    });
+  }, []);
+
+  console.log("page loaded");
+
   const { t } = useTranslation();
   return (
     <div>
-      <FilterResults filterData={filterData}/>
+      <SignOut />
+      {!user ? (
+        <SignUp />
+      ) : (
+        <div>
+          <div>
+            <h1>Hello {user.fullname}!</h1>
+            <p>{user.email}</p>
+          </div>
+        </div>
+      )}
+      <Login />
+      <FilterResults filterData={filterData} />
       <RoadMaps />
       <Hero />
       <AboutHero />
