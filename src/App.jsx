@@ -8,7 +8,7 @@ import AboutPage from "./pages/about-us";
 import Index from "./pages/index";
 import UserProfile from "./components/UserProfile/UserProfile";
 import { users } from "./data/usersData";
-
+import NameAndLinksdesign from "./components/NameAndLinks/Nameandlinksdesign";
 function App() {
   return (
     <div>
@@ -23,6 +23,7 @@ function App() {
         <Route path="/contact" element={<h1>contact us page</h1>} />
       </Routes>
       <UserProfile users={users} />
+      <NameAndLinksdesign/>
     </div>
   );
 }
