@@ -1,7 +1,7 @@
 function Profile({ users }) {
   const work = users.map((user) => {
     return (
-      <div className="text-lg  flex justify-center font-bold bg-[#f8f8f8]">
+      <div className="text-lg flex justify-center font-bold">
         <ul key={user.work}>
           <li key={user.work.Company}>
             Company:{" "}
@@ -46,7 +46,7 @@ function Profile({ users }) {
 
   const education = users.map((user) => {
     return (
-      <div className="text-lg  flex justify-center font-bold bg-[#f8f8f8]">
+      <div className="text-lg flex justify-center font-bold">
         <ul key={user.education}>
           <li key={user.education.University}>
             University:{" "}
@@ -75,14 +75,14 @@ function Profile({ users }) {
 
   return (
     <>
-      <h1 className="text-lg  flex justify-left  font-bold font-weight: 700 bg-[#f8f8f8]">
+      <h1 className="pl-40  small:pl-10   text-4xl text-dark-gray md:text-5xl lg:text-6x  font-weight: 700">
         User Profile
       </h1>
-      <h2 className="text-lg  flex justify-left font-bold bg-[#f8f8f8]">
+      <h2 className="md:pl-44  pl-12 text-2xl font-semibold md:m-5">
         Work Experience
       </h2>
       {work}
-      <h2 className="text-lg  flex justify-left font-bold bg-[#f8f8f8]">
+      <h2 className="md:pl-44  pl-12 text-2xl font-semibold md:m-5">
         Education
       </h2>
       {education}
