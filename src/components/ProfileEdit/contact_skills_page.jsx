@@ -16,9 +16,9 @@ function SocialSection({ props }) {
     <div className="flex flex-col h-96 py-10 bg-gray-200 content-start items-start">
       <h2 className="text-4xl py-12 small:pl-10 px-60 ">{props.name}</h2>
       <div className=" justify-start flex  flex-wrap ">
-        {formComponent({ props: { hint: 'Linkedin', name: 'Linkedin' } })}
-        {formComponent({ props: { hint: 'Github', name: 'Github' } })}
-        {formComponent({ props: { hint: 'Facebook', name: 'Facebook' } })}
+        {formComponent({ props: { hint: "Linkedin", name: "Linkedin" } })}
+        {formComponent({ props: { hint: "Github", name: "Github" } })}
+        {formComponent({ props: { hint: "Facebook", name: "Facebook" } })}
       </div>
     </div>
   );
@@ -29,11 +29,11 @@ function ContactSection({ props }) {
     <div className="flex  flex-col h-96 bg-gray-200 content-start items-start ">
       <h2 className="text-4xl py-12 small:pl-10 px-60 ">{props.name}</h2>
       <div className=" justify-start flex flex-wrap">
-        {formComponent({ props: { hint: 'E.g Duhok', name: 'Location' } })}
+        {formComponent({ props: { hint: "E.g Duhok", name: "Location" } })}
         {formComponent({
-          props: { hint: 'E.g shady97@gmail.com', name: 'Email' },
+          props: { hint: "E.g shady97@gmail.com", name: "Email" },
         })}
-        {formComponent({ props: { hint: '+964 750 111 1111', name: 'Phone' } })}
+        {formComponent({ props: { hint: "+964 750 111 1111", name: "Phone" } })}
       </div>
     </div>
   );
@@ -45,9 +45,9 @@ function SkillsSection({ props }) {
       <div className=" justify-start flex flex-wrap  ">
         {formComponent({
           props: {
-            hint: 'Skills',
-            name: 'Skills',
-            desc: 'Add skills as commas perated values.',
+            hint: "Skills",
+            name: "Skills",
+            desc: "Add skills as commas perated values.",
           },
         })}
       </div>
@@ -58,9 +58,9 @@ function SkillsSection({ props }) {
 function ContactSkills() {
   return (
     <div>
-      {ContactSection({ props: { name: 'Contact' } })}
-      {SocialSection({ props: { name: 'Social' } })}
-      {SkillsSection({ props: { name: 'Skills' } })}
+      {ContactSection({ props: { name: "Contact" } })}
+      {SocialSection({ props: { name: "Social" } })}
+      {SkillsSection({ props: { name: "Skills" } })}
     </div>
   );
 }

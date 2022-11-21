@@ -5,22 +5,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
   faGlobe,
-  faBars,
+  faCaretDown,
 } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import Button from "./Button";
+import Dropdown from "./DropDown";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   let Links = [
     { name: "Home", link: "/" },
-    { name: "About", link: "/" },
-    { name: "Roadmap", link: "/" },
-    { name: "Jobs", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "About", link: "/about-us" },
+    { name: "Roadmap", link: "/roadmap" },
+    { name: "Jobs", link: "/jobs" },
+    { name: "Contact", link: "/contact" },
   ];
-
+  const isAuthenticated = true;
   let [open, setOpen] = useState(false);
-
+  const [openDropDown, setOpenDropDown] = useState(false);
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
@@ -43,12 +45,12 @@ const Navbar = () => {
         >
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
-              <a
-                href={link.link}
+              <Link
+                to={link.link}
                 className="text-gray-800 hover:text-gray-400 duration-500"
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
 
@@ -63,8 +65,7 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </button>
           </div>
-
-          <Button>Login</Button>
+          {isAuthenticated ? <Dropdown /> : <Button>Login</Button>}
         </ul>
       </div>
     </div>
