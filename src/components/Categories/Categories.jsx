@@ -1,4 +1,7 @@
+import {useTranslation} from "react-i18next";
+
 function Categories() {
+  const {t} = useTranslation();
   return (
     <div className="grid grid-cols-4 gap-4 px-56 pt-20 pb-20 small:grid-cols-2 small:gap-x-6 small:px-12 medium:grid-cols-3 medium:px-2">
       <div>
@@ -19,10 +22,10 @@ function Categories() {
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
             {" "}
-            Design
+            {t('design-category')}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            67 Job Vacancies
+            {t('design-vacancies')}
           </p>
         </div>
       </div>
@@ -46,10 +49,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
-            Frontend
+            {t('frontend')}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            180 Job Vacancies
+            {t('frontend-vacancies')}
           </p>
         </div>
       </div>
@@ -71,10 +74,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base ">
-            Backend
+            {t('backend')}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            223 Job Vacancies
+            {t('backend-vacancies')}
           </p>
         </div>
       </div>
@@ -102,10 +105,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl  small:text-base">
-            Web Developer
+            {t('web-developer')}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            445 Job Vacancies
+            {t('web-vacancies')}
           </p>
         </div>
       </div>
@@ -128,10 +131,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
-            Network
+            {t('network')}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            321 Job Vacancies
+            {t('network-vacancies')}
           </p>
         </div>
       </div>
@@ -149,10 +152,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
-            Project Manager
+            {t('project-manager')}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            635 Job Vacancies
+            {t('pmanager-vacancies')}
           </p>
         </div>
       </div>
@@ -174,10 +177,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
-            Data Analytics
+            {t('data-analystics')}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            342 Job Vacancies
+            {t('analyst-vacancies')}
           </p>
         </div>
       </div>
@@ -187,7 +190,7 @@ function Categories() {
           className="text-2xl pr-2 font-semibold small:text-lg medium:xl"
           type="button"
         >
-          View All Categories
+          {t('view-all-categories')}
         </button>
         <span>
           <svg

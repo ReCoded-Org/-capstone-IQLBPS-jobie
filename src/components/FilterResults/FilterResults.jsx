@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
+import { useTranslation} from "react-i18next";
 import FilterButton from "./FilterButton";
 
 function FilterResults({ filterData }) {
@@ -62,17 +63,21 @@ function FilterResults({ filterData }) {
       </div>
     );
   });
+  const {t} = useTranslation();
   return (
     <div className="bg-gray-500/5">
       <div className="flex justify-between">
         <h2 className="ml-5 mt-5 text-lg">
           {" "}
-          Total{" "}
+          {t('total')}{" "}
+          
           <span className="text-accent font-semibold">
             {" "}
             {filterData.length}{" "}
+            
           </span>
-          Results
+          {t('results')}
+         
         </h2>
         <FilterButton handleChange={handleChange} />
       </div>

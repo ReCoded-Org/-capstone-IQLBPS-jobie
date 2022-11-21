@@ -101,7 +101,7 @@ function App() {
     <div>
       <FilterResults filterData={filterData}/>
       <RoadMaps />
-      <Hero />
+      
       <AboutHero />
       <JobsFinder />
       <OurCollaborators showCaseData={showCaseData} />
