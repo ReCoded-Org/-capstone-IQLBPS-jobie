@@ -10,6 +10,8 @@ import {
 import React, { useState } from "react";
 import Button from "./Button";
 import Dropdown from "./DropDown";
+import { useTranslation } from "react-i18next";
+
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -23,6 +25,14 @@ const Navbar = () => {
   const isAuthenticated = true;
   let [open, setOpen] = useState(false);
   const [openDropDown, setOpenDropDown] = useState(false);
+  const [isEnglish, setIsEnglish] = useState(true);
+
+  const { i18n } = useTranslation();
+
+  const handleTranslate = () => {
+    setIsEnglish(!isEnglish);
+    i18n.changeLanguage(isEnglish ? "en" : "ar");
+  };
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
@@ -54,7 +64,10 @@ const Navbar = () => {
             </li>
           ))}
 
-          <FontAwesomeIcon icon={faGlobe} className="mx-5" />
+          <span onClick={handleTranslate} className="mx-3">
+            <FontAwesomeIcon icon={faGlobe} className="mx-1" />
+            {isEnglish ? "En" : "Ku"}
+          </span>
           <div className="w-60 flex items-center md: flex ">
             <input
               type="text"
