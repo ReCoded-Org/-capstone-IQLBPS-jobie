@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Company Showcase Component correctly 1`] = `
+exports[`renders FilterResults Component correctly 1`] = `
 <div
-  className="bg-gray-500/5"
+  className="bg-gray-100 w-full ml-5"
 >
   <div
     className="flex justify-between"
@@ -14,12 +14,8 @@ exports[`renders Company Showcase Component correctly 1`] = `
       Total
        
       <span
-        className="text-accent font-semibold"
-      >
-         
-        7
-         
-      </span>
+        className="text-accent mr-1 font-semibold"
+      />
       Results
     </h2>
     <div

@@ -1,41 +1,29 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import FilterButton from "./FilterButton";
-import { filterData } from "../../data/filterData";
 
 function FilterResults({ setData, data }) {
-  console.log(data);
-  console.log(setData);
-
-  //  console.log(newArray)
-
   const handleChange = (props) => {
     const newArray = data?.map((key) => ({
       ...key,
       date: new Date(key.postingDate),
     }));
-    // console.log(props)
     if (props === "newest") {
       const sortingDataByNewest = newArray.sort((a, b) => b.date - a.date);
-      // console.log('newest newArray', sortingDataByNewest)
       setData(sortingDataByNewest);
     } else {
       const sortingDataByOldest = newArray.sort((a, b) => a.date - b.date);
-      // console.log('oldest data', sortingDataByOldest)
       setData(sortingDataByOldest);
     }
   };
 
   return (
-    <div className="bg-gray-500/5">
+    <div className="bg-gray-100 w-full ml-5">
       <div className="flex justify-between">
         <h2 className="ml-5 mt-5 text-lg">
           {" "}
           Total{" "}
-          <span className="text-accent font-semibold">
-            {" "}
-            {filterData.length}{" "}
-          </span>
+          <span className="text-accent mr-1 font-semibold">{data?.length}</span>
           Results
         </h2>
         <FilterButton handleChange={handleChange} />
@@ -59,7 +47,7 @@ function FilterResults({ setData, data }) {
                   {job.jobModel}
                 </h2>
                 <h2 className="order-6  font-semibold md:font-semibold md:mt-3 md:order-4 ">
-                  {job.salary}
+                  ${job.minSalary} - ${job.maxSalary}
                 </h2>
                 <FontAwesomeIcon
                   className="order-3 md:mt-3 md:order-5"
