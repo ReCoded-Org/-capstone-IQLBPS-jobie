@@ -6,8 +6,8 @@ import SignUp from "./components/signup/SignUp";
 import Login from "./components/Login/Login";
 import AboutPage from "./pages/about-us";
 import Index from "./pages/index";
-import UserProfile from "./components/UserProfile/UserProfile";
-import { users } from "./data/usersData";
+import Footer from "./components/Footer/Footer";
+import CombiningFilterComponents from "./components/CombiningComponents/CombiningFilterComponents";
 
 function App() {
   return (
@@ -18,11 +18,11 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about-us" element={<AboutPage />} />
-        <Route path="/roadmap" element={<h1>Roadmap page</h1>} />
-        <Route path="/jobs" element={<h1>jobs page</h1>} />
+        <Route path="/roadmap" element={<h1>roadmap page</h1>} />
+        <Route path="/jobs" element={<CombiningFilterComponents />} />
         <Route path="/contact" element={<h1>contact us page</h1>} />
       </Routes>
-      <UserProfile users={users} />
+      <Footer />
     </div>
   );
 }
