@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
 function DropDown() {
   return (
@@ -40,7 +41,9 @@ function DropDown() {
                       : "text-black-500"
                   }`}
                 >
-                  <h3>View Profile</h3>
+                  <Link to="/profile">
+                    <h3>View Profile</h3>
+                  </Link>
                 </div>
               )}
             </Menu.Item>
@@ -55,7 +58,9 @@ function DropDown() {
                       : "text-black-500"
                   }`}
                 >
-                  <h3>Edit Profile</h3>
+                  <Link to="/profile-edit">
+                    <h3>Edit Profile</h3>
+                  </Link>
                 </div>
               )}
             </Menu.Item>
