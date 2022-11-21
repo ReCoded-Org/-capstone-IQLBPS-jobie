@@ -21,9 +21,9 @@ import "./App.css";
 // import OurCollaborators from "./components/OurCollaborators/OurCollaborators";
 // import JobsFinder from "./components/Hero/JobsFinder";
 // import RoadMaps from "./components/Roadmaps/RoadMaps";
-
-import Navbar from "./components/Navbar/Navbar"
-import Roadmaps  from "./pages/roadmaps";
+    import Roadmaps from  "./pages/roadmaps"
+    import Navbar from "./components/Navbar/Navbar"
+   
 
 // const data = [
 //   {
@@ -120,8 +120,9 @@ function App() {
       <WyChooseUs />
       <Experience />
       <Education /> */}
-      <Navbar />
-      <Roadmaps />
+        <Navbar />
+        <Roadmaps />
+    
     </div>
   );
 }
