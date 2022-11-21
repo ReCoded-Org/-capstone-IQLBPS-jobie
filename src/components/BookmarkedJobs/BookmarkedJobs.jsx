@@ -85,6 +85,7 @@ className="w-5 h-5 fill-green-600 medium:w-4 medium:h-4 small:w-3 small:h-3"
       </div>
         );
       })}
+
     </div>
   );
 }
