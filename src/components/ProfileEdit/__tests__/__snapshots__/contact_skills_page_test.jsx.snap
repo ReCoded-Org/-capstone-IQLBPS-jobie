@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div>
+  <div
+    className="flex  flex-col h-96 bg-gray-200 content-start items-start "
+  >
+    <h2
+      className="text-4xl py-12 small:pl-10 px-60 "
+    >
+      Contact
+    </h2>
+    <div
+      className=" justify-start flex flex-wrap"
+    >
+      <div
+        className="flex small:pl-10 px-60 flex-col   w-80 items-start w-100 "
+      >
+        <h6
+          className="py-2"
+        >
+          Location
+        </h6>
+        <dt
+          className="pb-4 whitespace-nowrap"
+        />
+        <input
+          className="px-4 placeholder:text-xs  bg-gray-100 w-60 h-12 max-h-screen rounded-xl"
+          placeholder="E.g Duhok"
+        />
+      </div>
+      <div
+        className="flex small:pl-10 px-60 flex-col   w-80 items-start w-100 "
+      >
+        <h6
+          className="py-2"
+        >
+          Email
+        </h6>
+        <dt
+          className="pb-4 whitespace-nowrap"
+        />
+        <input
+          className="px-4 placeholder:text-xs  bg-gray-100 w-60 h-12 max-h-screen rounded-xl"
+          placeholder="E.g shady97@gmail.com"
+        />
+      </div>
+      <div
+        className="flex small:pl-10 px-60 flex-col   w-80 items-start w-100 "
+      >
+        <h6
+          className="py-2"
+        >
+          Phone
+        </h6>
+        <dt
+          className="pb-4 whitespace-nowrap"
+        />
+        <input
+          className="px-4 placeholder:text-xs  bg-gray-100 w-60 h-12 max-h-screen rounded-xl"
+          placeholder="+964 750 111 1111"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="flex flex-col h-96 py-10 bg-gray-200 content-start items-start"
+  >
+    <h2
+      className="text-4xl py-12 small:pl-10 px-60 "
+    >
+      Social
+    </h2>
+    <div
+      className=" justify-start flex  flex-wrap "
+    >
+      <div
+        className="flex small:pl-10 px-60 flex-col   w-80 items-start w-100 "
+      >
+        <h6
+          className="py-2"
+        >
+          Linkedin
+        </h6>
+        <dt
+          className="pb-4 whitespace-nowrap"
+        />
+        <input
+          className="px-4 placeholder:text-xs  bg-gray-100 w-60 h-12 max-h-screen rounded-xl"
+          placeholder="Linkedin"
+        />
+      </div>
+      <div
+        className="flex small:pl-10 px-60 flex-col   w-80 items-start w-100 "
+      >
+        <h6
+          className="py-2"
+        >
+          Github
+        </h6>
+        <dt
+          className="pb-4 whitespace-nowrap"
+        />
+        <input
+          className="px-4 placeholder:text-xs  bg-gray-100 w-60 h-12 max-h-screen rounded-xl"
+          placeholder="Github"
+        />
+      </div>
+      <div
+        className="flex small:pl-10 px-60 flex-col   w-80 items-start w-100 "
+      >
+        <h6
+          className="py-2"
+        >
+          Facebook
+        </h6>
+        <dt
+          className="pb-4 whitespace-nowrap"
+        />
+        <input
+          className="px-4 placeholder:text-xs  bg-gray-100 w-60 h-12 max-h-screen rounded-xl"
+          placeholder="Facebook"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="flex flex-col h-96 py-24 bg-gray-200 content-start items-start"
+  >
+    <h2
+      className="text-4xl py-12 small:pl-10 px-60 "
+    >
+      Skills
+    </h2>
+    <div
+      className=" justify-start flex flex-wrap  "
+    >
+      <div
+        className="flex small:pl-10 px-60 flex-col   w-80 items-start w-100 "
+      >
+        <h6
+          className="py-2"
+        >
+          Skills
+        </h6>
+        <dt
+          className="pb-4 whitespace-nowrap"
+        >
+          Add skills as commas perated values.
+        </dt>
+        <input
+          className="px-4 placeholder:text-xs  bg-gray-100 w-60 h-12 max-h-screen rounded-xl"
+          placeholder="Skills"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
