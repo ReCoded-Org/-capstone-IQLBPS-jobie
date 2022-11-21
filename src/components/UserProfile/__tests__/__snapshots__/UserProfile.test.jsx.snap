@@ -3,17 +3,17 @@
 exports[`renders Users Profile Component correctly 1`] = `
 Array [
   <h1
-    className="text-lg  flex justify-left  font-bold font-weight: 700 bg-[#f8f8f8]"
+    className="pl-40  small:pl-10   text-4xl text-dark-gray md:text-5xl lg:text-6x  font-weight: 700"
   >
     User Profile
   </h1>,
   <h2
-    className="text-lg  flex justify-left font-bold bg-[#f8f8f8]"
+    className="md:pl-44  pl-12 text-2xl font-semibold md:m-5"
   >
     Work Experience
   </h2>,
   <div
-    className="text-lg  flex justify-center font-bold bg-[#f8f8f8]"
+    className="text-lg flex justify-center font-bold"
   >
     <ul>
       <li>
@@ -71,12 +71,12 @@ Array [
     </ul>
   </div>,
   <h2
-    className="text-lg  flex justify-left font-bold bg-[#f8f8f8]"
+    className="md:pl-44  pl-12 text-2xl font-semibold md:m-5"
   >
     Education
   </h2>,
   <div
-    className="text-lg  flex justify-center font-bold bg-[#f8f8f8]"
+    className="text-lg flex justify-center font-bold"
   >
     <ul>
       <li>
