@@ -13,6 +13,7 @@ import Index from "./pages/index";
 import Footer from "./components/Footer/Footer";
 import CombiningFilterComponents from "./components/CombiningComponents/CombiningFilterComponents";
 import SignOut from "./components/signup/SignOut";
+import RoadMaps from "./pages/roadmaps";
 
 function App() {
   const user = useSelector(selectUser);
@@ -43,7 +44,7 @@ function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about-us" element={<AboutPage />} />
-        <Route path="/roadmap" element={<h1>roadmap page</h1>} />
+        <Route path="/roadmap" element={<RoadMaps />} />
         <Route path="/jobs" element={<CombiningFilterComponents />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/profile-edit" element={<h1>profile edit page</h1>} />
