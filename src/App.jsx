@@ -38,18 +38,8 @@ function App() {
     <div>
       <Navbar />
       <SignOut />
-      {!user ? (
-        <SignUp />
-      ) : (
-        <div>
-          <div>
-            <h1>Hello {user.fullname}!</h1>
-            <p>{user.email}</p>
-          </div>
-        </div>
-      )}
       <Routes>
-        <Route path="/" element={<Index />} />
+        <Route path="/" element={user ? <Index /> : <SignUp />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about-us" element={<AboutPage />} />
