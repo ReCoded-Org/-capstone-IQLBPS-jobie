@@ -12,7 +12,6 @@ import ProfilePage from "./pages/profile";
 import Index from "./pages/index";
 import Footer from "./components/Footer/Footer";
 import CombiningFilterComponents from "./components/CombiningComponents/CombiningFilterComponents";
-import SignOut from "./components/signup/SignOut";
 import RoadMaps from "./pages/roadmaps";
 
 function App() {
@@ -38,7 +37,6 @@ function App() {
   return (
     <div>
       <Navbar />
-      <SignOut />
       <Routes>
         <Route path="/" element={user ? <Index /> : <SignUp />} />
         <Route path="/sign-up" element={<SignUp />} />

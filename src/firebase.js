@@ -15,6 +15,8 @@ import {
 } from "firebase/firestore";
 import {
   getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
   createUserWithEmailAndPassword,
   updateProfile,
   onAuthStateChanged,
@@ -33,9 +35,12 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const google = new GoogleAuthProvider();
 const auth = getAuth();
 
 export {
+  signInWithPopup,
+  google,
   db,
   collection,
   getDocs,

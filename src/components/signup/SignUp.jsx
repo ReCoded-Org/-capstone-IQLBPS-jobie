@@ -1,6 +1,6 @@
 /* eslint-disable no-alert */
 /* eslint-disable no-console */
-
+import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import {
@@ -48,7 +48,7 @@ function SignUp() {
   // on submiting the form console.log the data
 
   return (
-    <div className=" my-52">
+    <div className=" my-36 text-center">
       <h1 className="font-inter font-black text-2xl mb-6">Sign Up</h1>
       <div className="w-full max-w-sm mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -120,7 +120,10 @@ function SignUp() {
           <div className="mb-4">
             <p className="text-dark-gray">
               Already Have an Account?{" "}
-              <span className="font-semibold cursor-pointer">Log in</span>
+              <span className="font-semibold cursor-pointer">
+                {" "}
+                <Link to="/login">Log in</Link>{" "}
+              </span>
             </p>
           </div>
         </form>
