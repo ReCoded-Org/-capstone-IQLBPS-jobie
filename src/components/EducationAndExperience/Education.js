@@ -10,7 +10,7 @@ const Education = () => {
   }
   return (
     <div className="bg-[#d5d6d8]">
-      <div className="pt-4 pb-10">
+      <div className="pt-4 pb-10 text-center">
         <h1 className="pb-5">Education</h1>
         <button
           type="button"

@@ -12,7 +12,7 @@ const Experience = () => {
 
   return (
     <div className="bg-gray-200">
-      <div className="pt-4 pb-10">
+      <div className="pt-4 pb-10 text-center">
         <h1 className="pb-5">Work Experience</h1>
         <button
           type="button"
