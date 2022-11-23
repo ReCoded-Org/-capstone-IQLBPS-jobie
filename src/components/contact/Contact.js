@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function Contact() {
+const Contact = () => {
   return (
     <div className="ml-9 flex flex-col md:flex-row justify-start pt-20 pb-10 px-32 small:px-14 small:py-5 medium:py-6 medium:px-16 large:py-8 large:px-18">
       <div className="flex justify-start m-5 pr-10 flex-col">
@@ -67,4 +65,6 @@ export default function Contact() {
       </div>
     </div>
   );
-}
+};
+
+export default Contact;
