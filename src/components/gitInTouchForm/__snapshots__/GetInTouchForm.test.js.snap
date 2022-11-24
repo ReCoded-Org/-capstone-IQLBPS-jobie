@@ -11,7 +11,7 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
       className="text-4xl subpixel-antialiased text-slate-600 font-semibold"
     >
        
-      Get in touch
+      get-in-touch
     </h1>
     <form
       className="flex flex-col gap-3 mt-10"
@@ -31,7 +31,7 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
             <p
               className="text-left text-lg subpixel-antialiased text-slate-600 font-semibold"
             >
-              Name
+              name
                
             </p>
             <input
@@ -56,7 +56,7 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
               className="text-left text-lg subpixel-antialiased text-slate-600 font-semibold"
             >
                
-              Last name
+              last-name
                
             </p>
             <input
@@ -86,7 +86,7 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
           <p
             className="text-left text-lg subpixel-antialiased text-slate-600 font-semibold"
           >
-            Email :
+            email
           </p>
           <input
             className="px-3 py-2   border-2 border-gray-900"
@@ -175,7 +175,8 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
           />
         </svg>
         <p>
-          As Sulaimaniyah ,Iraq 
+          location
+           
         </p>
          
       </div>
@@ -197,7 +198,9 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
           />
         </svg>
         <p>
-           +964 750 113 0495 
+           
+          phone-no
+           
         </p>
          
       </div>
@@ -219,7 +222,9 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
           />
         </svg>
         <p>
-           jobie.contact@.com 
+           
+          jobie-email
+           
         </p>
          
       </div>
@@ -241,7 +246,7 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
           />
         </svg>
         <p>
-          9:00 - 17:00
+          time
         </p>
          
       </div>

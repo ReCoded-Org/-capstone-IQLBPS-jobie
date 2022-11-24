@@ -2,7 +2,7 @@ import Showcase from "./Showcase";
 
 const JobsShowcase = ({ showcaseArray }) => {
   return (
-    <div className="my-20 flex justify-center gap-x-20 flex-wrap w-screen ">
+    <div className="my-20 flex justify-center gap-x-20 flex-wrap">
       {showcaseArray.map((data) => {
         return (
           <Showcase

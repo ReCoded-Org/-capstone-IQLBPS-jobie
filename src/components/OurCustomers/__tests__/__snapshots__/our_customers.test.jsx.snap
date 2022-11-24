@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<div
+  className="flex  py-10 justify-center items-center flex-col"
+>
+  <h1
+    className=" text-4xl font-semibold text-blue-900"
+  >
+    Our Customers
+  </h1>
+  <h1
+    className=" text-2xl font-semibold text-blue-900"
+  >
+    We have helped 2,568 users to find their dream job.
+  </h1>
+  <div
+    className="w-screen h-auto  bg-white flex flex-row justify-center flex-wrap wrap"
+  >
+    <div
+      className=" flex flex-col  p-6 w-96 h-80 bg-white rounded-xl shadow-md  m-10"
+    >
+      <div
+        className="flex  items-center  flex-row justify-start"
+      >
+        <div
+          className="w-12 h-12 rounded-full "
+        >
+          <img
+            alt="error"
+            src="https://www.hotelbooqi.com/wp-content/uploads/2021/12/128-1280406_view-user-icon-png-user-circle-icon-png-300x300.png"
+          />
+        </div>
+        <div
+          className="flex flex-col"
+        >
+          <h1
+            className=" text-lg font-bold px-4"
+          >
+            Shady Bot
+          </h1>
+          <div
+            className="flex flex-col"
+          >
+            <h1
+              className=" text-lg text-blue-900 px-4"
+            >
+              DevOps @ Google
+            </h1>
+          </div>
+        </div>
+      </div>
+      <h1
+        className="py-5 text-gray-800"
+      >
+        I've been working with Jobie for a while now and I'm really happy with the service. I've found it very easy to find a job and I'm really glad that I've found it.
+      </h1>
+      <img
+        alt="error"
+        className="self-end"
+        height={64}
+        src="https://www.pngall.com/wp-content/uploads/4/Quotation-Mark-PNG-Picture.png"
+        width={64}
+      />
+    </div>
+    <div
+      className=" flex flex-col  p-6 w-96 h-80 bg-white rounded-xl shadow-md  m-10"
+    >
+      <div
+        className="flex  items-center  flex-row justify-start"
+      >
+        <div
+          className="w-12 h-12 rounded-full "
+        >
+          <img
+            alt="error"
+            src="https://www.hotelbooqi.com/wp-content/uploads/2021/12/128-1280406_view-user-icon-png-user-circle-icon-png-300x300.png"
+          />
+        </div>
+        <div
+          className="flex flex-col"
+        >
+          <h1
+            className=" text-lg font-bold px-4"
+          >
+            Shady Bot
+          </h1>
+          <div
+            className="flex flex-col"
+          >
+            <h1
+              className=" text-lg text-blue-900 px-4"
+            >
+              DevOps @ Google
+            </h1>
+          </div>
+        </div>
+      </div>
+      <h1
+        className="py-5 text-gray-800"
+      >
+        I've been working with Jobie for a while now and I'm really happy with the service. I've found it very easy to find a job and I'm really glad that I've found it.
+      </h1>
+      <img
+        alt="error"
+        className="self-end"
+        height={64}
+        src="https://www.pngall.com/wp-content/uploads/4/Quotation-Mark-PNG-Picture.png"
+        width={64}
+      />
+    </div>
+    <div
+      className=" flex flex-col  p-6 w-96 h-80 bg-white rounded-xl shadow-md  m-10"
+    >
+      <div
+        className="flex  items-center  flex-row justify-start"
+      >
+        <div
+          className="w-12 h-12 rounded-full "
+        >
+          <img
+            alt="error"
+            src="https://www.hotelbooqi.com/wp-content/uploads/2021/12/128-1280406_view-user-icon-png-user-circle-icon-png-300x300.png"
+          />
+        </div>
+        <div
+          className="flex flex-col"
+        >
+          <h1
+            className=" text-lg font-bold px-4"
+          >
+            Shady Bot
+          </h1>
+          <div
+            className="flex flex-col"
+          >
+            <h1
+              className=" text-lg text-blue-900 px-4"
+            >
+              DevOps @ Google
+            </h1>
+          </div>
+        </div>
+      </div>
+      <h1
+        className="py-5 text-gray-800"
+      >
+        I've been working with Jobie for a while now and I'm really happy with the service. I've found it very easy to find a job and I'm really glad that I've found it.
+      </h1>
+      <img
+        alt="error"
+        className="self-end"
+        height={64}
+        src="https://www.pngall.com/wp-content/uploads/4/Quotation-Mark-PNG-Picture.png"
+        width={64}
+      />
+    </div>
+  </div>
+</div>
+`;

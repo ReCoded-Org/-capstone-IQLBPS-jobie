@@ -6,7 +6,7 @@ function Hero() {
     <div className="bg-dark-gray flex justify-around items-center px-32 small:px-14 small:py-5 medium:py-6 medium:px-16 large:py-8 large:px-18">
       <div className="text-left">
         <h1 className="text-white text-5xl leading-snug font-semibold font-inter small:text-lg medium:text-3xl large:text-4xl">
-          <Trans i18nKey="no-of-jobs"> 
+          <Trans i18nKey="no-of-jobs">
             10,254 Jobs <br />
             Are Listed Here!
           </Trans>

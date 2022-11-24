@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component Footer Column when there are multiple items 1`] = `
+<div>
+  <p
+    className="font-medium text-white opacity-30"
+  >
+    Title
+  </p>
+  <nav
+    aria-label="Footer Nav"
+    className="mt-3 flex flex-col space-y-1 text-sm small:text-base text-white"
+  >
+    <a
+      className="hover:opacity-75"
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      className="hover:opacity-75"
+      href="/About_Us"
+      onClick={[Function]}
+    >
+      About Us
+    </a>
+  </nav>
+</div>
+`;
