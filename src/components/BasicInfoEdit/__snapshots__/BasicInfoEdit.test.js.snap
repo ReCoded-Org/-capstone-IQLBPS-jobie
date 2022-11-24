@@ -7,7 +7,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
   <h1
     className="text-2xl text-left ml-48 mt-24 small:ml-16 medium:ml-24"
   >
-    Basic Info
+    basic-info
   </h1>
   <form
     action="#"
@@ -29,7 +29,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
               className="block text-sm font-medium text-gray-700"
               htmlFor="first-name"
             >
-              First Name
+              first-Name
             </label>
             <input
               autoComplete="given-name"
@@ -47,7 +47,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
               className="block text-sm font-medium text-gray-700"
               htmlFor="last-name"
             >
-              Last Name
+              last-name
             </label>
             <input
               autoComplete="family-name"
@@ -65,7 +65,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
               className="block text-sm font-medium text-gray-700"
               htmlFor="Title"
             >
-              Title
+              title
             </label>
             <input
               autoComplete="given-name"
@@ -82,7 +82,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
               className="block text-left text-sm font-medium text-gray-700"
               htmlFor="Biography"
             >
-              Biography
+              biography
             </label>
             <textarea
               className=" h-24 w-full mt-1 block rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"

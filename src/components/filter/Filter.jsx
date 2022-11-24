@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Filter = ({ setData, filterData }) => {
+  const { t } = useTranslation();
   // obtaining min and max values for salary range from filterData.js to be set as initial states //
   const minSalaryArray = filterData.map((item) => item.minSalary);
   const minSalaryValue = Math.min(...minSalaryArray);
@@ -116,12 +118,14 @@ const Filter = ({ setData, filterData }) => {
   return (
     <div className="flex ">
       <div className="bg-gray-200 h-screen p-5 flex flex-col items-center">
-        <h2 className="text-secondary font-bold text-3xl">Filter</h2>
+        <h2 className="text-secondary font-bold text-3xl">{t("filter")}</h2>
 
         {/* SALARY */}
         <div className="salary pl-3">
           <div className="flex space-between pt-3 pb-3 text-center">
-            <h6 className="text-secondary  font-bold text-xl">Salary Range</h6>
+            <h6 className="text-secondary  font-bold text-xl">
+              {t("salary-range")}
+            </h6>
             <img
               src="/assets/filterComponent/dropdown-svgrepo-com.svg"
               alt=""
@@ -129,9 +133,11 @@ const Filter = ({ setData, filterData }) => {
           </div>
           <div className="  inputs grid-cols-2 grid-rows-2 gap-y-2 inline-grid pb-3  gap-x-20  ">
             <p className="text-secondary text-left font-semibold text-l ">
-              From
+              {t("from")}
             </p>
-            <p className="text-secondary text-left font-semibold text-l">To</p>
+            <p className="text-secondary text-left font-semibold text-l">
+              {t("to")}
+            </p>
             <input
               type="text"
               className="w-20 rounded-md"
@@ -157,7 +163,7 @@ const Filter = ({ setData, filterData }) => {
         {/* LOCATION */}
         <div className="location overflow-visible pb-3 pt-3">
           <h6 className="text-secondary pb-3 text-left font-bold text-xl">
-            Location
+            {t("location")}
           </h6>
           <div className="relative inline-block text-left">
             <div>
@@ -179,13 +185,13 @@ const Filter = ({ setData, filterData }) => {
                   value={filter.location}
                   onChange={(e) => locationHandler(e)}
                 >
-                  <option>Choose a location</option>
-                  <option>Iraq</option>
-                  <option>Jordan</option>
-                  <option>Yemen</option>
-                  <option>Syria</option>
-                  <option>Lebanon</option>
-                  <option>Kuwait</option>
+                  <option>{t("choose-all-location")}</option>
+                  <option>{t("iraq")}</option>
+                  <option>{t("jordan")}</option>
+                  <option>{t("yemen")}</option>
+                  <option>{t("syr")}</option>
+                  <option>{t("lebanon")}</option>
+                  <option>{t("turkey")}</option>
                 </select>
                 {/* </form> */}
               </div>
@@ -196,7 +202,7 @@ const Filter = ({ setData, filterData }) => {
         {/* TYPE OF EMPLOYMENT */}
         <div className="employment-type pb-3 pt-3 ">
           <h6 className="text-secondary pb-3 text-left font-bold text-xl ">
-            Type Of Employment
+            {t("type-of-employment")}
           </h6>
           <div className="relative inline-flex">
             <svg
@@ -217,10 +223,10 @@ const Filter = ({ setData, filterData }) => {
                 employmentTypeHandler(e);
               }}
             >
-              <option>Choose type</option>
-              <option>Full-time</option>
-              <option>Part-time</option>
-              <option>Freelance</option>
+              <option>{t("choose-all-employment")}</option>
+              <option>{t("full-time")}</option>
+              <option>{t("part-time")}</option>
+              <option>{t("remote")}</option>
             </select>
           </div>
         </div>
@@ -228,7 +234,7 @@ const Filter = ({ setData, filterData }) => {
         {/* CATEGORY */}
         <div className="category  pb-3 pt-3">
           <h6 className="text-secondary pb-3 text-left font-bold text-xl">
-            Category
+            {t("category")}
           </h6>
           <div className="relative inline-flex">
             <svg
@@ -249,10 +255,10 @@ const Filter = ({ setData, filterData }) => {
                 categoryHandler(e);
               }}
             >
-              <option>Choose a category</option>
-              <option>Technology</option>
-              <option>Marketing</option>
-              <option>Engineering</option>
+              <option>{t("choose-all-category")}</option>
+              <option>{t("tech")}</option>
+              <option>{t("design")}</option>
+              <option>{t("engineering")}</option>
             </select>
           </div>
         </div>
@@ -260,7 +266,7 @@ const Filter = ({ setData, filterData }) => {
         {/* EXPERIENCE */}
         <div className="experience pb-3 pt-3 ">
           <h6 className="text-secondary pb-3 text-left font-bold text-xl">
-            Work Exeperience
+            {t("work-exeperience")}
           </h6>
 
           <div className="flex flex-col text-left ">
@@ -272,7 +278,7 @@ const Filter = ({ setData, filterData }) => {
                 onClick={(e) => experienceClickHandler(e)}
               />
               <span className="text-secondary font-semibold text-l pl-2">
-                One
+                {t("one")}
               </span>
             </div>
             <div className="checkbox-container">
@@ -283,7 +289,7 @@ const Filter = ({ setData, filterData }) => {
                 onClick={(e) => experienceClickHandler(e)}
               />
               <span className="text-secondary font-semibold text-l pl-2">
-                Two
+                {t("two")}
               </span>
             </div>
             <div className="checkbox-container">
@@ -294,7 +300,7 @@ const Filter = ({ setData, filterData }) => {
                 onClick={(e) => experienceClickHandler(e)}
               />
               <span className="text-secondary font-semibold text-l pl-2">
-                Three
+                {t("three")}
               </span>
             </div>
             <div className="checkbox-container">
@@ -305,7 +311,7 @@ const Filter = ({ setData, filterData }) => {
                 onClick={(e) => experienceClickHandler(e)}
               />
               <span className="text-secondary font-semibold text-l pl-2">
-                Four+
+                {t("four+")}
               </span>
             </div>
           </div>
@@ -314,7 +320,7 @@ const Filter = ({ setData, filterData }) => {
         {/* WORK LEVEL */}
         <div className="work-level pb-3 pt-3">
           <h6 className="text-secondary pb-3  text-left font-bold text-xl">
-            Work Level
+            {t("work-level")}
           </h6>
           <div className="relative inline-flex">
             <svg
@@ -335,10 +341,10 @@ const Filter = ({ setData, filterData }) => {
                 levelHandler(e);
               }}
             >
-              <option>Choose a level</option>
-              <option>Junior</option>
-              <option>Mid</option>
-              <option>Senior</option>
+              <option>{t("choose-all-work-level")}</option>
+              <option>{t("internee")}</option>
+              <option>{t("junior")}</option>
+              <option>{t("senior")}</option>
             </select>
           </div>
         </div>
