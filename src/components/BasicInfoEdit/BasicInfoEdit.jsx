@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function BasicInfoEdit() {
+  const { t } = useTranslation();
   return (
     <div className="bg-gray-50 pt-1 pb-0">
       <h1 className="text-2xl text-left ml-48 mt-24 small:ml-16 medium:ml-24">
-        Basic Info
+        {t("basic-info")}
       </h1>
 
       <form action="#" method="POST">
@@ -17,7 +19,7 @@ function BasicInfoEdit() {
                   htmlFor="first-name"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  First Name
+                  {t("first-Name")}
                 </label>
                 <input
                   placeholder="First name"
@@ -34,7 +36,7 @@ function BasicInfoEdit() {
                   htmlFor="last-name"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Last Name
+                  {t("last-name")}
                 </label>
                 <input
                   placeholder="Last name"
@@ -51,7 +53,7 @@ function BasicInfoEdit() {
                   htmlFor="Title"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Title
+                  {t("title")}
                 </label>
                 <input
                   type="text"
@@ -67,7 +69,7 @@ function BasicInfoEdit() {
                   htmlFor="Biography"
                   className="block text-left text-sm font-medium text-gray-700"
                 >
-                  Biography
+                  {t("biography")}
                 </label>
                 <textarea
                   type="text"

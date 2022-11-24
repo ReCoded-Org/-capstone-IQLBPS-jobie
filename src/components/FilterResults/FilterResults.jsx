@@ -1,8 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
+import { useTranslation } from "react-i18next";
 import FilterButton from "./FilterButton";
 
 function FilterResults({ setData, data }) {
+  const { t } = useTranslation();
   const handleChange = (props) => {
     const newArray = data?.map((key) => ({
       ...key,
@@ -21,10 +23,9 @@ function FilterResults({ setData, data }) {
     <div className="bg-gray-100 w-full ml-5">
       <div className="flex justify-between">
         <h2 className="ml-5 mt-5 text-lg">
-          {" "}
-          Total{" "}
+          {t("total")}
           <span className="text-accent mr-1 font-semibold">{data?.length}</span>
-          Results
+          {t("results")}
         </h2>
         <FilterButton handleChange={handleChange} />
       </div>
@@ -54,13 +55,11 @@ function FilterResults({ setData, data }) {
                   icon={faBookmark}
                 />
                 <h2 className="order-8 font-semibold mb-5 md:font-normal md:order-6">
-                  {" "}
                   {job.employer}
                 </h2>
                 <h2 className="order-9 mb-5 md:order-7"> {job.jobType}</h2>
                 <h2 className="order-7 md:order-8"> {job.payFreq}</h2>
                 <h2 className="order-2 font-semibold md:font-normal md:order-9">
-                  {" "}
                   {job.postingDate}
                 </h2>
               </div>

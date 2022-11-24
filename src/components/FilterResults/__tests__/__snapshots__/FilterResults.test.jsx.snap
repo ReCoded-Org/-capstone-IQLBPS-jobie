@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders FilterResults Component correctly 1`] = `
+exports[`renders Company Showcase Component correctly 1`] = `
 <div
   className="bg-gray-100 w-full ml-5"
 >
@@ -10,13 +10,11 @@ exports[`renders FilterResults Component correctly 1`] = `
     <h2
       className="ml-5 mt-5 text-lg"
     >
-       
-      Total
-       
+      total
       <span
         className="text-accent mr-1 font-semibold"
       />
-      Results
+      results
     </h2>
     <div
       className="relative inline-block text-left"
@@ -37,7 +35,7 @@ exports[`renders FilterResults Component correctly 1`] = `
           type="button"
         >
            
-          Sort results by
+          sort-results-by
         </button>
       </div>
     </div>
