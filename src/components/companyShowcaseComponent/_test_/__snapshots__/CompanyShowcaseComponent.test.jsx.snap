@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Company Showcase Component correctly 1`] = `
+<section
+  className="flex flex-col bg-gray-500/5 justify-center items-center"
+>
+  <h2
+    className=" font-inter text-center text-blue-900 font-semibold  text-xs mt-5 mb-8 md:text-2xl"
+  />
+  <div
+    className="grid grid-cols-5 grid-rows-2 gap-x-5 place-content-center items-center w-4/6"
+  >
+    <a
+      className="w-50"
+      href="https://www.facebook.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="facebooks logo"
+        className="hover:scale-75"
+        src="/assets/company-showcase-component-assets/facebook.png"
+      />
+    </a>
+    <a
+      className="w-50"
+      href="https://www.amazon.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="amazons logo"
+        className="hover:scale-75"
+        src="/assets/company-showcase-component-assets/amazon.png"
+      />
+    </a>
+    <a
+      className="w-50"
+      href="https://www.microsoft.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="microsofts logo"
+        className="hover:scale-75"
+        src="/assets/company-showcase-component-assets/microsoft.png"
+      />
+    </a>
+    <a
+      className="w-50"
+      href="https://www.apple.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="apples logo"
+        className="hover:scale-75"
+        src="/assets/company-showcase-component-assets/apple.png"
+      />
+    </a>
+    <a
+      className="w-50"
+      href="https://www.google.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="googles logo"
+        className="hover:scale-75"
+        src="/assets/company-showcase-component-assets/google.png"
+      />
+    </a>
+  </div>
+  <div
+    className="grid grid-cols-4 gap-x-5 place-content-center items-center w-5/6"
+  >
+    <a
+      className="w-50"
+      href="https://www.airbnb.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="airbnbs logo"
+        className="hover:scale-75"
+        src="/assets/company-showcase-component-assets/airbnb.png"
+      />
+    </a>
+    <a
+      className="w-50"
+      href="https://www.spotify.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="spotifys logo"
+        className="hover:scale-75"
+        src="/assets/company-showcase-component-assets/spotify.png"
+      />
+    </a>
+    <a
+      className="w-50"
+      href="https://www.yahoo.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="yahoos logo"
+        className="hover:scale-75"
+        src="/assets/company-showcase-component-assets/yahoo.png"
+      />
+    </a>
+    <a
+      className="w-50"
+      href="https://www.netflix.com"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <img
+        alt="netflixs logo"
+        className="hover:scale-75"
+        src="/assets/company-showcase-component-assets/netflix.png"
+      />
+    </a>
+  </div>
+</section>
+`;

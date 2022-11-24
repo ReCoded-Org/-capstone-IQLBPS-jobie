@@ -16,6 +16,11 @@ module.exports = {
         500: '500px',
         300: '300px',
       },
+      spacing: {
+        '600px': '600px',
+        '530px': '530px',
+        '560px': '560px',
+      },
       screens: {
         small: { min: '360px', max: '650px' },
         medium: { min: '651px', max: '1023px' },

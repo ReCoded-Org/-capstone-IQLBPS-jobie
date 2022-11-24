@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when the component matches the snapshot 1`] = `
+<div
+  className=" my-52"
+>
+  <h1
+    className="font-inter font-black text-2xl mb-6"
+  >
+    Sign Up
+  </h1>
+  <div
+    className="w-full max-w-sm mx-auto"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="mb-4"
+      >
+        <input
+          className="shadow border-2 border-black rounded-md w-full py-2 px-3 text-dark-gray leading-tight focus:outline-1 focus:shadow-outline"
+          name="name"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Username                                                                    "
+          type="text"
+        />
+        <error
+          className="text-primary font-inter"
+        />
+      </div>
+      <div
+        className="mb-4"
+      >
+        <input
+          className="shadow border-2 border-black rounded-md w-full py-2 px-3 text-dark-gray leading-tight focus:outline-1 focus:shadow-outline"
+          name="email"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="John@example.com                                                    "
+          type="email"
+        />
+        <error
+          className="text-primary font-inter"
+        />
+      </div>
+      <div
+        className="mb-4 font-inter"
+      >
+        <input
+          className="shadow border-2 border-black rounded-md w-full py-2 px-3 text-dark-gray leading-tight focus:outline-1 focus:shadow-outline"
+          name="password"
+          onBlur={[Function]}
+          onChange={[Function]}
+          placeholder="Password                                                                     "
+          type="password"
+        />
+        <error
+          className="text-primary font-inter"
+        />
+      </div>
+      <div
+        className="mb-4"
+      >
+        <button
+          className="w-full bg-accent font-inter text-white rounded-md py-1 hover:bg-red-500"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </div>
+      <div
+        className="mb-4"
+      >
+        <p
+          className="text-dark-gray"
+        >
+          Already Have an Account?
+           
+          <span
+            className="font-semibold cursor-pointer"
+          >
+            Log in
+          </span>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
+`;

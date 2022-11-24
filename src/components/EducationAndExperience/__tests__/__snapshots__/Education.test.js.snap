@@ -10,14 +10,14 @@ exports[`renders Education commponent correctly 1`] = `
     <h1
       className="pb-5"
     >
-      Education
+      education
     </h1>
     <button
       className="bg-[#154360]  hover:bg-[#226086] text-white font-bold py-2 px-4 rounded-full  left-10 top-10 "
       onClick={[Function]}
       type="button"
     >
-      Add Item
+      add-item
     </button>
   </div>
 </div>
