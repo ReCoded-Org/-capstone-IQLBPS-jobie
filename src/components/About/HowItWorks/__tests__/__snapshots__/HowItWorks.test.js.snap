@@ -2,11 +2,11 @@
 
 exports[`renders Custom button correctly 1`] = `
 <div
-  className="container px-20 "
+  className="px-20 bg-gray-500/5"
 >
   <div>
     <h1
-      className="text-left text-5xl font-inter text-secondary py-10 font-bold"
+      className="text-center text-5xl font-inter text-secondary py-10 font-bold"
     >
       how-it-works
     </h1>

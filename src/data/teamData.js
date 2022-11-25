@@ -1,7 +1,7 @@
 export const teamMembers = [
   {
     name: "Allan Ahmed",
-    position: "Frontend Developer",
+    position: "Team Lead | Frontend Developer",
     src: "/assets/meetOurTeam/allan.jpg",
     linkedin: "https://www.linkedin.com/in/allan-ahmed/",
   },
@@ -52,5 +52,23 @@ export const teamMembers = [
     position: "Frontend Developer",
     src: "/assets/meetOurTeam/lawen.jpg",
     linkedin: "https://www.linkedin.com/in/lawen-sardar/",
+  },
+  {
+    name: "Aya Ali",
+    position: "Frontend Developer",
+    src: "/assets/meetOurTeam/default.jpeg",
+    linkedin: "https://www.linkedin.com/in/aya-ali-5b46bb180/",
+  },
+  {
+    name: "Nawal Muhammed",
+    position: "Frontend Developer",
+    src: "/assets/meetOurTeam/Nawal.png",
+    linkedin: "https://www.linkedin.com/in/nawal-muhammad-382b7837/",
+  },
+  {
+    name: "Zryan Muhammed",
+    position: "Frontend Developer",
+    src: "/assets/meetOurTeam/default.jpeg",
+    linkedin: "https://www.linkedin.com/in/zryan-muhammed-9b5478216/",
   },
 ];

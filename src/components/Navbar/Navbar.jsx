@@ -64,7 +64,7 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faGlobe} className="mx-5" />
           {isEnglish ? "En" : "Ku"}
         </span>
-        <div className="lg:w-60 md:w-45 flex items-center">
+        <div className="lg:w-50 md:w-45 flex items-center">
           <input
             type="text"
             className="block px-4 md:my-0 my-5 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 w-full"
