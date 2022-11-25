@@ -4,23 +4,23 @@ import { useTranslation } from "react-i18next";
 import FilterButton from "./FilterButton";
 
 function FilterResults({ setData, data }) {
-  console.log('nu',data)
-  
-  // const halfLength = Math.ceil(data.length / 2);    
+  console.log("nu", data);
+
+  // const halfLength = Math.ceil(data.length / 2);
 
   // const leftSide = data.slice(0,halfLength);
   //   //  console.log('half',leftSide)
-     
+
   const { t } = useTranslation();
   const handleChange = (props) => {
     const newArray = data?.map((key) => ({
       ...key,
       date: new Date(key.postingDate),
     }));
-    console.log('newArray',newArray)
+    console.log("newArray", newArray);
     if (props === "newest") {
       const sortingDataByNewest = newArray.sort((a, b) => b.date - a.date);
-      console.log('sortingDataByNewest',sortingDataByNewest)
+      console.log("sortingDataByNewest", sortingDataByNewest);
       setData(sortingDataByNewest);
     } else {
       const sortingDataByOldest = newArray.sort((a, b) => a.date - b.date);

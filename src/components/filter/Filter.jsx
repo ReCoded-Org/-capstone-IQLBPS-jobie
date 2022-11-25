@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const Filter = ({ setData,items,data }) => {
-  console.log('hi items', data)
+const Filter = ({ setData, items, data }) => {
+  console.log("hi items", data);
   const { t } = useTranslation();
   // obtaining min and max values for salary range from filterData.js to be set as initial states //
   const minSalaryArray = items.map((item) => item.minSalary);
