@@ -1,7 +1,10 @@
 function Profile({ users }) {
   const work = users.map((user) => {
     return (
-      <div className="text-lg flex justify-center font-bold">
+      <div
+        className="text-lg flex justify-center font-bold"
+        key={user.education.id}
+      >
         <ul key={user.work}>
           <li key={user.work.Company}>
             Company:{" "}
@@ -46,7 +49,10 @@ function Profile({ users }) {
 
   const education = users.map((user) => {
     return (
-      <div className="text-lg flex justify-center font-bold">
+      <div
+        className="text-lg flex justify-center font-bold"
+        key={user.education.id}
+      >
         <ul key={user.education}>
           <li key={user.education.University}>
             University:{" "}

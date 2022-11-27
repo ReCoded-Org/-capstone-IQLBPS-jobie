@@ -2,7 +2,11 @@ import renderer from "react-test-renderer";
 import FilterResults from "../FilterResults";
 import { filterData } from "../../../data/filterData";
 
-it("renders FilterResults Component correctly", () => {
+jest.mock("react-i18next", () => ({
+  useTranslation: () => ({ t: (key) => key }),
+  Trans: ({ children }) => children,
+}));
+it("renders Company Showcase Component correctly", () => {
   const tree = renderer
     .create(<FilterResults filterData={filterData} />)
     .toJSON();

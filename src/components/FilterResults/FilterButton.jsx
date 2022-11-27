@@ -1,7 +1,9 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
+import { useTranslation } from "react-i18next";
 
 function FilterButton({ handleChange }) {
+  const { t } = useTranslation();
   return (
     <Menu
       as="div"
@@ -14,7 +16,7 @@ function FilterButton({ handleChange }) {
           className="rounded-full bg-gray-300 mr-5 mt-5 pl-5 pr-5 text-lg duration-500 hover:bg-accent"
         >
           {" "}
-          Sort results by
+          {t("sort-results-by")}
         </Menu.Button>
       </div>
 
@@ -41,7 +43,7 @@ function FilterButton({ handleChange }) {
                       : "text-black-500"
                   }`}
                 >
-                  <h3>Newest</h3>
+                  <h3>{t("newest")}</h3>
                 </div>
               )}
             </Menu.Item>
@@ -57,7 +59,7 @@ function FilterButton({ handleChange }) {
                       : "text-black-500"
                   }`}
                 >
-                  <h3>Oldest</h3>
+                  <h3>{t("oldest")}</h3>
                 </div>
               )}
             </Menu.Item>

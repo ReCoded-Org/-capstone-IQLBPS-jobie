@@ -15,6 +15,7 @@ import CombiningFilterComponents from "./components/CombiningComponents/Combinin
 import SignOut from "./components/signup/SignOut";
 import RoadMaps from "./pages/roadmaps";
 import ProfileEdit from "./pages/profile-edit";
+import ContactPage from "./pages/contact";
 
 function App() {
   const user = useSelector(selectUser);
@@ -49,7 +50,7 @@ function App() {
         <Route path="/jobs" element={<CombiningFilterComponents />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/profile-edit" element={<ProfileEdit/>} />
-        <Route path="/contact" element={<h1>contact us page</h1>} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
     </div>

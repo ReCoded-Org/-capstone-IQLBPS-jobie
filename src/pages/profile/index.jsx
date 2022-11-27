@@ -1,6 +1,6 @@
-import Contact from "../../components/Contact/Contact";
 import NameAndLinks from "../../components/NameAndLinks/NameAndLinks";
 import UserProfile from "../../components/UserProfile/UserProfile";
+import Contact from "../../components/Contact/Contact";
 import { users } from "../../data/usersData";
 
 function ProfilePage() {
