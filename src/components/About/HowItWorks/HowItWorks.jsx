@@ -9,9 +9,9 @@ import {
 function HowItWorks() {
   const { t } = useTranslation();
   return (
-    <div className="container px-20 ">
+    <div className="px-20 bg-gray-500/5">
       <div>
-        <h1 className="text-left text-5xl font-inter text-secondary py-10 font-bold">
+        <h1 className="text-center text-5xl font-inter text-secondary py-10 font-bold">
           {t("how-it-works")}
         </h1>
       </div>

@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const Filter = ({ setData, filterData }) => {
+const Filter = ({ setData, items, data }) => {
+  console.log("hi items", data);
   const { t } = useTranslation();
   // obtaining min and max values for salary range from filterData.js to be set as initial states //
-  const minSalaryArray = filterData.map((item) => item.minSalary);
-  const minSalaryValue = Math.min(...minSalaryArray);
+  const minSalaryArray = items.map((item) => item.minSalary);
+  const minSalaryValue = Math.min(minSalaryArray);
 
-  const maximumSalaryArray = filterData.map((item) => item.maxSalary);
-  const maxSalaryValue = Math.max(...maximumSalaryArray);
+  const maximumSalaryArray = items.map((item) => item.maxSalary);
+  const maxSalaryValue = Math.max(maximumSalaryArray);
 
   const [filter, setFilter] = useState({
     salary: {
@@ -45,7 +46,7 @@ const Filter = ({ setData, filterData }) => {
 
   useEffect(() => {
     setData(
-      filterData.filter((item) => {
+      items.filter((item) => {
         if (
           item.minSalary >= filter.salary.min &&
           item.minSalary <= filter.salary.max
@@ -64,7 +65,7 @@ const Filter = ({ setData, filterData }) => {
     });
 
     setData(
-      filterData.filter((item) => {
+      items.filter((item) => {
         if (item.location === e.target.value) {
           return item;
         }
@@ -117,7 +118,7 @@ const Filter = ({ setData, filterData }) => {
 
   return (
     <div className="flex ">
-      <div className="bg-gray-200 h-screen p-5 flex flex-col items-center">
+      <div className="bg-gray-200 md:h-screen p-5 flex flex-col items-center">
         <h2 className="text-secondary font-bold text-3xl">{t("filter")}</h2>
 
         {/* SALARY */}
