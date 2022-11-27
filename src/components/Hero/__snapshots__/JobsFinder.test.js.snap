@@ -18,7 +18,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
         className="decoration-solid pt-0 text-dark-gray leading-loose"
       >
          
-        Find the best jobe for you here
+        Find the best job for you here
       </p>
     </div>
     <div

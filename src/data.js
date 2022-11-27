@@ -8,7 +8,7 @@ export const showcaseData = [
   {
     id: 2,
     header: 'Part Time Jobs',
-    body: 'if you are set on your career and want to work full time, then a full time job is just the one for you, clicking here will show you all the current full time jobs in our platform',
+    body: 'if you are set on your career and want to work Part time, then a part time job is just the one for you, clicking here will show you all the current part time jobs in our platform',
     button: 'Part Time jobs >',
   },
   {
