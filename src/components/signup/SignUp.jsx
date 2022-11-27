@@ -48,8 +48,10 @@ function SignUp() {
   // on submiting the form console.log the data
 
   return (
-    <div className=" my-36 text-center">
-      <h1 className="font-inter font-black text-2xl mb-6">Sign Up</h1>
+    <div className=" my-52">
+      <h1 className="font-inter text-center font-black text-2xl mb-6">
+        Sign Up
+      </h1>
       <div className="w-full max-w-sm mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">

@@ -39,7 +39,7 @@ function JobsFinder({ setData }) {
             <input
               type="search"
               placeholder="Type to search "
-              className="rounded-3xl px-6 py-2 outline-none relative left-8"
+              className="rounded-3xl px-6 py-2 outline-none relative md:left-8"
               value={text}
               onChange={handleChange}
             />

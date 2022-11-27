@@ -1,14 +1,15 @@
-import NameAndLinks from "../../components/NameAndLinks/NameAndLinks";
+import NameAndLinksdesign from "../../components/NameAndLinks/Nameandlinksdesign";
 import UserProfile from "../../components/UserProfile/UserProfile";
-import Contact from "../../components/Contact/Contact";
+import UserContact from "../../components/userContact/UserContact";
+
 import { users } from "../../data/usersData";
 
 function ProfilePage() {
   return (
-    <div className="flex flex-col align-items-center bg-gray-500/5">
-      <NameAndLinks />
+    <div className="flex flex-col justify-start align-items-center bg-gray-500/5">
+      <NameAndLinksdesign />
       <UserProfile users={users} />
-      <Contact />
+      <UserContact />
     </div>
   );
 }
