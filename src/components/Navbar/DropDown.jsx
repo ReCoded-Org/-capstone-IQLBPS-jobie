@@ -1,8 +1,18 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { signout } from "../../features/user/userSlice";
+import { auth } from "../../firebase";
 
-function DropDown() {
+function DropDown({ setIsAuthenticated }) {
+  const dispatch = useDispatch();
+  const logoutOfApp = () => {
+    dispatch(signout());
+    auth.signOut();
+    setIsAuthenticated(false);
+  };
+
   return (
     <Menu
       as="div"
@@ -74,6 +84,7 @@ function DropDown() {
                       ? "bg-white text-secondary rounded"
                       : "text-black-500"
                   }`}
+                  onClick={logoutOfApp}
                 >
                   <h3>signout</h3>
                 </div>

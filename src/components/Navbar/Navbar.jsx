@@ -16,7 +16,7 @@ const Navbar = () => {
     { name: "Jobs", link: "/jobs" },
     { name: "Contact", link: "/contact" },
   ];
-  const isAuthenticated = true;
+  const [isAuthenticated,setIsAuthenticated] = useState(true);
   const [open, setOpen] = useState(false);
   const [openDropDown, setOpenDropDown] = useState(false);
   const [isEnglish, setIsEnglish] = useState(true);
@@ -74,7 +74,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </button>
         </div>
-        {isAuthenticated ? <Dropdown /> : <Button>Login</Button>}
+        {isAuthenticated ? <Dropdown setIsAuthenticated={setIsAuthenticated} isAuthenticated={isAuthenticated}/> : <Button>Login</Button>}
       </ul>
     </div>
   );
