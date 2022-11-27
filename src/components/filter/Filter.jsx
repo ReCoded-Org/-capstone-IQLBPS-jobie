@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const Filter = ({ setData, items, data }) => {
-  console.log("hi items", data);
+const Filter = ({ setData, items }) => {
+  // console.log("hi items", data);
   const { t } = useTranslation();
   // obtaining min and max values for salary range from filterData.js to be set as initial states //
   const minSalaryArray = items.map((item) => item.minSalary);
@@ -49,7 +49,7 @@ const Filter = ({ setData, items, data }) => {
       items.filter((item) => {
         if (
           item.minSalary >= filter.salary.min &&
-          item.minSalary <= filter.salary.max
+          item.maxSalary <= filter.salary.max
         ) {
           return item;
         }
@@ -118,7 +118,7 @@ const Filter = ({ setData, items, data }) => {
 
   return (
     <div className="flex ">
-      <div className="bg-gray-200 md:h-screen p-5 flex flex-col items-center">
+      <div className="bg-gray-200 p-5 flex flex-col items-center">
         <h2 className="text-secondary font-bold text-3xl">{t("filter")}</h2>
 
         {/* SALARY */}

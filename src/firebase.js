@@ -12,6 +12,7 @@ import {
   limit,
   onSnapshot,
   query,
+  where,
 } from "firebase/firestore";
 import {
   getAuth,
@@ -53,4 +54,5 @@ export {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
+  where
 };

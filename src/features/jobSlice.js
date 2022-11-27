@@ -10,7 +10,7 @@ export const getJobsList = createAsyncThunk(
      const querySnapshot = await getDocs(collection(db, "jobs"));
      querySnapshot.forEach((doc) => {
       //  console.log(doc.id, " => ", doc.data());
-       array.push(doc.data())
+       array.push({...doc.data()})
     });
    
     return (array)

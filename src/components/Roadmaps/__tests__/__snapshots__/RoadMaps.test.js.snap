@@ -2,7 +2,7 @@
 
 exports[`renders Road Maps Component correctly 1`] = `
 <div
-  className="pt-10 pb-5 medium:pt-8 small:pt-5 small:pb-3 bg-gray-100"
+  className="pt-10 pb-5 medium:pt-8 small:pt-5 small:pb-3 bg-gray-500/5"
 >
   <div
     className="max-w-[80%] mx-auto"
