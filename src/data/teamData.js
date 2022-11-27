@@ -71,4 +71,10 @@ export const teamMembers = [
     src: "/assets/meetOurTeam/default.jpeg",
     linkedin: "https://www.linkedin.com/in/zryan-muhammed-9b5478216/",
   },
+  {
+    name: "Paywand Mohammed",
+    position: "Frontend Developer",
+    src: "/assets/meetOurTeam/paywand.png",
+    linkedin: "https://www.linkedin.com/in/paywand-mohammed-b306581a4/",
+  },
 ];

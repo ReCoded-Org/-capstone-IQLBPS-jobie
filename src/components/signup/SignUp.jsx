@@ -1,8 +1,10 @@
 /* eslint-disable no-alert */
 /* eslint-disable no-console */
-
+import React from "react";
 import { useForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+
 import {
   auth,
   createUserWithEmailAndPassword,
@@ -12,6 +14,8 @@ import {
 import { signup } from "../../features/user/userSlice";
 
 function SignUp() {
+  const navigate = useNavigate();
+
   const dispatch = useDispatch();
   const onSubmit = (data) => {
     const { email, name, password } = data;
@@ -30,6 +34,7 @@ function SignUp() {
               })
             )
           )
+           .then(navigate("/"))
           .catch((error) => {
             console.log("user not updated", error);
           });
@@ -122,7 +127,10 @@ function SignUp() {
           <div className="mb-4">
             <p className="text-dark-gray">
               Already Have an Account?{" "}
-              <span className="font-semibold cursor-pointer">Log in</span>
+              <Link to="/login">
+                {" "}
+                <span className="font-semibold cursor-pointer">Log in</span>
+              </Link>
             </p>
           </div>
         </form>

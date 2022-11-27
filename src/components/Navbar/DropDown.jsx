@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
+import SignOut from "../signup/SignOut";
 
 function DropDown() {
   return (
@@ -64,6 +65,7 @@ function DropDown() {
                 </div>
               )}
             </Menu.Item>
+
             <Menu.Item>
               {({ active }) => (
                 <div
@@ -75,7 +77,8 @@ function DropDown() {
                       : "text-black-500"
                   }`}
                 >
-                  <h3>signout</h3>
+                  {/* <h3>signout</h3> */}
+                  <SignOut />
                 </div>
               )}
             </Menu.Item>
