@@ -14,6 +14,7 @@ import Footer from "./components/Footer/Footer";
 import CombiningFilterComponents from "./components/CombiningComponents/CombiningFilterComponents";
 import SignOut from "./components/signup/SignOut";
 import RoadMaps from "./pages/roadmaps";
+import ProfileEdit from "./pages/profile-edit";
 import ContactPage from "./pages/contact";
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
         <Route path="/roadmap" element={<RoadMaps />} />
         <Route path="/jobs" element={<CombiningFilterComponents />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/profile-edit" element={<h1>profile edit page</h1>} />
+        <Route path="/profile-edit" element={<ProfileEdit/>} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
