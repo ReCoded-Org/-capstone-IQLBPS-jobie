@@ -28,12 +28,12 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
         className="font-semibold text-dark-gray text-xl small:text-base"
       >
          
-        Design
+        design-category
       </h4>
       <p
         className="text-gray-600 text-base small:text-sm"
       >
-        67 Job Vacancies
+        design-vacancies
       </p>
     </div>
   </div>
@@ -62,12 +62,12 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
       <h4
         className="font-semibold text-dark-gray text-xl small:text-base"
       >
-        Frontend
+        frontend
       </h4>
       <p
         className="text-gray-600 text-base small:text-sm"
       >
-        180 Job Vacancies
+        frontend-vacancies
       </p>
     </div>
   </div>
@@ -94,12 +94,12 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
       <h4
         className="font-semibold text-dark-gray text-xl small:text-base "
       >
-        Backend
+        backend
       </h4>
       <p
         className="text-gray-600 text-base small:text-sm"
       >
-        223 Job Vacancies
+        backend-vacancies
       </p>
     </div>
   </div>
@@ -134,12 +134,12 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
       <h4
         className="font-semibold text-dark-gray text-xl  small:text-base"
       >
-        Web Developer
+        web-developer
       </h4>
       <p
         className="text-gray-600 text-base small:text-sm"
       >
-        445 Job Vacancies
+        web-vacancies
       </p>
     </div>
   </div>
@@ -169,12 +169,12 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
       <h4
         className="font-semibold text-dark-gray text-xl small:text-base"
       >
-        Network
+        network
       </h4>
       <p
         className="text-gray-600 text-base small:text-sm"
       >
-        321 Job Vacancies
+        network-vacancies
       </p>
     </div>
   </div>
@@ -199,12 +199,12 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
       <h4
         className="font-semibold text-dark-gray text-xl small:text-base"
       >
-        Project Manager
+        project-manager
       </h4>
       <p
         className="text-gray-600 text-base small:text-sm"
       >
-        635 Job Vacancies
+        pmanager-vacancies
       </p>
     </div>
   </div>
@@ -231,12 +231,12 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
       <h4
         className="font-semibold text-dark-gray text-xl small:text-base"
       >
-        Data Analytics
+        data-analystics
       </h4>
       <p
         className="text-gray-600 text-base small:text-sm"
       >
-        342 Job Vacancies
+        analyst-vacancies
       </p>
     </div>
   </div>
@@ -247,7 +247,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
       className="text-2xl pr-2 font-semibold small:text-lg medium:xl"
       type="button"
     >
-      View All Categories
+      view-all-categories
     </button>
     <span>
       <svg

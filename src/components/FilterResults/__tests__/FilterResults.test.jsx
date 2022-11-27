@@ -2,7 +2,6 @@ import renderer from "react-test-renderer";
 import FilterResults from "../FilterResults";
 import { filterData } from "../../../data/filterData";
 
-
 jest.mock("react-i18next", () => ({
   useTranslation: () => ({ t: (key) => key }),
   Trans: ({ children }) => children,

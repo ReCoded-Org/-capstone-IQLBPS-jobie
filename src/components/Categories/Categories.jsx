@@ -1,7 +1,7 @@
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function Categories() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="grid grid-cols-4 gap-4 px-56 pt-20 pb-20 small:grid-cols-2 small:gap-x-6 small:px-12 medium:grid-cols-3 medium:px-2">
       <div>
@@ -22,10 +22,10 @@ function Categories() {
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
             {" "}
-            {t('design-category')}
+            {t("design-category")}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            {t('design-vacancies')}
+            {t("design-vacancies")}
           </p>
         </div>
       </div>
@@ -49,10 +49,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
-            {t('frontend')}
+            {t("frontend")}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            {t('frontend-vacancies')}
+            {t("frontend-vacancies")}
           </p>
         </div>
       </div>
@@ -74,10 +74,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base ">
-            {t('backend')}
+            {t("backend")}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            {t('backend-vacancies')}
+            {t("backend-vacancies")}
           </p>
         </div>
       </div>
@@ -105,10 +105,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl  small:text-base">
-            {t('web-developer')}
+            {t("web-developer")}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            {t('web-vacancies')}
+            {t("web-vacancies")}
           </p>
         </div>
       </div>
@@ -131,10 +131,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
-            {t('network')}
+            {t("network")}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            {t('network-vacancies')}
+            {t("network-vacancies")}
           </p>
         </div>
       </div>
@@ -152,10 +152,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
-            {t('project-manager')}
+            {t("project-manager")}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            {t('pmanager-vacancies')}
+            {t("pmanager-vacancies")}
           </p>
         </div>
       </div>
@@ -177,10 +177,10 @@ function Categories() {
         </div>
         <div className="text-center">
           <h4 className="font-semibold text-dark-gray text-xl small:text-base">
-            {t('data-analystics')}
+            {t("data-analystics")}
           </h4>
           <p className="text-gray-600 text-base small:text-sm">
-            {t('analyst-vacancies')}
+            {t("analyst-vacancies")}
           </p>
         </div>
       </div>
@@ -190,7 +190,7 @@ function Categories() {
           className="text-2xl pr-2 font-semibold small:text-lg medium:xl"
           type="button"
         >
-          {t('view-all-categories')}
+          {t("view-all-categories")}
         </button>
         <span>
           <svg

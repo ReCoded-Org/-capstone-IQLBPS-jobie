@@ -24,18 +24,24 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
     <div
       className=" flex-col mt-2"
     >
-      <input
-        className="rounded-3xl px-6 py-2 outline-none relative left-8"
-        placeholder="Type to search "
-        type="search"
-      />
-      <button
-        className="py-2 bg-accent px-5 rounded-3xl text-white relative   hover:bg-red-500 "
-        type="button"
+      <form
+        onSubmit={[Function]}
       >
-         
-        Search
-      </button>
+        <input
+          className="rounded-3xl px-6 py-2 outline-none relative md:left-8"
+          onChange={[Function]}
+          placeholder="Type to search "
+          type="search"
+          value=""
+        />
+        <button
+          className="py-2 bg-accent px-5 rounded-3xl text-white relative   hover:bg-red-500 "
+          type="submit"
+        >
+           
+          Search
+        </button>
+      </form>
     </div>
   </div>
 </div>

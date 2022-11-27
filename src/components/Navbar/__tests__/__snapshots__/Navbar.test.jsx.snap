@@ -2,85 +2,83 @@
 
 exports[`renders Meet Our Team component correctly 1`] = `
 <div
-  className="shadow-md w-full fixed top-0 left-0"
+  className="bg-white lg:flex-nowrap md:flex-wrap shadow-md max-w-10 sticky top-0 left-0 z-10 md:flex items-center  justify-between py-4 md:px-10 px-7"
 >
+  <img
+    alt="logo"
+    className="h-8 md:flex md:h-12 cursor-pointer"
+    src="/logo.svg"
+  />
   <div
-    className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7"
+    className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden object-scale-down"
+    onClick={[Function]}
   >
-    <div
-      className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800"
+    <ion-icon
+      name="menu"
+    />
+  </div>
+  <ul
+    className="md:flex md:items-center md:justify-item-ends md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] md:pl-0 pl-9 transition-all duration-500 ease-in top-[-490px]"
+  >
+    <li
+      className="md:ml-8 lg:text-xl md:text-sm lg:my-0 my-7"
     >
-      <span
-        className="text-3xl text-indigo-600 mr-1 pt-2"
+      <a
+        className="text-gray-800 hover:text-gray-400 duration-500"
+        href="/"
+        onClick={[Function]}
       >
-        <img
-          alt="logo"
-          className="h-8 md:flex md:h-12"
-          src="/logo.svg"
-        />
-      </span>
-    </div>
-    <div
-      className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+        Home
+      </a>
+    </li>
+    <li
+      className="md:ml-8 lg:text-xl md:text-sm lg:my-0 my-7"
+    >
+      <a
+        className="text-gray-800 hover:text-gray-400 duration-500"
+        href="/about-us"
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </li>
+    <li
+      className="md:ml-8 lg:text-xl md:text-sm lg:my-0 my-7"
+    >
+      <a
+        className="text-gray-800 hover:text-gray-400 duration-500"
+        href="/roadmap"
+        onClick={[Function]}
+      >
+        Roadmap
+      </a>
+    </li>
+    <li
+      className="md:ml-8 lg:text-xl md:text-sm lg:my-0 my-7"
+    >
+      <a
+        className="text-gray-800 hover:text-gray-400 duration-500"
+        href="/jobs"
+        onClick={[Function]}
+      >
+        Jobs
+      </a>
+    </li>
+    <li
+      className="md:ml-8 lg:text-xl md:text-sm lg:my-0 my-7"
+    >
+      <a
+        className="text-gray-800 hover:text-gray-400 duration-500"
+        href="/contact"
+        onClick={[Function]}
+      >
+        Contact
+      </a>
+    </li>
+    <span
+      className="mx-3"
       onClick={[Function]}
     >
-      <ion-icon
-        name="menu"
-      />
-    </div>
-    <ul
-      className="mx-5 md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in top-[-490px]"
-    >
-      <li
-        className="md:ml-8 text-xl md:my-0 my-7"
-      >
-        <a
-          className="text-gray-800 hover:text-gray-400 duration-500"
-          href="/"
-        >
-          Home
-        </a>
-      </li>
-      <li
-        className="md:ml-8 text-xl md:my-0 my-7"
-      >
-        <a
-          className="text-gray-800 hover:text-gray-400 duration-500"
-          href="/"
-        >
-          About
-        </a>
-      </li>
-      <li
-        className="md:ml-8 text-xl md:my-0 my-7"
-      >
-        <a
-          className="text-gray-800 hover:text-gray-400 duration-500"
-          href="/"
-        >
-          Roadmap
-        </a>
-      </li>
-      <li
-        className="md:ml-8 text-xl md:my-0 my-7"
-      >
-        <a
-          className="text-gray-800 hover:text-gray-400 duration-500"
-          href="/"
-        >
-          Jobs
-        </a>
-      </li>
-      <li
-        className="md:ml-8 text-xl md:my-0 my-7"
-      >
-        <a
-          className="text-gray-800 hover:text-gray-400 duration-500"
-          href="/"
-        >
-          Contact
-        </a>
-      </li>
       <svg
         aria-hidden="true"
         className="svg-inline--fa fa-globe mx-5"
@@ -98,44 +96,62 @@ exports[`renders Meet Our Team component correctly 1`] = `
           style={Object {}}
         />
       </svg>
-      <div
-        className="w-60 flex items-center md: flex "
-      >
-        <input
-          className=" block w-full px-4 py-2 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 w-full"
-          placeholder="Search..."
-          type="text"
-        />
-        <button
-          className="-ml-6"
-          type="button"
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-magnifying-glass "
-            data-icon="magnifying-glass"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </button>
-      </div>
+      En
+    </span>
+    <div
+      className="lg:w-50 md:w-45 flex items-center"
+    >
+      <input
+        className="block px-4 md:my-0 my-5 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 w-full"
+        placeholder="Search..."
+        type="text"
+      />
       <button
-        className="flex bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-9 mx-4 rounded-full"
+        className="-ml-6"
         type="button"
       >
-        Login
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-magnifying-glass "
+          data-icon="magnifying-glass"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
       </button>
-    </ul>
-  </div>
+    </div>
+    <div
+      className="relative inline-block text-left"
+      data-headlessui-state=""
+      data-testid="filter-button"
+    >
+      <div>
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-5 mx-3 rounded-full"
+          data-headlessui-state=""
+          data-testid="filter-botton-toggle"
+          id="headlessui-menu-button-:r0:"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          type="button"
+        >
+           
+          Account
+        </button>
+      </div>
+    </div>
+  </ul>
 </div>
 `;

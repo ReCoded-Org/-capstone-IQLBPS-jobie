@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
-import {  useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 function BasicInfoEdit() {
-  const {t}= useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="bg-gray-50 pt-1 pb-0">
       <h1 className="text-2xl text-left ml-48 mt-24 small:ml-16 medium:ml-24">
-        {t('basic-info')}
+        {t("basic-info")}
       </h1>
 
       <form action="#" method="POST">
@@ -19,7 +19,7 @@ function BasicInfoEdit() {
                   htmlFor="first-name"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  {t('first-Name')}
+                  {t("first-Name")}
                 </label>
                 <input
                   placeholder="First name"
@@ -36,7 +36,7 @@ function BasicInfoEdit() {
                   htmlFor="last-name"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  {t('last-name')}
+                  {t("last-name")}
                 </label>
                 <input
                   placeholder="Last name"
@@ -53,7 +53,7 @@ function BasicInfoEdit() {
                   htmlFor="Title"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  {t('title')}
+                  {t("title")}
                 </label>
                 <input
                   type="text"
@@ -69,16 +69,13 @@ function BasicInfoEdit() {
                   htmlFor="Biography"
                   className="block text-left text-sm font-medium text-gray-700"
                 >
-                  
-                
-                
-                {t('biography')}
+                  {t("biography")}
                 </label>
                 <textarea
                   type="text"
                   name="Biography"
                   id="Biography"
-                  className=" h-24 w-full mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                  className=" h-24 w-full mt-1 block rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 />
               </div>
             </div>

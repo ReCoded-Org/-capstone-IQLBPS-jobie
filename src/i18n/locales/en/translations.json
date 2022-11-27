@@ -21,7 +21,11 @@
     "from": "From",
     "to": "To",
     "location": "Location",
+<<<<<<< HEAD
     "choose-all-location": "Choose all that applies...",
+=======
+    "choose-all-location": "Choose a location",
+>>>>>>> develop
     "iraq": "Iraq",
     "lebanon": "Lebanon",
     "yemen": "Yemen",
@@ -29,12 +33,20 @@
     "jordan": "Jordan",
     "syria": "Syria",
     "type-of-employment": "Type Of Employment",
+<<<<<<< HEAD
     "choose-all-employment": "Choose all that applies...",
+=======
+    "choose-all-employment": "Choose a type",
+>>>>>>> develop
     "full-time": "Full-time",
     "part-time": "Part-time",
     "remote1": "Remote",
     "category": "Category",
+<<<<<<< HEAD
     "choose-all-category": "Choose all that applies...",
+=======
+    "choose-all-category": "Choose a category",
+>>>>>>> develop
     "tech": "Tech",
     "design": "Design",
     "engineering": "Engineering",
@@ -47,8 +59,8 @@
     "three": "Three",
     "four+": "Four+",
     "work-level": "Work Level",
-    "choose-all-work-level": "Choose all that applies...",
-    "internee": "Internee",
+    "choose-all-work-level": "Choose a level",
+    "internee": "Intern",
     "junior": "Junior",
     "senior": "Senior" ,
     "sort-results-by": "Sort results by",
