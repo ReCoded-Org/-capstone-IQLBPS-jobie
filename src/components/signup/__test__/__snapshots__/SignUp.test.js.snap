@@ -81,7 +81,14 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
           <span
             className="font-semibold cursor-pointer"
           >
-            Log in
+             
+            <a
+              href="/login"
+              onClick={[Function]}
+            >
+              Log in
+            </a>
+             
           </span>
         </p>
       </div>
