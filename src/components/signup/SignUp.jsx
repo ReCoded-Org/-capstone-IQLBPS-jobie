@@ -34,7 +34,7 @@ function SignUp() {
               })
             )
           )
-           .then(navigate("/"))
+          .then(navigate("/"))
           .catch((error) => {
             console.log("user not updated", error);
           });
