@@ -96,5 +96,13 @@
     "location-experience": "Location",
     "type-of-employment-exp": "Type of Employment",
     "position": "Position",
-    "date-exp": "Date"
+    "date-exp": "Date",
+    "jobie-description": "Jobie is a platform that can help you set up your career we give services from finding out the right path to advance your career through a roadmap or a right position from the top companies",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "jobs-finder": "Jobs Finder",
+    "find-your-best-job": "Find the best jobe for you here",
+    "search-finder": "Search"
 }

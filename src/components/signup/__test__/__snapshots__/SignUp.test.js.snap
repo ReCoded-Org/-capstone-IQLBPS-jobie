@@ -78,18 +78,17 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
         >
           Already Have an Account?
            
-          <span
-            className="font-semibold cursor-pointer"
+          <a
+            href="/login"
+            onClick={[Function]}
           >
              
-            <a
-              href="/login"
-              onClick={[Function]}
+            <span
+              className="font-semibold cursor-pointer"
             >
               Log in
-            </a>
-             
-          </span>
+            </span>
+          </a>
         </p>
       </div>
     </form>

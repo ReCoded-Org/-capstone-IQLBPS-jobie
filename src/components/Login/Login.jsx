@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { auth, google, signInWithPopup } from "../../firebase";
@@ -19,8 +20,10 @@ function Login() {
   } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
-    <div className=" my-36 text-center">
-      <h1 className="font-inter font-black text-2xl mb-6 ">Log in</h1>
+    <div className=" my-52">
+      <h1 className="font-inter text-center font-black text-2xl mb-6">
+        Log in
+      </h1>
       <div className="w-full max-w-sm mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
@@ -73,7 +76,10 @@ function Login() {
           <div className="mb-4">
             <p className="text-dark-gray">
               Don&apos;t Have an Account?{" "}
-              <span className="font-semibold"> Sign up</span>
+              <Link to="/sign-up">
+                {" "}
+                <span className="font-semibold">Sign up</span>{" "}
+              </Link>
             </p>
           </div>
           <div>

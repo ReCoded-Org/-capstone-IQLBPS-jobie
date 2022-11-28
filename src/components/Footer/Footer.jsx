@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import FooterCol from "./FooterCol";
 
 function Footer() {
+  const [t] = useTranslation();
   return (
     <footer aria-label="Site Footer" className="bg-dark-gray">
       <div className="flex flex-row justify-between mx-auto max-w-6xl pt-7 pb-[4.75rem] small:py-7 medium:py-7 small:px-6 large:px-8 small:flex-col small:items-center medium:flex-col medium:items-center">
@@ -11,9 +13,7 @@ function Footer() {
             className="h-[3.7rem] small:mx-auto medium:mx-auto"
           />
           <p className="mt-4 max-w-[25rem] text-sm small:text-base text-white text-justify small:text-center py-7 small:max-w-[33rem]">
-            Jobie is a platform that can help you set up your career we give
-            services from finding out the right path to advance your career
-            through a roadmap or a right position from the top companies
+            {t("jobie-description")}
           </p>
         </div>
 
@@ -22,7 +22,7 @@ function Footer() {
             title="Navigate"
             links={[
               { title: "Home", path: "/" },
-              { title: "About Us", path: "/About_Us" },
+              { title: "About Us", path: "/about-us" },
               { title: "Roadmap", path: "/Roadmap" },
               { title: "Jobs", path: "/Jobs" },
               { title: "Contact Us", path: "/Contact_Us" },
@@ -60,8 +60,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="sr-only"> Facebook </span>
-
+              <span className="sr-only">{t("facebook")}</span>
               <svg
                 className="h-9 w-9 small:w-8"
                 fill="currentColor"
@@ -82,8 +81,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="sr-only"> Instagram </span>
-
+              <span className="sr-only">{t("instagram")}</span>
               <svg
                 className="h-9 w-9 small:w-8"
                 fill="currentColor"
@@ -104,8 +102,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="sr-only"> Twitter </span>
-
+              <span className="sr-only">{t("twitter")}</span>
               <svg
                 className="h-9 w-9 small:w-8"
                 fill="currentColor"
@@ -122,8 +119,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="sr-only"> GitHub </span>
-
+              <span className="sr-only"> {t("github")} </span>
               <svg
                 className="h-9 w-9 small:w-8"
                 fill="currentColor"

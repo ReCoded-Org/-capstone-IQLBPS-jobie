@@ -1,7 +1,7 @@
 import { React, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
-import { signup, selectUser, signout } from "./features/user/userSlice";
+import { signup, signout } from "./features/user/userSlice";
 import { auth, onAuthStateChanged } from "./firebase";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -16,8 +16,9 @@ import RoadMaps from "./pages/roadmaps";
 import ProfileEdit from "./pages/profile-edit";
 import ContactPage from "./pages/contact";
 
+
 function App() {
-  const user = useSelector(selectUser);
+
   const dispatch = useDispatch();
   useEffect(() => {
     onAuthStateChanged(auth, (userAuth) => {
@@ -40,7 +41,7 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={user ? <Index /> : <SignUp />} />
+        <Route path="/" element= {<Index/> }/>
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about-us" element={<AboutPage />} />

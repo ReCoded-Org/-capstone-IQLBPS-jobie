@@ -65,6 +65,7 @@ function DropDown() {
                 </div>
               )}
             </Menu.Item>
+
             <Menu.Item>
               {({ active }) => (
                 <div
@@ -76,9 +77,8 @@ function DropDown() {
                       : "text-black-500"
                   }`}
                 >
-                  <h3>
-                    <SignOut />
-                  </h3>
+                  {/* <h3>signout</h3> */}
+                  <SignOut />
                 </div>
               )}
             </Menu.Item>

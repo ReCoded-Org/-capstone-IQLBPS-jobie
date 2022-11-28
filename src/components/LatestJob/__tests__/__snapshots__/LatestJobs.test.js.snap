@@ -2,7 +2,7 @@
 
 exports[`renders Latest Jobs correctly 1`] = `
 <div
-  className="bg-gray-100"
+  className="bg-gray-500/5"
 >
   <div
     className="max-w-[70%] large:max-w-[70%] medium:max-w-[80%] small:max-w-[85%] h-full mx-auto py-10 small:py-5"

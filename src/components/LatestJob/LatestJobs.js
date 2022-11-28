@@ -25,7 +25,7 @@ const LatestJobs = ({ headers, data }) => {
       !(remote || partTime || fullTime)
   );
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-500/5">
       <div className="max-w-[70%] large:max-w-[70%] medium:max-w-[80%] small:max-w-[85%] h-full mx-auto py-10 small:py-5">
         <h1 className="text-3xl small:text-xl text-secondary mb-10 small:mb-5 font-semibold">
           Latest Jobs

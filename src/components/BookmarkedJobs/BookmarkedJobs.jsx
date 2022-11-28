@@ -1,40 +1,53 @@
-import { bookmarkedJobsData } from "../../data/bookmarkedJobsData";
+import { useEffect, useState } from "react";
+import { bookmark } from "../../features/bookmark/bookmark";
 
 function BookmarkedJobs() {
-  const closed = (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className="w-5 h-5 fill-red-600 medium:w-4 medium:h-4 small:w-3 small:h-3"
-    >
-      <path
-        fillRule="evenodd"
-        d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
-        clipRule="evenodd"
-      />
-    </svg>
-  );
-  const open = (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className="w-5 h-5 fill-green-600 medium:w-4 medium:h-4 small:w-3 small:h-3"
-    >
-      <path
-        fillRule="evenodd"
-        d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
-        clipRule="evenodd"
-      />
-    </svg>
-  );
+  const [markedJobs, setMarkedJobs] = useState([]);
+
+  console.log("cough", markedJobs);
+
+  useEffect(() => {
+    const getBookMarks = async () => {
+      const marks = await bookmark();
+      setMarkedJobs(marks);
+    };
+    getBookMarks();
+  }, []);
+
+  // const closed = (
+  //   <svg
+  //     xmlns="http://www.w3.org/2000/svg"
+  //     viewBox="0 0 24 24"
+  //     fill="currentColor"
+  //     className="w-5 h-5 fill-red-600 medium:w-4 medium:h-4 small:w-3 small:h-3"
+  //   >
+  //     <path
+  //       fillRule="evenodd"
+  //       d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z"
+  //       clipRule="evenodd"
+  //     />
+  //   </svg>
+  // );
+  // const open = (
+  //   <svg
+  //     xmlns="http://www.w3.org/2000/svg"
+  //     viewBox="0 0 24 24"
+  //     fill="currentColor"
+  //     className="w-5 h-5 fill-green-600 medium:w-4 medium:h-4 small:w-3 small:h-3"
+  //   >
+  //     <path
+  //       fillRule="evenodd"
+  //       d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+  //       clipRule="evenodd"
+  //     />
+  //   </svg>
+  // );
   return (
-    <div className=" px-96 py-4 medium:px-24 medium:py-2 small:px-4 small:py-2">
-      <h1 className="text-center text-3xl pb-10 font-semibold font-inter medium:text-2xl small:text-xl ">
+    <div className="pl-44 py-4 medium:px-24 medium:py-2 small:px-4 small:py-2">
+      <h1 className="mb-4 text-4xl text-dark-gray md:text-5xl lg:text-6x pb-7 text-left mt-8">
         Bookmarked Jobs
       </h1>
-      {bookmarkedJobsData.map((data) => {
+      {markedJobs.map((data) => {
         return (
           <div
             key={data.id}
@@ -93,16 +106,11 @@ function BookmarkedJobs() {
                 </div>
               </div>
             </div>
-            <div className="flex items-center pr-4">
-              {data.status === "open" ? open : closed}
-              <p className="font-semibold pl-2 text-dark-gray medium:text-sm small:text-xs">
-                {data.status === "open" ? "open" : "closed"}
-              </p>
-            </div>
           </div>
         );
       })}
     </div>
   );
 }
+
 export default BookmarkedJobs;
