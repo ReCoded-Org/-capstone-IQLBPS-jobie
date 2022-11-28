@@ -11,14 +11,12 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
       <h1
         className="text-3xl font-medium text-dark-gray leading-loose "
       >
-         
-        Jobs Finder
+        jobs-finder
       </h1>
       <p
         className="decoration-solid pt-0 text-dark-gray leading-loose"
       >
-         
-        Find the best job for you here
+        find-your-best-job
       </p>
     </div>
     <div
@@ -38,8 +36,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
           className="py-2 bg-accent px-5 rounded-3xl text-white relative   hover:bg-red-500 "
           type="submit"
         >
-           
-          Search
+          search-finder
         </button>
       </form>
     </div>
