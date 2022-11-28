@@ -118,7 +118,7 @@ const Filter = ({ setData, items }) => {
 
   return (
     <div className="flex ">
-      <div className="bg-gray-200 h-screen p-5 flex flex-col items-center">
+      <div className="bg-gray-200 p-5 flex flex-col items-center">
         <h2 className="text-secondary font-bold text-3xl">{t("filter")}</h2>
 
         {/* SALARY */}
