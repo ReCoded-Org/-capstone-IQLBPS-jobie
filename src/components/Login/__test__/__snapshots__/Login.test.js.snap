@@ -7,7 +7,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
   <h1
     className="font-inter text-center font-black text-2xl mb-6"
   >
-    Log in
+    login
   </h1>
   <div
     className="w-full max-w-sm mx-auto"
@@ -40,7 +40,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
           name="password"
           onBlur={[Function]}
           onChange={[Function]}
-          placeholder="Password                                                                     "
+          placeholder="Password"
           type="password"
         />
         <error
@@ -54,7 +54,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
           className="w-full bg-accent font-inter text-white rounded-md py-1 hover:bg-red-500"
           type="submit"
         >
-          Log in
+          login
         </button>
       </div>
       <div
@@ -102,12 +102,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
               style={Object {}}
             />
           </svg>
-          Log in with
-          <span
-            className="font-bold"
-          >
-             Google
-          </span>
+          Log in with Google
         </button>
       </div>
     </form>

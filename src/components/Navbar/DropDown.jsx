@@ -2,10 +2,12 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { useTranslation } from "react-i18next";
 import { signout } from "../../features/user/userSlice";
 import { auth } from "../../firebase";
 
 function DropDown({ setIsAuthenticated }) {
+  const [t] = useTranslation();
   const dispatch = useDispatch();
   const logoutOfApp = () => {
     dispatch(signout());
@@ -25,8 +27,7 @@ function DropDown({ setIsAuthenticated }) {
           data-testid="filter-botton-toggle"
           className="bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-5 mx-3 rounded-full"
         >
-          {" "}
-          Account
+          {t("account")}
         </Menu.Button>
       </div>
 
@@ -53,7 +54,7 @@ function DropDown({ setIsAuthenticated }) {
                   }`}
                 >
                   <Link to="/profile">
-                    <h3>View Profile</h3>
+                    <h3>{t("view-profile")}</h3>
                   </Link>
                 </div>
               )}
@@ -70,7 +71,7 @@ function DropDown({ setIsAuthenticated }) {
                   }`}
                 >
                   <Link to="/profile-edit">
-                    <h3>Edit Profile</h3>
+                    <h3>{t("edit-profile")}</h3>
                   </Link>
                 </div>
               )}
@@ -88,7 +89,7 @@ function DropDown({ setIsAuthenticated }) {
                   }`}
                   onClick={logoutOfApp}
                 >
-                  <h3>Log out</h3>
+                  <h3>{t("signout")}</h3>
                   {/* <SignOut /> */}
                 </div>
               )}

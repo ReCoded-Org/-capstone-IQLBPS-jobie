@@ -10,7 +10,7 @@ exports[`renders Latest Jobs correctly 1`] = `
     <h1
       className="text-3xl small:text-xl text-secondary mb-10 small:mb-5 font-semibold"
     >
-      Latest Jobs
+      latest-job
     </h1>
     <div
       className="flex justify-end"
@@ -26,7 +26,7 @@ exports[`renders Latest Jobs correctly 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        Full Time
+        full-time
       </label>
       <label
         className="mr-4 small:mr-2 small:text-sm"
@@ -39,7 +39,7 @@ exports[`renders Latest Jobs correctly 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        Part Time
+        part-time
       </label>
       <label
         className="small:text-sm"
@@ -52,7 +52,7 @@ exports[`renders Latest Jobs correctly 1`] = `
           onChange={[Function]}
           type="checkbox"
         />
-        Remote
+        remote
       </label>
     </div>
     <div

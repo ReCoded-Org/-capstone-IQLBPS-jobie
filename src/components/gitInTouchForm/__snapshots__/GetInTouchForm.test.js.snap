@@ -40,7 +40,7 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
               name="firstName"
               onBlur={[Function]}
               onChange={[Function]}
-              placeholder="Name"
+              placeholder="first-n"
               type="text"
             />
             <p
@@ -65,7 +65,7 @@ exports[`renders Get in touch form corectlly  correctly 1`] = `
               name="lastName"
               onBlur={[Function]}
               onChange={[Function]}
-              placeholder="Last Name"
+              placeholder="last-n"
               type="text"
             />
             <p
