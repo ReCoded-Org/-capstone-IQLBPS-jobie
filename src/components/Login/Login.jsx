@@ -1,10 +1,17 @@
 /* eslint-disable no-console */
+import { useNavigate, Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { auth, google, signInWithPopup } from "../../firebase";
 
 function Login() {
+  const navigate = useNavigate();
+  const login = async (provider) => {
+    const result = await signInWithPopup(auth, provider);
+    console.log(result);
+    navigate("/");
+  };
   const {
     register,
     formState: { errors },
@@ -77,6 +84,7 @@ function Login() {
           <div>
             <button
               type="button"
+              onClick={() => login(google)}
               className=" text-black border-t-2 border-l-2 border-r-4 border-b-4 border-black py-0.5 px-8 rounded-lg bg-white hover:shadow-md"
             >
               <FontAwesomeIcon
