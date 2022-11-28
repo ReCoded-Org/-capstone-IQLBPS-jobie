@@ -256,7 +256,9 @@ exports[`Footer Component Render Footer Correctly 1`] = `
           <span
             className="sr-only"
           >
+             
             github
+             
           </span>
           <svg
             aria-hidden="true"

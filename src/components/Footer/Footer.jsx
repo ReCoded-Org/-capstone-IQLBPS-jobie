@@ -61,7 +61,6 @@ function Footer() {
               rel="noreferrer"
             >
               <span className="sr-only">{t("facebook")}</span>
-
               <svg
                 className="h-9 w-9 small:w-8"
                 fill="currentColor"
@@ -83,7 +82,6 @@ function Footer() {
               rel="noreferrer"
             >
               <span className="sr-only">{t("instagram")}</span>
-
               <svg
                 className="h-9 w-9 small:w-8"
                 fill="currentColor"
@@ -105,7 +103,6 @@ function Footer() {
               rel="noreferrer"
             >
               <span className="sr-only">{t("twitter")}</span>
-
               <svg
                 className="h-9 w-9 small:w-8"
                 fill="currentColor"
@@ -122,8 +119,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="sr-only">{t("github")}</span>
-
+              <span className="sr-only"> {t("github")} </span>
               <svg
                 className="h-9 w-9 small:w-8"
                 fill="currentColor"

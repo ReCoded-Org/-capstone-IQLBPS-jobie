@@ -1,6 +1,6 @@
 import renderer from "react-test-renderer";
-import Experience from "../Experience";
 import React from "react";
+import Experience from "../Experience";
 
 jest.mock("react-i18next", () => ({
   useTranslation: () => ({ t: (key) => key }),
