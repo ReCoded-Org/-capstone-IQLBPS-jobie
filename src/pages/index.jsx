@@ -81,7 +81,7 @@ const header = [
 
 function Index() {
   return (
-    <div>
+    <div className="bg-gray-500/5">
       <Hero />
       <JobsShowcase showcaseArray={showcaseData} />
       <Categories />

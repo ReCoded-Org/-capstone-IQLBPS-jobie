@@ -3,8 +3,8 @@ import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
 
 const NameAndLinksdesign = () => {
   return (
-    <div className="max-w-5xl mt-16 mb-24 px-4 flex flex-col gap-4 flex-wrap mx-auto">
-      <div className="flex gap-4 items-start">
+    <div className="flex flex-col ml-0 md:ml-40 mt-16 mb-24 px-4 gap-4 flex-wrap mx-auto">
+      <div className="flex gap-4  justify items-start">
         <div className="text-8xl font-bold pt-4 px-8 pb-6 cursor-pointer bg-blue-100 rounded-xl text-slate-900">
           A
         </div>

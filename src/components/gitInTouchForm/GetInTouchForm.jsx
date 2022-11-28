@@ -53,7 +53,7 @@ export default function GetInTouchForm() {
   return (
     <div className="flex  justify-center my-[100px] gap-3 small:flex-col ">
       <div className="flex-1 justify-center   m-5 small:m-5">
-        <h1 className="text-4xl subpixel-antialiased text-slate-600 font-semibold">
+        <h1 className="text-4xl text-center subpixel-antialiased text-slate-600 font-semibold">
           {" "}
           {t("get-in-touch")}
         </h1>
@@ -152,7 +152,7 @@ export default function GetInTouchForm() {
       </div>
 
       <div className="flex-1   m-5 ">
-        <h1 className="text-4xl subpixel-antialiased text-slate-600 font-semibold mb-10">
+        <h1 className="text-4xl text-center subpixel-antialiased text-slate-600 font-semibold mb-10">
           Contact Us
         </h1>
 

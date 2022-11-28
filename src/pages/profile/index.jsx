@@ -1,14 +1,16 @@
-import NameAndLinks from "../../components/NameAndLinks/NameAndLinks";
+import Nameandlinksdesign from "../../components/NameAndLinks/Nameandlinksdesign";
 import UserProfile from "../../components/UserProfile/UserProfile";
-import Contact from "../../components/contact/Contact";
+import UserContact from "../../components/userContact/UserContact";
 import { users } from "../../data/usersData";
+import BookmarkedJobs from "../../components/BookmarkedJobs/BookmarkedJobs";
 
 function ProfilePage() {
   return (
     <div className="flex flex-col align-items-center bg-gray-500/5">
-      <NameAndLinks />
+      <Nameandlinksdesign />
       <UserProfile users={users} />
-      <Contact />
+      <BookmarkedJobs />
+      <UserContact />
     </div>
   );
 }

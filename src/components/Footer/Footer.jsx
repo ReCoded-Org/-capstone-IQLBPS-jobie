@@ -22,7 +22,7 @@ function Footer() {
             title="Navigate"
             links={[
               { title: "Home", path: "/" },
-              { title: "About Us", path: "/About_Us" },
+              { title: "About Us", path: "/about-us" },
               { title: "Roadmap", path: "/Roadmap" },
               { title: "Jobs", path: "/Jobs" },
               { title: "Contact Us", path: "/Contact_Us" },

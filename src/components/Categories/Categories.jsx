@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 function Categories() {
   const { t } = useTranslation();
   return (
-    <div className="grid grid-cols-4 gap-4 px-56 pt-20 pb-20 small:grid-cols-2 small:gap-x-6 small:px-12 medium:grid-cols-3 medium:px-2">
+    <div className="bg-gray-500/5 grid grid-cols-4 gap-4 px-56 pt-20 pb-20 small:grid-cols-2 small:gap-x-6 small:px-12 medium:grid-cols-3 medium:px-2">
       <div>
         <div className="bg-[#d4e6f1] rounded-full w-16 h-16 p-4 mx-auto small:w-12 small:h-12 small:p-3">
           <svg

@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div>
       <div className="flex justify-start flex-col">
-        <h1>{t('contact')}</h1>
+        <h1>{t("contact")}</h1>
         <div className="flex  justify-center content-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -2,7 +2,7 @@
 
 exports[`renders Company Showcase Component correctly 1`] = `
 <div
-  className="bg-gray-100 w-full ml-5"
+  className="bg-gray-100 w-full md:ml-5"
 >
   <div
     className="flex justify-between"

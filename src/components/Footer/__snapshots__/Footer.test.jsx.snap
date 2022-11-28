@@ -44,7 +44,7 @@ exports[`Footer Component Render Footer Correctly 1`] = `
           </a>
           <a
             className="hover:opacity-75"
-            href="/About_Us"
+            href="/about-us"
             onClick={[Function]}
           >
             About Us
