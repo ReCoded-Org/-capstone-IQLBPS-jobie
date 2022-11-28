@@ -103,7 +103,7 @@ exports[`renders Meet Our Team component correctly 1`] = `
     >
       <input
         className="block px-4 md:my-0 my-5 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 w-full"
-        placeholder="Search..."
+        placeholder="search"
         type="text"
       />
       <button
@@ -137,7 +137,7 @@ exports[`renders Meet Our Team component correctly 1`] = `
         className="flex bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-9 mx-4 rounded-full"
         type="button"
       >
-        Login
+        login
       </button>
     </a>
   </ul>

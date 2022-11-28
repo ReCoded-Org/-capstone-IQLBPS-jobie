@@ -8,9 +8,11 @@ import { faMagnifyingGlass, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Button from "./Button";
 import Dropdown from "./DropDown";
 import { useTranslation } from "react-i18next";
+import { t } from "i18next";
 
 console.log("auth", auth);
 const Navbar = () => {
+  const { t } = useTranslation();
   const Links = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about-us" },
@@ -81,7 +83,7 @@ const Navbar = () => {
           <input
             type="text"
             className="block px-4 md:my-0 my-5 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 w-full"
-            placeholder="Search..."
+            placeholder={t("search")}
           />
           <button type="button" className="-ml-6">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
@@ -91,7 +93,7 @@ const Navbar = () => {
           <Dropdown setIsAuthenticated={setIsAuth} isAuthenticated={isAuth} />
         ) : (
           <Link to="/login">
-            <Button>Login</Button>
+            <Button>{t("login")}</Button>
           </Link>
         )}
       </ul>

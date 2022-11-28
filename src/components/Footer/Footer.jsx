@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import FooterCol from "./FooterCol";
 
 function Footer() {
-  const [t] = useTranslation();
+  const { t } = useTranslation();
   return (
     <footer aria-label="Site Footer" className="bg-dark-gray">
       <div className="flex flex-row justify-between mx-auto max-w-6xl pt-7 pb-[4.75rem] small:py-7 medium:py-7 small:px-6 large:px-8 small:flex-col small:items-center medium:flex-col medium:items-center">

@@ -3,9 +3,11 @@ import { useNavigate, Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { Trans, useTranslation } from "react-i18next";
 import { auth, google, signInWithPopup } from "../../firebase";
 
 function Login() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const login = async (provider) => {
     const result = await signInWithPopup(auth, provider);
@@ -21,7 +23,7 @@ function Login() {
   return (
     <div className=" my-52">
       <h1 className="font-inter text-center font-black text-2xl mb-6">
-        Log in
+        {t("login")}
       </h1>
       <div className="w-full max-w-sm mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -47,7 +49,7 @@ function Login() {
               className="shadow border-2 border-black rounded-md w-full py-2 px-3 text-dark-gray leading-tight focus:outline-1 focus:shadow-outline"
               id="password"
               type="password"
-              placeholder="Password                                                                     &#xF023;"
+              placeholder="Password&#xF023;"
               {...register("password", {
                 required: true,
                 minLength: 8,
@@ -69,7 +71,7 @@ function Login() {
               type="submit"
               className="w-full bg-accent font-inter text-white rounded-md py-1 hover:bg-red-500"
             >
-              Log in
+              {t("login")}
             </button>
           </div>
           <div className="mb-4">
@@ -91,8 +93,7 @@ function Login() {
                 icon={faGoogle}
                 className="pr-3 text-2xl font-bold"
               />
-              Log in with
-              <span className="font-bold"> Google</span>
+              <Trans i18nKey="login-with">Log in with Google</Trans>
             </button>
           </div>
         </form>
