@@ -19,7 +19,7 @@ exports[`Footer Component Render Footer Correctly 1`] = `
       <p
         className="mt-4 max-w-[25rem] text-sm small:text-base text-white text-justify small:text-center py-7 small:max-w-[33rem]"
       >
-        Jobie is a platform that can help you set up your career we give services from finding out the right path to advance your career through a roadmap or a right position from the top companies
+        jobie-description
       </p>
     </div>
     <div
@@ -186,7 +186,7 @@ exports[`Footer Component Render Footer Correctly 1`] = `
           <span
             className="sr-only"
           >
-             Facebook 
+            facebook
           </span>
           <svg
             aria-hidden="true"
@@ -210,7 +210,7 @@ exports[`Footer Component Render Footer Correctly 1`] = `
           <span
             className="sr-only"
           >
-             Instagram 
+            instagram
           </span>
           <svg
             aria-hidden="true"
@@ -234,7 +234,7 @@ exports[`Footer Component Render Footer Correctly 1`] = `
           <span
             className="sr-only"
           >
-             Twitter 
+            twitter
           </span>
           <svg
             aria-hidden="true"
@@ -256,7 +256,9 @@ exports[`Footer Component Render Footer Correctly 1`] = `
           <span
             className="sr-only"
           >
-             GitHub 
+             
+            github
+             
           </span>
           <svg
             aria-hidden="true"
