@@ -5,7 +5,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
   className=" my-52"
 >
   <h1
-    className="font-inter font-black text-2xl mb-6"
+    className="font-inter text-center font-black text-2xl mb-6"
   >
     Sign Up
   </h1>
@@ -78,11 +78,17 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
         >
           Already Have an Account?
            
-          <span
-            className="font-semibold cursor-pointer"
+          <a
+            href="/login"
+            onClick={[Function]}
           >
-            Log in
-          </span>
+             
+            <span
+              className="font-semibold cursor-pointer"
+            >
+              Log in
+            </span>
+          </a>
         </p>
       </div>
     </form>

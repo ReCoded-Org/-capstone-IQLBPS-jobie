@@ -2,8 +2,8 @@ import React from "react";
 
 function WhyChooseUs() {
   return (
-    <div className=" bg-[#f8f8f8] ">
-      <h1 className="text-5xl font-inter font-semibold text-dark-gray small:text-xl medium:text-3xl">
+    <div className="pt-10 bg-gray-500/5 ">
+      <h1 className="text-5xl text-center font-inter font-semibold text-dark-gray small:text-xl medium:text-3xl">
         Why Choose <span className="text-accent">Us?</span>
       </h1>
       <div className="flex px-40 justify-around py-12 small:grid small:grid-rows-2 small:grid-flow-col small:gap-4 small:py-6 medium:grid medium:grid-rows-2 medium:grid-flow-col medium:gap-6 medium:py-7 large:gap-6">

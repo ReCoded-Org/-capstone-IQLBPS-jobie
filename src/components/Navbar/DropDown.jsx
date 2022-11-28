@@ -12,6 +12,7 @@ function DropDown({ setIsAuthenticated }) {
     auth.signOut();
     setIsAuthenticated(false);
   };
+  // import SignOut from "../signup/SignOut";
 
   return (
     <Menu
@@ -74,6 +75,7 @@ function DropDown({ setIsAuthenticated }) {
                 </div>
               )}
             </Menu.Item>
+
             <Menu.Item>
               {({ active }) => (
                 <div
@@ -86,7 +88,8 @@ function DropDown({ setIsAuthenticated }) {
                   }`}
                   onClick={logoutOfApp}
                 >
-                  <h3>signout</h3>
+                  <h3>Log out</h3>
+                  {/* <SignOut /> */}
                 </div>
               )}
             </Menu.Item>

@@ -1,6 +1,7 @@
 /* eslint-disable */
 /* eslint-disable no-console, no-control-regex*/
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { auth, onAuthStateChanged } from "../../firebase";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +9,7 @@ import Button from "./Button";
 import Dropdown from "./DropDown";
 import { useTranslation } from "react-i18next";
 
+console.log("auth", auth);
 const Navbar = () => {
   const Links = [
     { name: "Home", link: "/" },
@@ -16,16 +18,27 @@ const Navbar = () => {
     { name: "Jobs", link: "/jobs" },
     { name: "Contact", link: "/contact" },
   ];
-  const [isAuthenticated,setIsAuthenticated] = useState(true);
+
+  const [isAuth, setIsAuth] = useState(false);
   const [open, setOpen] = useState(false);
   const [openDropDown, setOpenDropDown] = useState(false);
   const [isEnglish, setIsEnglish] = useState(true);
-
   const { i18n } = useTranslation();
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (userAuth) => {
+      if (userAuth) {
+        // user is logged in
+        setIsAuth(true);
+      } else {
+        setIsAuth(false);
+      }
+    });
+  }, [auth]);
 
   const handleTranslate = () => {
     setIsEnglish(!isEnglish);
-    i18n.changeLanguage(isEnglish ? "en" : "ar");
+    i18n.changeLanguage(!isEnglish ? "en" : "ar");
   };
   return (
     <div className="bg-white lg:flex-nowrap md:flex-wrap shadow-md max-w-10 sticky top-0 left-0 z-10 md:flex items-center  justify-between py-4 md:px-10 px-7">
@@ -42,7 +55,7 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={`md:flex md:items-center md:justify-item-ends md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] md:pl-0 pl-9 transition-all duration-500 ease-in ${
+        className={`backdrop-blur-md bg-white/60 md:flex md:items-center md:justify-item-ends md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] md:pl-0 pl-9 transition-all duration-500 ease-in ${
           open ? "top-20" : "top-[-490px]"
         }`}
       >
@@ -61,10 +74,10 @@ const Navbar = () => {
         ))}
 
         <span onClick={handleTranslate} className="mx-3">
-          <FontAwesomeIcon icon={faGlobe} className="mx-5" />
+          <FontAwesomeIcon icon={faGlobe} className="mx-5 " />
           {isEnglish ? "En" : "Ku"}
         </span>
-        <div className="lg:w-60 md:w-45 flex items-center">
+        <div className="lg:w-50 md:w-45 flex items-center">
           <input
             type="text"
             className="block px-4 md:my-0 my-5 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 w-full"
@@ -74,7 +87,13 @@ const Navbar = () => {
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </button>
         </div>
-        {isAuthenticated ? <Dropdown setIsAuthenticated={setIsAuthenticated} isAuthenticated={isAuthenticated}/> : <Button>Login</Button>}
+        {isAuth ? (
+          <Dropdown setIsAuthenticated={setIsAuth} isAuthenticated={isAuth} />
+        ) : (
+          <Link to="/login">
+            <Button>Login</Button>
+          </Link>
+        )}
       </ul>
     </div>
   );

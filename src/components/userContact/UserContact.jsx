@@ -1,7 +1,6 @@
 import { t } from "i18next";
-import React from "react";
 
-export default function Contact() {
+function UserContact() {
   return (
     <div>
       <div className="flex justify-start flex-col">
@@ -49,3 +48,5 @@ export default function Contact() {
     </div>
   );
 }
+
+export default UserContact;

@@ -18,7 +18,7 @@ exports[`renders Meet Our Team component correctly 1`] = `
     />
   </div>
   <ul
-    className="md:flex md:items-center md:justify-item-ends md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] md:pl-0 pl-9 transition-all duration-500 ease-in top-[-490px]"
+    className="backdrop-blur-md bg-white/60 md:flex md:items-center md:justify-item-ends md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] md:pl-0 pl-9 transition-all duration-500 ease-in top-[-490px]"
   >
     <li
       className="md:ml-8 lg:text-xl md:text-sm lg:my-0 my-7"
@@ -81,7 +81,7 @@ exports[`renders Meet Our Team component correctly 1`] = `
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-globe mx-5"
+        className="svg-inline--fa fa-globe mx-5 "
         data-icon="globe"
         data-prefix="fas"
         focusable="false"
@@ -99,7 +99,7 @@ exports[`renders Meet Our Team component correctly 1`] = `
       En
     </span>
     <div
-      className="lg:w-60 md:w-45 flex items-center"
+      className="lg:w-50 md:w-45 flex items-center"
     >
       <input
         className="block px-4 md:my-0 my-5 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 w-full"
@@ -129,29 +129,17 @@ exports[`renders Meet Our Team component correctly 1`] = `
         </svg>
       </button>
     </div>
-    <div
-      className="relative inline-block text-left"
-      data-headlessui-state=""
-      data-testid="filter-button"
+    <a
+      href="/login"
+      onClick={[Function]}
     >
-      <div>
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-5 mx-3 rounded-full"
-          data-headlessui-state=""
-          data-testid="filter-botton-toggle"
-          id="headlessui-menu-button-:r0:"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          type="button"
-        >
-           
-          Account
-        </button>
-      </div>
-    </div>
+      <button
+        className="flex bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-9 mx-4 rounded-full"
+        type="button"
+      >
+        Login
+      </button>
+    </a>
   </ul>
 </div>
 `;

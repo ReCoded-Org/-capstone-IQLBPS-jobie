@@ -5,7 +5,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
   className=" my-52"
 >
   <h1
-    className="font-inter font-black text-2xl mb-6"
+    className="font-inter text-center font-black text-2xl mb-6"
   >
     Log in
   </h1>
@@ -65,16 +65,24 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
         >
           Don't Have an Account?
            
-          <span
-            className="font-semibold"
+          <a
+            href="/sign-up"
+            onClick={[Function]}
           >
-            Sign up
-          </span>
+             
+            <span
+              className="font-semibold"
+            >
+              Sign up
+            </span>
+             
+          </a>
         </p>
       </div>
       <div>
         <button
           className=" text-black border-t-2 border-l-2 border-r-4 border-b-4 border-black py-0.5 px-8 rounded-lg bg-white hover:shadow-md"
+          onClick={[Function]}
           type="button"
         >
           <svg

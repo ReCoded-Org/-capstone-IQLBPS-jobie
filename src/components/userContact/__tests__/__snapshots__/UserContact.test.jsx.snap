@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders Contact 1`] = `
+exports[`renders User Contact Component correctly 1`] = `
 <div>
   <div
     className="flex justify-start flex-col"
