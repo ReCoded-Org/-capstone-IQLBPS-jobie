@@ -2,8 +2,8 @@
 /* eslint-disable no-console */
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
+import { useDispatch } from "react-redux";
 
 import {
   auth,
@@ -14,7 +14,7 @@ import {
 import { signup } from "../../features/user/userSlice";
 
 function SignUp() {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const dispatch = useDispatch();

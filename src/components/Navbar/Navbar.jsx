@@ -8,6 +8,7 @@ import { faMagnifyingGlass, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Button from "./Button";
 import Dropdown from "./DropDown";
 import { useTranslation } from "react-i18next";
+import { t } from "i18next";
 
 console.log("auth", auth);
 const Navbar = () => {

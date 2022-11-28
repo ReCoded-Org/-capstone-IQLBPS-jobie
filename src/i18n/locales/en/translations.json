@@ -109,7 +109,7 @@
   "type-to-search": "Type to search ",
   "view-profile": "View Profile",
   "edit-profile": "Edit Profile",
-  "signout": "Log Out",
+  "signout": "Sign Out",
   "login": "Login",
   "search": "Search...",
   "login": "Login",
@@ -118,7 +118,7 @@
   "first-n": "First name",
   "last-n": "Last name",
   "latest-job": "Latest Job",
-  "dont-have-acc": "Don&apos;t Have an Account? <span className='font-semibold'>Sign up</span>",
+  "dont-have-acc": "Don&apos;t Have an Account?{''} <span className='font-semibold'>Sign up</span>",
   "login-with": "Log in with Google",
   "sign-up": "Sign Up",
   "sign-upp": "Sign Up"

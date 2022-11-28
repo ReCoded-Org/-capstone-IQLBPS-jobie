@@ -7,7 +7,7 @@ import { signout } from "../../features/user/userSlice";
 import { auth } from "../../firebase";
 
 function DropDown({ setIsAuthenticated }) {
-    const [t] = useTranslation();
+  const [t] = useTranslation();
   const dispatch = useDispatch();
   const logoutOfApp = () => {
     dispatch(signout());

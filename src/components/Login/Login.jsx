@@ -49,7 +49,7 @@ function Login() {
               className="shadow border-2 border-black rounded-md w-full py-2 px-3 text-dark-gray leading-tight focus:outline-1 focus:shadow-outline"
               id="password"
               type="password"
-              placeholder="Password                                                                     &#xF023;"
+              placeholder="Password&#xF023;"
               {...register("password", {
                 required: true,
                 minLength: 8,

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import CustomButton from "../UI/Button/CustomButton";
 
 const LatestJobs = ({ headers, data }) => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   const [fullTime, setFullTime] = useState(false);
   const [partTime, setPartTime] = useState(false);
   const [remote, setRemote] = useState(false);

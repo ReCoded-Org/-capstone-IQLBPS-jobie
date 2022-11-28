@@ -40,7 +40,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
           name="password"
           onBlur={[Function]}
           onChange={[Function]}
-          placeholder="Password                                                                     "
+          placeholder="Password"
           type="password"
         />
         <error
