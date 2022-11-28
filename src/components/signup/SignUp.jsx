@@ -1,9 +1,9 @@
 /* eslint-disable no-alert */
 /* eslint-disable no-console */
-import React from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { useTranslation } from "react-i18next";
 
 import {
   auth,
@@ -14,6 +14,7 @@ import {
 import { signup } from "../../features/user/userSlice";
 
 function SignUp() {
+    const { t } = useTranslation();
   const navigate = useNavigate();
 
   const dispatch = useDispatch();
@@ -55,7 +56,7 @@ function SignUp() {
   return (
     <div className=" my-52">
       <h1 className="font-inter text-center font-black text-2xl mb-6">
-        Sign Up
+        {t("sign-up")}
       </h1>
       <div className="w-full max-w-sm mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -121,7 +122,7 @@ function SignUp() {
               type="submit"
               className="w-full bg-accent font-inter text-white rounded-md py-1 hover:bg-red-500"
             >
-              Sign Up
+              {t("sign-upp")}
             </button>
           </div>
           <div className="mb-4">

@@ -48,7 +48,7 @@ function App() {
         <Route path="/roadmap" element={<RoadMaps />} />
         <Route path="/jobs" element={<CombiningFilterComponents />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/profile-edit" element={<ProfileEdit/>} />
+        <Route path="/profile-edit" element={<ProfileEdit />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />

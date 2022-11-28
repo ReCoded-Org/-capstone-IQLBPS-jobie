@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { bookmark } from "../../features/bookmark/bookmark";
 
 function BookmarkedJobs() {
+  const { t } = useTranslation();
   const [markedJobs, setMarkedJobs] = useState([]);
 
   console.log("cough", markedJobs);
@@ -45,7 +47,7 @@ function BookmarkedJobs() {
   return (
     <div className="pl-44 py-4 medium:px-24 medium:py-2 small:px-4 small:py-2">
       <h1 className="mb-4 text-4xl text-dark-gray md:text-5xl lg:text-6x pb-7 text-left mt-8">
-        Bookmarked Jobs
+        {t("bookmarked-jobs")}
       </h1>
       {markedJobs.map((data) => {
         return (

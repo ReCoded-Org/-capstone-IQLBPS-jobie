@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import CustomButton from "../UI/Button/CustomButton";
 
 const LatestJobs = ({ headers, data }) => {
+    const { t } = useTranslation();
   const [fullTime, setFullTime] = useState(false);
   const [partTime, setPartTime] = useState(false);
   const [remote, setRemote] = useState(false);
@@ -28,7 +30,7 @@ const LatestJobs = ({ headers, data }) => {
     <div className="bg-gray-500/5">
       <div className="max-w-[70%] large:max-w-[70%] medium:max-w-[80%] small:max-w-[85%] h-full mx-auto py-10 small:py-5">
         <h1 className="text-3xl small:text-xl text-secondary mb-10 small:mb-5 font-semibold">
-          Latest Jobs
+          {t("latest-job")}
         </h1>
         <div className="flex justify-end">
           <label htmlFor="full-time" className="mr-4 small:mr-2 small:text-sm">
@@ -39,7 +41,7 @@ const LatestJobs = ({ headers, data }) => {
               onChange={handleFullTime}
               checked={fullTime}
             />
-            Full Time
+            {t("full-time")}
           </label>
           <label htmlFor="part-time" className="mr-4 small:mr-2 small:text-sm">
             <input
@@ -49,7 +51,7 @@ const LatestJobs = ({ headers, data }) => {
               onChange={handlePartTime}
               checked={partTime}
             />
-            Part Time
+            {t("part-time")}
           </label>
           <label htmlFor="remote" className="small:text-sm">
             <input
@@ -59,7 +61,7 @@ const LatestJobs = ({ headers, data }) => {
               onChange={handleRemote}
               checked={remote}
             />
-            Remote
+            {t("remote")}
           </label>
         </div>
         <div className="overflow-x-auto shadow-md">

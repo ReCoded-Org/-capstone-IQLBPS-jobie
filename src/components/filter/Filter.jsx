@@ -190,7 +190,7 @@ const Filter = ({ setData, items }) => {
                   <option>{t("iraq")}</option>
                   <option>{t("jordan")}</option>
                   <option>{t("yemen")}</option>
-                  <option>{t("syr")}</option>
+                  <option>{t("syria")}</option>
                   <option>{t("lebanon")}</option>
                   <option>{t("turkey")}</option>
                 </select>

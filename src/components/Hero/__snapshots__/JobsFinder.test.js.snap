@@ -28,7 +28,7 @@ exports[`renders correctly when the component matches the snapshot 1`] = `
         <input
           className="rounded-3xl px-6 py-2 outline-none relative md:left-8"
           onChange={[Function]}
-          placeholder="Type to search "
+          placeholder="type-to-search"
           type="search"
           value=""
         />
