@@ -88,7 +88,7 @@ const Navbar = () => {
           </button>
         </div>
         {isAuth ? (
-          <Dropdown />
+          <Dropdown setIsAuthenticated={setIsAuth} isAuthenticated={isAuth} />
         ) : (
           <Link to="/login">
             <Button>Login</Button>
