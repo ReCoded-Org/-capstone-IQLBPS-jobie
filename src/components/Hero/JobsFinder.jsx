@@ -41,7 +41,7 @@ function JobsFinder({ setData }) {
           <form onSubmit={handleSubmit}>
             <input
               type="search"
-              placeholder="Type to search "
+              placeholder={t('type-to-search')}
               className="rounded-3xl px-6 py-2 outline-none relative md:left-8"
               value={text}
               onChange={handleChange}

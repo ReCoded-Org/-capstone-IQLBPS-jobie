@@ -1,6 +1,10 @@
+
+import {useTranslation} from "react-i18next"
 import { bookmarkedJobsData } from "../../data/bookmarkedJobsData";
 
+
 function BookmarkedJobs() {
+  const {t} = useTranslation()
   const closed = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +36,7 @@ function BookmarkedJobs() {
   return (
     <div className=" px-96 py-4 medium:px-24 medium:py-2 small:px-4 small:py-2">
       <h1 className="text-center text-3xl pb-10 font-semibold font-inter medium:text-2xl small:text-xl ">
-        Bookmarked Jobs
+        {t('bookmarked-jobs')}
       </h1>
       {bookmarkedJobsData.map((data) => {
         return (

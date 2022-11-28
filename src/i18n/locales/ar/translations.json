@@ -102,7 +102,36 @@
     "github": "گیتهەب",
     "jobs-finder": "پیشە دۆزەرەوە",
     "find-your-best-job": "لێرە باشترین کارەکانت بدۆزەوە",
-    "search-finder": "گەڕان"
+    "search-finder": "گەڕان",
+    "account": "هەژمار",
+    "type-to-search": "بگەڕێ ",
+    "view-profile": "پرۆفایلەکەت ببینە",
+    "edit-profile": "دەستکاری کردن",
+    "signout": "چوونە دەرەوە",
+    "login": "چوونە ژوورەوە",
+    "search": "گەڕان...",
+    "login": "چوونە ژوورەوە",
+    "home": "لاپەڕەی سەرەکی",
+    "bookmarked-jobs": "پیشە هەڵگیراوەکان",
+    "first-n": "ناو",
+    "last-n": "ناوی باوک",
+    "latest-job": "دوایین کارەکان",
+    "dont-have-acc": "هەژماری تایبەت بە خۆتت نییە؟{''} <span className='font-semibold'>هەژمارێک دروست بکە</span>",
+    "login-with": "Log in with <span className='font-bold'> Google</span>",
+    "sign-up": "هەژمار دروست بکە",
+    "sign-upp": "چوونە ژوورەوە"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

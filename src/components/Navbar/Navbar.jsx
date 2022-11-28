@@ -6,10 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Button from "./Button";
 import Dropdown from "./DropDown";
-import { useTranslation } from "react-i18next";
+import {useTranslation } from "react-i18next";
+import { t } from "i18next";
 
 const Navbar = () => {
   const Links = [
+
     { name: "Home", link: "/" },
     { name: "About", link: "/about-us" },
     { name: "Roadmap", link: "/roadmap" },
@@ -68,13 +70,13 @@ const Navbar = () => {
           <input
             type="text"
             className="block px-4 md:my-0 my-5 text-purple-700 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40 w-full"
-            placeholder="Search..."
+            placeholder={t('search')}
           />
           <button type="button" className="-ml-6">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </button>
         </div>
-        {isAuthenticated ? <Dropdown /> : <Button>Login</Button>}
+        {isAuthenticated ? <Dropdown /> : <Button>{t('login')}</Button>}
       </ul>
     </div>
   );

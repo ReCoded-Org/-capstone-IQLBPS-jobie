@@ -72,7 +72,7 @@ export default function GetInTouchForm() {
                 <input
                   className="px-6 py-2   border-2 border-gray-900"
                   type="text"
-                  placeholder="Name"
+                  placeholder={t('first-n')}
                   name="firstName"
                   {...register("firstName")}
                   id="n44ame"
@@ -91,7 +91,7 @@ export default function GetInTouchForm() {
                   className="px-6 py-2   border-2 border-gray-900"
                   type="text"
                   name="lastName"
-                  placeholder="Last Name"
+                  placeholder={t('last-n')}
                   {...register("lastName")}
                   id="nam3e"
                 />

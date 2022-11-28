@@ -2,8 +2,10 @@
 import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+import {Trans,useTranslation} from "react-i18next";
 
 function Login() {
+  const {t} = useTranslation();
   const {
     register,
     formState: { errors },
@@ -12,7 +14,7 @@ function Login() {
   const onSubmit = (data) => console.log(data);
   return (
     <div className=" my-52">
-      <h1 className="font-inter font-black text-2xl mb-6">Log in</h1>
+      <h1 className="font-inter font-black text-2xl mb-6">{t('login')}</h1>
       <div className="w-full max-w-sm mx-auto">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
@@ -37,7 +39,7 @@ function Login() {
               className="shadow border-2 border-black rounded-md w-full py-2 px-3 text-dark-gray leading-tight focus:outline-1 focus:shadow-outline"
               id="password"
               type="password"
-              placeholder="Password                                                                     &#xF023;"
+              placeholder="Password&#xF023;"
               {...register("password", {
                 required: true,
                 minLength: 8,
@@ -59,13 +61,15 @@ function Login() {
               type="submit"
               className="w-full bg-accent font-inter text-white rounded-md py-1 hover:bg-red-500"
             >
-              Log in
+              {t('login')}
             </button>
           </div>
           <div className="mb-4">
             <p className="text-dark-gray">
+             <Trans i18nKey= "dont-have-acc">
               Don&apos;t Have an Account?{" "}
               <span className="font-semibold">Sign up</span>
+              </Trans>
             </p>
           </div>
           <div>
@@ -77,8 +81,10 @@ function Login() {
                 icon={faGoogle}
                 className="pr-3 text-2xl font-bold"
               />
+              <Trans i18nKey= "login-with">
               Log in with
-              <span className="font-bold"> Google</span>
+              <span className='font-bold'> Google</span>
+              </Trans>
             </button>
           </div>
         </form>

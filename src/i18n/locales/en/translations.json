@@ -104,5 +104,24 @@
     "github": "GitHub",
     "jobs-finder": "Jobs Finder",
     "find-your-best-job": "Find the best jobe for you here",
-    "search-finder": "Search"
+    "search-finder": "Search",
+    "account": "Account",
+    "type-to-search": "Type to search ",
+    "view-profile": "View Profile",
+    "edit-profile": "Edit Profile",
+    "signout": "Sign Out",
+    "login": "Login",
+    "search": "Search...",
+    "login": "Login",
+    "home": "Home",
+    "bookmarked-jobs": "Bookmarked Jobs",
+    "first-n": "First name",
+    "last-n": "Last name",
+    "latest-job": "Latest Job",
+    "dont-have-acc": "Don&apos;t Have an Account?{''} <span className='font-semibold'>Sign up</span>",
+    "login-with": "Log in with <span className='font-bold'> Google</span>",
+    "sign-up": "Sign Up",
+    "sign-upp": "Sign Up"
+    
+
 }

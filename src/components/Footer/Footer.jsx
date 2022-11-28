@@ -3,7 +3,7 @@ import FooterCol from "./FooterCol";
 
 
 function Footer() {
-  const [t] = useTranslation();
+  const {t} = useTranslation();
   return (
     <footer aria-label="Site Footer" className="bg-dark-gray">
       <div className="flex flex-row justify-between mx-auto max-w-6xl pt-7 pb-[4.75rem] small:py-7 medium:py-7 small:px-6 large:px-8 small:flex-col small:items-center medium:flex-col medium:items-center">
@@ -21,6 +21,7 @@ function Footer() {
         <div className="grid grid-cols-3 pr-[3.2rem] max-w-[40rem] gap-[5.2rem] small:gap-10 text-sm small:text-base text-left small:text-center leading-[0rem] small:leading-3 small:grid-cols-1 small:pr-0 medium:pr-0 medium:grid-cols-2 large:col-span-2 large:grid-cols-3 py-11">
           <FooterCol
             title="Navigate"
+            
             links={[
               { title: "Home", path: "/" },
               { title: "About Us", path: "/About_Us" },

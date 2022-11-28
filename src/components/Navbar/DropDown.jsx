@@ -1,9 +1,11 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 function DropDown() {
-  return (
+  const [t] = useTranslation();
+    return (
     <Menu
       as="div"
       data-testid="filter-button"
@@ -15,7 +17,7 @@ function DropDown() {
           className="bg-red-400 hover:bg-blue-700 text-white font-bold py-2 px-5 mx-3 rounded-full"
         >
           {" "}
-          Account
+          {t('account')}
         </Menu.Button>
       </div>
 
@@ -42,7 +44,7 @@ function DropDown() {
                   }`}
                 >
                   <Link to="/profile">
-                    <h3>View Profile</h3>
+                    <h3>{t('view-profile')}</h3>
                   </Link>
                 </div>
               )}
@@ -59,7 +61,7 @@ function DropDown() {
                   }`}
                 >
                   <Link to="/profile-edit">
-                    <h3>Edit Profile</h3>
+                    <h3>{t('edit-profile')}</h3>
                   </Link>
                 </div>
               )}
@@ -75,7 +77,7 @@ function DropDown() {
                       : "text-black-500"
                   }`}
                 >
-                  <h3>signout</h3>
+                  <h3>{t('signout')}</h3>
                 </div>
               )}
             </Menu.Item>
