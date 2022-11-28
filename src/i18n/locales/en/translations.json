@@ -21,11 +21,7 @@
     "from": "From",
     "to": "To",
     "location": "Location",
-<<<<<<< HEAD
-    "choose-all-location": "Choose all that applies...",
-=======
     "choose-all-location": "Choose a location",
->>>>>>> develop
     "iraq": "Iraq",
     "lebanon": "Lebanon",
     "yemen": "Yemen",
@@ -33,20 +29,12 @@
     "jordan": "Jordan",
     "syria": "Syria",
     "type-of-employment": "Type Of Employment",
-<<<<<<< HEAD
-    "choose-all-employment": "Choose all that applies...",
-=======
     "choose-all-employment": "Choose a type",
->>>>>>> develop
     "full-time": "Full-time",
     "part-time": "Part-time",
     "remote1": "Remote",
     "category": "Category",
-<<<<<<< HEAD
-    "choose-all-category": "Choose all that applies...",
-=======
     "choose-all-category": "Choose a category",
->>>>>>> develop
     "tech": "Tech",
     "design": "Design",
     "engineering": "Engineering",
@@ -108,5 +96,13 @@
     "location-experience": "Location",
     "type-of-employment-exp": "Type of Employment",
     "position": "Position",
-    "date-exp": "Date"
+    "date-exp": "Date",
+    "jobie-description": "Jobie is a platform that can help you set up your career we give services from finding out the right path to advance your career through a roadmap or a right position from the top companies",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "github": "GitHub",
+    "jobs-finder": "Jobs Finder",
+    "find-your-best-job": "Find the best jobe for you here",
+    "search-finder": "Search"
 }

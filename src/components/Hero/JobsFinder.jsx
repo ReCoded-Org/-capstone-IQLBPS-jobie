@@ -1,7 +1,10 @@
 import { useState } from "react";
+import {useTranslation} from "react-i18next"
 import { filterData } from "../../data/filterData";
 
+
 function JobsFinder({ setData }) {
+  const [t] = useTranslation();
   const [text, setText] = useState("");
   const handleChange = (e) => setText(e.target.value);
 
@@ -27,11 +30,11 @@ function JobsFinder({ setData }) {
         <div>
           <h1 className="text-3xl font-medium text-dark-gray leading-loose ">
             {" "}
-            Jobs Finder
+            {t('jobs-finder')}
           </h1>
           <p className="decoration-solid pt-0 text-dark-gray leading-loose">
             {" "}
-            Find the best jobe for you here
+            {t('find-your-best-job')}
           </p>
         </div>
         <div className=" flex-col mt-2">
@@ -48,7 +51,7 @@ function JobsFinder({ setData }) {
               className="py-2 bg-accent px-5 rounded-3xl text-white relative   hover:bg-red-500 "
             >
               {" "}
-              Search
+              {t('search-finder')}
             </button>
           </form>
         </div>
